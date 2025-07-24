@@ -20,16 +20,19 @@ const MarkerCluster = ({ markers }: any) => {
       });
 
       leafletMarker.bindPopup(`
-        <div class="flex">
-          <img src="${getIconByCategory(marker.kategori)}" alt="${marker.nama}"/>
-          <h1>${marker.nama}</h1>
-          <p>${marker.deskripsi}</p>
-          <img src="images/${marker.foto}"/>
+        <div class="flex gap-5">
+          <img class="w-12 h-12" src="${getIconByCategory(marker.kategori).options.iconUrl}" alt="${
+        marker.nama
+      }"/>
+          <div>
+            <h1 class="font-bold text-lg">${marker.nama}</h1>
+            <p class="text-black/50">${marker.provinsi}</p>
+          </div>
         </div>
          `);
 
       leafletMarker.on("click", () => {
-        map.flyTo([marker.latitude, marker.longitude], 10, {
+        map.flyTo([marker.latitude, marker.longitude], 15, {
           duration: 1.2,
         });
 
@@ -61,10 +64,10 @@ const getIconByCategory = (category: string) => {
     case "Alat Musik":
       iconFile = "alat-musik.png";
       break;
-    case "Makanan Daerah":
+    case "Makanan":
       iconFile = "makanan.png";
       break;
-    case "Tempat Wisata":
+    case "Wisata":
       iconFile = "wisata.png";
       break;
     default:
