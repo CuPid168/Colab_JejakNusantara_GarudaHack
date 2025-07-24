@@ -38,10 +38,9 @@ function useTypewriter(text: string, active: boolean) {
     setDisplayed("");
     setDone(false);
     let i = 0;
-    let speed = 60; // start slow
+    let speed = 60;
     intervalRef.current && clearInterval(intervalRef.current);
     function getSpeed(idx: number) {
-      // Slow for first 10 chars, then faster
       if (idx < 10) return 60;
       if (idx < 30) return 30;
       return 12;
@@ -66,7 +65,6 @@ function useTypewriter(text: string, active: boolean) {
 }
 
 export default function Chatbot() {
-  // Group related state for efficiency
   const [chatState, setChatState] = useState({
     input: "",
     history: [] as Array<{ role: "user" | "ai"; text: string; typewriter?: boolean }>,
@@ -78,7 +76,6 @@ export default function Chatbot() {
   const chatEndRef = useRef<HTMLDivElement>(null);
   const chatAreaRef = useRef<HTMLDivElement>(null);
 
-  // Load session and history on mount
   useEffect(() => {
     const id = getOrCreateSessionId();
     setSessionId(id);
@@ -86,32 +83,28 @@ export default function Chatbot() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        // Set typewriter: false for all AI messages
         setChatState(prev => ({
           ...prev,
           history: parsed.map((msg: any) =>
             msg.role === "ai" ? { ...msg, typewriter: false } : msg
           )
         }));
-      } catch {}
+      } catch { }
     }
   }, []);
 
-  // Save history to localStorage
   useEffect(() => {
     if (sessionId) {
       localStorage.setItem(HISTORY_KEY_PREFIX + sessionId, JSON.stringify(chatState.history));
     }
   }, [chatState.history, sessionId]);
 
-  // Scroll to bottom on new message or loading
   useEffect(() => {
     if (chatAreaRef.current) {
       chatAreaRef.current.scrollTop = chatAreaRef.current.scrollHeight;
     }
   }, [chatState.history, chatState.loading]);
 
-  // Show/hide welcome message
   useEffect(() => {
     setChatState(prev => ({
       ...prev,
@@ -119,10 +112,8 @@ export default function Chatbot() {
     }));
   }, [chatState.history]);
 
-  // Only typewriter for the latest AI message that is new (not from localStorage)
   const lastBotIdx = chatState.history.map(h => h.role).lastIndexOf("ai");
   const lastBotMsg = lastBotIdx !== -1 ? chatState.history[lastBotIdx] : null;
-  // Only typewriter if the last AI message is the most recent and has typewriter:true
   const shouldTypewriter = !!(lastBotMsg && lastBotMsg.typewriter && lastBotIdx === chatState.history.length - 1);
   const typewriterText = useTypewriter(shouldTypewriter ? lastBotMsg.text : "", shouldTypewriter);
 
@@ -166,55 +157,17 @@ export default function Chatbot() {
   };
 
   return (
-    <div style={{ maxWidth: 500, margin: "40px auto", padding: 24, borderRadius: 12, boxShadow: "0 2px 8px #eee", background: "#fff", display: "flex", flexDirection: "column", height: "80vh" }}>
-      <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Kamus Nusantara</h1>
-      <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
-        {SUGGESTIONS.map((s, i) => (
-          <button
-            key={i}
-            onClick={() => handleSuggestionClick(s)}
-            style={{
-              background: "#f1faee",
-              color: "#7b3f00",
-              border: "none",
-              borderRadius: 16,
-              padding: "6px 14px",
-              fontSize: 14,
-              cursor: "pointer",
-              fontWeight: 500,
-              boxShadow: "0 1px 2px #eee",
-              transition: "background 0.2s",
-            }}
-          >
-            {s}
-          </button>
-        ))}
-        <button
-          onClick={handleClear}
-          style={{
-            marginLeft: "auto",
-            background: "#e63946",
-            color: "#fff",
-            border: "none",
-            borderRadius: 16,
-            padding: "6px 14px",
-            fontSize: 14,
-            cursor: "pointer",
-            fontWeight: 500,
-            boxShadow: "0 1px 2px #eee",
-          }}
-        >
-          Hapus Chat
-        </button>
-      </div>
-      {/* Chat area */}
+    <div
+      className="w-full max-w-none rounded-xl shadow-md bg-white flex flex-col h-[80vh] box-border mt-10 mb-10 px-6 py-6 lg:px-20 lg:py-12 "
+    >
+      <h1 className="text-2xl font-bold mb-4 text-left text-[#222]">Mulai percakapan kamu!</h1>
       <div
         ref={chatAreaRef}
-        style={{ flex: 1, overflowY: "auto", background: "#f8f9fa", borderRadius: 8, padding: 16, marginBottom: 16, display: "flex", flexDirection: "column" }}
+        className="flex-1 overflow-y-auto bg-[#f8f9fa] rounded-lg p-4 mb-4 flex flex-col bg-gray-100"
       >
         {chatState.showWelcome && (
-          <div style={{ color: "#fff", background: "#7b3f00", borderRadius: 16, padding: "10px 18px", alignSelf: "flex-start", marginBottom: 12, maxWidth: "80%", fontWeight: 500 }}>
-            Selamat datang! Tanyakan apa saja tentang budaya Indonesia, bahasa daerah, makanan, cerita rakyat, atau tradisi unik. Klik saran di atas untuk mulai!
+          <div className="text-white bg-[#7B4019] rounded-2xl px-5 py-2.5 self-start mb-3 max-w-[80%] font-medium">
+            Selamat datang! Tanyakan apa saja tentang budaya Indonesia, bahasa daerah, makanan, cerita rakyat, atau tradisi unik. Klik saran di bawah untuk mulai!
           </div>
         )}
         {chatState.history.map((msg, idx) => {
@@ -227,22 +180,10 @@ export default function Chatbot() {
             return (
               <div
                 key={idx}
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginBottom: 8,
-                }}
+                className="flex justify-start mb-2"
               >
                 <div
-                  style={{
-                    background: "#7b3f00",
-                    color: "#fff",
-                    borderRadius: 16,
-                    padding: "8px 16px",
-                    maxWidth: "80%",
-                    whiteSpace: "pre-line",
-                    alignSelf: "flex-start",
-                  }}
+                  className="bg-[#7B4019] text-white rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line self-start"
                 >
                   {typewriterText}
                 </div>
@@ -252,22 +193,10 @@ export default function Chatbot() {
           return (
             <div
               key={idx}
-              style={{
-                display: "flex",
-                justifyContent: msg.role === "user" ? "flex-end" : "flex-start",
-                marginBottom: 8,
-              }}
+              className={`flex mb-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                style={{
-                  background: msg.role === "user" ? "#e63946" : "#7b3f00",
-                  color: "#fff",
-                  borderRadius: 16,
-                  padding: "8px 16px",
-                  maxWidth: "80%",
-                  whiteSpace: "pre-line",
-                  alignSelf: msg.role === "user" ? "flex-end" : "flex-start",
-                }}
+                className={`rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line ${msg.role === "user" ? "bg-white text-black self-end shadow-md !rounded-tr-none" : "bg-[#7b3f00] text-white self-start shadow-md !rounded-tl-none"}`}
               >
                 {msg.text}
               </div>
@@ -275,21 +204,39 @@ export default function Chatbot() {
           );
         })}
         {chatState.loading && (
-          <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: 8 }}>
-            <div style={{ background: "#f1faee", borderRadius: 16, padding: "8px 16px", maxWidth: "80%", alignSelf: "flex-start", display: "flex", alignItems: "center", minHeight: 32 }}>
+          <div className="flex justify-start mb-2">
+            <div className="bg-[#f1faee] rounded-2xl px-4 py-2 max-w-[80%] self-start flex items-center min-h-[32px]">
               <DotWave size={32} speed={1.2} color="#7b3f00" />
             </div>
           </div>
         )}
         <div ref={chatEndRef} />
       </div>
-      {/* Input area */}
+      <div className="flex gap-2 mb-2 flex-wrap">
+        {SUGGESTIONS.map((s, i) => (
+          <button
+            key={i}
+            onClick={() => handleSuggestionClick(s)}
+            className="bg-[#f1faee] text-[#7b3f00] border-none rounded-2xl px-4 py-1.5 text-sm cursor-pointer font-medium shadow-sm transition-colors duration-200 hover:bg-[#ffe5d0]"
+            type="button"
+          >
+            {s}
+          </button>
+        ))}
+        <button
+          onClick={handleClear}
+          className="ml-auto bg-[#e63946] text-white border-none rounded-2xl px-4 py-1.5 text-sm cursor-pointer font-medium shadow-sm"
+          type="button"
+        >
+          Hapus Chat
+        </button>
+      </div>
       <form
         onSubmit={e => {
           e.preventDefault();
           handleSend();
         }}
-        style={{ display: "flex", alignItems: "flex-end", gap: 8 }}
+        className="flex items-end gap-2 w-full"
       >
         <TextareaAutosize
           value={chatState.input}
@@ -298,31 +245,19 @@ export default function Chatbot() {
           minRows={1}
           maxRows={6}
           placeholder="Tanya bahasa atau seputar budaya ..."
-          style={{ flex: 1, padding: 12, borderRadius: 20, border: "1px solid #ccc", resize: "none", fontSize: 16, outline: "none" }}
+          className="flex-1 px-3 py-3 rounded-full border border-[#FF7D29] resize-none text-base outline-none w-full disabled:bg-gray-100"
           disabled={chatState.loading}
         />
         <button
           type="submit"
           disabled={chatState.loading || !chatState.input.trim()}
-          style={{
-            padding: "10px 18px",
-            borderRadius: "50%",
-            background: chatState.loading || !chatState.input.trim() ? "#ccc" : "#e63946",
-            color: "#fff",
-            fontWeight: 700,
-            border: "none",
-            cursor: chatState.loading || !chatState.input.trim() ? "not-allowed" : "pointer",
-            fontSize: 20,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          className={`rounded-full flex items-center justify-center text-white font-bold text-xl px-4 py-2 transition-colors duration-200 ${chatState.loading || !chatState.input.trim() ? "bg-gray-400 cursor-not-allowed" : "bg-[#FF7D29] hover:bg-[#c92a2a] cursor-pointer"}`}
           aria-label="Kirim"
         >
           ▶
         </button>
       </form>
-      {chatState.error && <div style={{ color: "#e63946", marginTop: 8 }}>{chatState.error}</div>}
+      {chatState.error && <div className="text-[#e63946] mt-2">{chatState.error}</div>}
     </div>
   );
 } 
