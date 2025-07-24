@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Lato } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lato = Lato({
+  weight: ["100", "300", "400", "700", "900"],
   subsets: ["latin"],
 });
 
@@ -19,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }
