@@ -2,7 +2,21 @@
 
 import { useState, useEffect } from "react";
 
-const CultureDetail = ({allCulture, selectedProvince, selectedCategory }) => {
+interface Culture {
+  provinsi: string;
+  kategori: string;
+  nama: string;
+  deskripsi: string;
+  // add other fields if needed
+}
+
+interface CultureDetailProps {
+  allCulture: Culture[];
+  selectedProvince: string;
+  selectedCategory: string;
+}
+
+const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }: CultureDetailProps) => {
   const cultureInOneProvince = allCulture.filter(
     (item) => item.provinsi === selectedProvince && item?.kategori === selectedCategory
   );

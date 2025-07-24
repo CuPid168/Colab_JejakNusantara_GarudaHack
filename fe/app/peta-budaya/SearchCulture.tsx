@@ -1,6 +1,20 @@
 import { IoMdSearch } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
+type SearchCultureProps = {
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
+  hoveredProvince: string | null;
+  setHoveredProvince: (province: string | null) => void;
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+  isDropdownOpen: boolean;
+  setIsDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedProvince: (province: string) => void;
+  provincesList: string[];
+  dropdownRef: React.RefObject<HTMLDivElement>;
+};
+
 const SearchCulture = ({
   selectedCategory,
   setSelectedCategory,
@@ -13,7 +27,7 @@ const SearchCulture = ({
   setSelectedProvince,
   provincesList,
   dropdownRef,
-}) => {
+}: SearchCultureProps) => {
   const categoryButton = ["Budaya", "Makanan Daerah", "Tempat Wisata", "Alat Musik"];
 
   const filteredProvinces = provincesList.filter((province) =>
@@ -55,7 +69,7 @@ const SearchCulture = ({
         <button
           type="button"
           className="cursor-pointer absolute left-2 top-2 flex items-center"
-          onClick={() => setIsDropdownOpen((prev) => !prev)}
+          onClick={() => setIsDropdownOpen((prev: boolean) => !prev)}
         >
           <RiArrowDropDownLine
             className={`${isDropdownOpen ? "rotate-180" : ""} size-8 transition-transform text-gray-500`}

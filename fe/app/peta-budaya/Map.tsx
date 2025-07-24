@@ -94,7 +94,20 @@ const ZoomToMarker = ({ position }: { position?: [number, number] }) => {
   return null;
 };
 
-const Map = ({ allCulture }) => {
+interface CultureMarker {
+  latitude: number;
+  longitude: number;
+  kategori: string;
+  nama: string;
+  provinsi: string;
+  // Add other properties if needed
+}
+
+interface MapProps {
+  allCulture: CultureMarker[];
+}
+
+const Map = ({ allCulture }: MapProps) => {
   const [selectedMarker, setSelectedMarker] = useState<any>(null);
 
   return (
