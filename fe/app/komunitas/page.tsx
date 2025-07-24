@@ -9,6 +9,7 @@ import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { FaThumbsUp, FaArrowUp, FaRegComment } from 'react-icons/fa';
+import { Dialog as CommentDialog, DialogTrigger as CommentDialogTrigger, DialogContent as CommentDialogContent, DialogHeader as CommentDialogHeader, DialogTitle as CommentDialogTitle } from "@/components/ui/dialog";
 
 export default function KomunitasPage() {
   const { data: session, status } = useSession();
@@ -21,6 +22,13 @@ export default function KomunitasPage() {
   const [posts, setPosts] = useState<any[]>([]);
   const [refresh, setRefresh] = useState(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [commentModalPostId, setCommentModalPostId] = useState<string | null>(null);
+  const [comments, setComments] = useState<any[]>([]);
+  const [commentText, setCommentText] = useState("");
+  const [commentLoading, setCommentLoading] = useState(false);
+  const [commentError, setCommentError] = useState("");
+  const [likeLoading, setLikeLoading] = useState<string | null>(null);
+  const [upvoteLoading, setUpvoteLoading] = useState<string | null>(null);
 
   // Fetch posts
   useEffect(() => {
@@ -28,6 +36,72 @@ export default function KomunitasPage() {
       .then(res => res.json())
       .then(data => setPosts(Array.isArray(data) ? data : []));
   }, [refresh]);
+
+  // Fetch comments for a post
+  const openComments = async (postId: string) => {
+    setCommentModalPostId(postId);
+    setCommentLoading(true);
+    setCommentError("");
+    try {
+      const res = await fetch(`/api/posts/${postId}/comments`);
+      const data = await res.json();
+      setComments(Array.isArray(data) ? data : []);
+    } catch (err) {
+      setCommentError("Gagal memuat komentar");
+    } finally {
+      setCommentLoading(false);
+    }
+  };
+
+  // Add a comment
+  const handleAddComment = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!commentModalPostId) return;
+    setCommentLoading(true);
+    setCommentError("");
+    try {
+      const res = await fetch(`/api/posts/${commentModalPostId}/comments`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: commentText }),
+      });
+      if (!res.ok) throw new Error("Gagal menambah komentar");
+      const newComment = await res.json();
+      setComments(prev => [...prev, newComment]);
+      setCommentText("");
+      setRefresh(r => r + 1);
+    } catch (err) {
+      setCommentError("Gagal menambah komentar");
+    } finally {
+      setCommentLoading(false);
+    }
+  };
+
+  // Like handler
+  const handleLike = async (postId: string) => {
+    if (!session) return;
+    setLikeLoading(postId);
+    try {
+      const res = await fetch(`/api/posts/${postId}/like`, { method: "POST" });
+      if (!res.ok) throw new Error();
+      setRefresh(r => r + 1);
+    } finally {
+      setLikeLoading(null);
+    }
+  };
+
+  // Upvote handler
+  const handleUpvote = async (postId: string) => {
+    if (!session) return;
+    setUpvoteLoading(postId);
+    try {
+      const res = await fetch(`/api/posts/${postId}/upvote`, { method: "POST" });
+      if (!res.ok) throw new Error();
+      setRefresh(r => r + 1);
+    } finally {
+      setUpvoteLoading(null);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -87,9 +161,76 @@ export default function KomunitasPage() {
                   </div>
                   <div className="mt-2 text-sm text-gray-700 whitespace-pre-line">{post.description}</div>
                   <div className="flex gap-6 mt-2 text-xs text-gray-500 items-center">
-                    <span className="flex items-center gap-1"><FaThumbsUp /> {post.likesCount}</span>
-                    <span className="flex items-center gap-1"><FaArrowUp /> {post.upvotesCount}</span>
-                    <span className="flex items-center gap-1"><FaRegComment /> {post.commentsCount}</span>
+                    <button
+                      className={`flex items-center gap-1 ${!session ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#7B4019]'}`}
+                      onClick={() => handleLike(post.id)}
+                      disabled={!session || likeLoading === post.id}
+                      title={!session ? 'Login untuk menyukai' : 'Suka'}
+                    >
+                      <FaThumbsUp /> {post.likesCount}
+                    </button>
+                    <button
+                      className={`flex items-center gap-1 ${!session ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#FF7D29]'}`}
+                      onClick={() => handleUpvote(post.id)}
+                      disabled={!session || upvoteLoading === post.id}
+                      title={!session ? 'Login untuk upvote' : 'Upvote'}
+                    >
+                      <FaArrowUp /> {post.upvotesCount}
+                    </button>
+                    <CommentDialog open={commentModalPostId === post.id} onOpenChange={open => { if (!open) setCommentModalPostId(null); }}>
+                      <CommentDialogTrigger asChild>
+                        <button
+                          className={`flex items-center gap-1 ${!session ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#7B4019]'}`}
+                          onClick={() => openComments(post.id)}
+                          disabled={!session}
+                          title={!session ? 'Login untuk komentar' : 'Komentar'}
+                        >
+                          <FaRegComment /> {post.commentsCount}
+                        </button>
+                      </CommentDialogTrigger>
+                      <CommentDialogContent className="max-w-lg w-full">
+                        <CommentDialogHeader>
+                          <CommentDialogTitle>Komentar</CommentDialogTitle>
+                        </CommentDialogHeader>
+                        {commentLoading ? (
+                          <div className="text-center py-6">Memuat...</div>
+                        ) : commentError ? (
+                          <div className="text-red-500 text-center py-6">{commentError}</div>
+                        ) : (
+                          <div className="flex flex-col gap-4 max-h-72 overflow-y-auto py-2">
+                            {comments.length === 0 ? (
+                              <div className="text-gray-400 text-center">Belum ada komentar.</div>
+                            ) : comments.map((c, i) => (
+                              <div key={i} className="flex gap-3 items-start">
+                                <Image src={c.user?.image || `https://i.pravatar.cc/300?u=${c.user?.id}`} alt="User" width={28} height={28} className="rounded-full" />
+                                <div>
+                                  <div className="font-semibold text-xs">{c.user?.name || 'User'}</div>
+                                  {c.user?.domisili && <div className="text-xs text-gray-500">{c.user.domisili}</div>}
+                                  <div className="text-xs text-gray-700 mt-1">{c.text}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                        {session && (
+                          <form className="flex gap-2 mt-4" onSubmit={handleAddComment}>
+                            <input
+                              type="text"
+                              value={commentText}
+                              onChange={e => setCommentText(e.target.value)}
+                              placeholder="Tulis komentar..."
+                              className="flex-1 border rounded-full px-4 py-2 text-sm"
+                              disabled={commentLoading}
+                              maxLength={300}
+                              required
+                            />
+                            <Button type="submit" disabled={commentLoading || !commentText.trim()} className="rounded-full bg-[#7B4019] text-white px-4 py-2">
+                              Kirim
+                            </Button>
+                          </form>
+                        )}
+                      </CommentDialogContent>
+                    </CommentDialog>
                   </div>
                 </div>
               ))}
@@ -101,12 +242,12 @@ export default function KomunitasPage() {
           {session && session.user ? (
             <>
               <div className="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
-                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session.user.id}`} alt="Profile" width={96} height={96} />
+                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session?.user.id || session.user.email}`} alt="Profile" width={96} height={96} />
               </div>
               <div className="font-semibold text-lg mb-1">{session.user.name || "Pengguna"}</div>
               <div className="text-sm text-gray-500 mb-4">{typeof session.user.email === 'string' ? session.user.email : '-'}</div>
               {/* User stats */}
-              <div className="flex gap-4 mb-6">
+              <div className="flex gap-4 mb-4">
                 <div className="text-center">
                   <div className="font-bold text-[#7B4019]">{posts.filter(p => p.user?.email === session?.user?.email).length}</div>
                   <div className="text-xs text-gray-500">Post</div>
@@ -118,6 +259,21 @@ export default function KomunitasPage() {
                 <div className="text-center">
                   <div className="font-bold text-[#7B4019]">0</div>
                   <div className="text-xs text-gray-500">Upvote</div>
+                </div>
+              </div>
+              {/* User's posted images gallery */}
+              <div className="w-full flex flex-col items-center mb-6">
+                <div className="w-full text-sm font-semibold mb-2 text-center">Postingan Anda</div>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {posts.filter(p => p.user?.email === session?.user?.email).length === 0 ? (
+                    <div className="text-xs text-gray-400">Belum ada postingan.</div>
+                  ) : (
+                    posts.filter(p => p.user?.email === session?.user?.email).map(p => (
+                      <div key={p.id} className="w-16 h-16 rounded-lg overflow-hidden border border-gray-200 bg-gray-100 flex items-center justify-center">
+                        <Image src={p.image} alt="Post" width={64} height={64} className="object-cover w-full h-full" />
+                      </div>
+                    ))
+                  )}
                 </div>
               </div>
               {/* Create Post Button */}
