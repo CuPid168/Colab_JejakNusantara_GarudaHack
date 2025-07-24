@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import { FaThumbsUp, FaArrowUp, FaRegComment } from 'react-icons/fa';
 
 export default function KomunitasPage() {
   const { data: session, status } = useSession();
@@ -72,9 +73,12 @@ export default function KomunitasPage() {
               {posts.map(post => (
                 <div key={post.id} className="bg-[#f8f9fa] rounded-xl shadow p-4 flex flex-col gap-2">
                   <div className="flex items-center gap-3 mb-2">
-                    <Image src={post.user?.image || "/images/login.svg"} alt="User" width={36} height={36} className="rounded-full" />
+                    <Image src={post.user?.image || `https://i.pravatar.cc/300?u=${post.user?.id}`} alt="User" width={36} height={36} className="rounded-full" />
                     <div>
                       <div className="font-semibold">{post.user?.name || "User"}</div>
+                      {post.user?.domisili && (
+                        <div className="text-xs text-gray-500">{post.user.domisili}</div>
+                      )}
                       <div className="text-xs text-gray-500">{post.location}</div>
                     </div>
                   </div>
@@ -82,10 +86,10 @@ export default function KomunitasPage() {
                     <Image src={post.image} alt="Post" width={400} height={300} className="rounded-lg object-cover max-h-72" />
                   </div>
                   <div className="mt-2 text-sm text-gray-700 whitespace-pre-line">{post.description}</div>
-                  <div className="flex gap-6 mt-2 text-xs text-gray-500">
-                    <span>👍 {post.likesCount}</span>
-                    <span>⬆️ {post.upvotesCount}</span>
-                    <span>💬 {post.commentsCount}</span>
+                  <div className="flex gap-6 mt-2 text-xs text-gray-500 items-center">
+                    <span className="flex items-center gap-1"><FaThumbsUp /> {post.likesCount}</span>
+                    <span className="flex items-center gap-1"><FaArrowUp /> {post.upvotesCount}</span>
+                    <span className="flex items-center gap-1"><FaRegComment /> {post.commentsCount}</span>
                   </div>
                 </div>
               ))}
@@ -97,14 +101,14 @@ export default function KomunitasPage() {
           {session && session.user ? (
             <>
               <div className="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
-                <Image src={session.user.image || "/images/login.svg"} alt="Profile" width={96} height={96} />
+                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session.user.id}`} alt="Profile" width={96} height={96} />
               </div>
               <div className="font-semibold text-lg mb-1">{session.user.name || "Pengguna"}</div>
               <div className="text-sm text-gray-500 mb-4">{typeof session.user.email === 'string' ? session.user.email : '-'}</div>
               {/* User stats */}
               <div className="flex gap-4 mb-6">
                 <div className="text-center">
-                  <div className="font-bold text-[#7B4019]">{posts.filter(p => p.user?.email === session.user.email).length}</div>
+                  <div className="font-bold text-[#7B4019]">{posts.filter(p => p.user?.email === session?.user?.email).length}</div>
                   <div className="text-xs text-gray-500">Post</div>
                 </div>
                 <div className="text-center">
