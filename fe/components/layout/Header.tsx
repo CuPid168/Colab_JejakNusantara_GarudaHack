@@ -72,7 +72,7 @@ const Header = () => {
             <>
               <span className="font-semibold text-primary">{session.user.name}</span>
               <Button variant="outline" onClick={() => signOut({ callbackUrl: "/" })}>
-                Keluar
+                <span className="rounded-full">Keluar</span>
               </Button>
             </>
           ) : (
@@ -81,7 +81,7 @@ const Header = () => {
                 asChild
                 key={button.name}
                 variant={button.name === "Daftar" ? "default" : "outline"}
-                className={button.name === "Daftar" ? "text-white" : ""}
+                className={`rounded-full ${button.name === "Daftar" ? "text-white" : ""}`}
               >
                 <Link href={button.href}>{button.name}</Link>
               </Button>
@@ -119,7 +119,7 @@ const Header = () => {
               <div className="flex flex-col gap-2 p-4 border-t mt-2">
                 {session && session.user ? (
                   <Button variant="outline" onClick={() => signOut({ callbackUrl: "/" })}>
-                    Keluar
+                    <span className="rounded-full">Keluar</span>
                   </Button>
                 ) : (
                   authButtons.map((button) => (
@@ -127,7 +127,7 @@ const Header = () => {
                       asChild
                       key={button.name}
                       variant={button.name === "Daftar" ? "default" : "outline"}
-                      className={button.name === "Daftar" ? "text-white" : ""}
+                      className={`rounded-full ${button.name === "Daftar" ? "text-white" : ""}`}
                     >
                       <Link href={button.href}>{button.name}</Link>
                     </Button>

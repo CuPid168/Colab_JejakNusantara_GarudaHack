@@ -18,6 +18,10 @@ model User {
   domisili       String?
   accounts       Account[]
   sessions       Session[]
+  posts          Post[]
+  likes          Like[]
+  upvotes        Upvote[]
+  comments       Comment[]
 }
 
 model Account {
@@ -52,4 +56,47 @@ model VerificationToken {
   expires   DateTime
 
   @@unique([identifier, token])
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  image       String
+  location    String
+  description String
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  likes       Like[]
+  upvotes     Upvote[]
+  comments    Comment[]
+}
+
+model Like {
+  id      String   @id @default(cuid())
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId  String
+  post    Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId  String
+
+  @@unique([userId, postId])
+}
+
+model Upvote {
+  id      String   @id @default(cuid())
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId  String
+  post    Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId  String
+
+  @@unique([userId, postId])
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  text      String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId    String
 }
