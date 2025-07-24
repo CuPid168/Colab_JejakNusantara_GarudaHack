@@ -15,6 +15,7 @@ model User {
   emailVerified  DateTime?
   image          String?
   password       String?
+  domisili       String?
   accounts       Account[]
   sessions       Session[]
 }
