@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -20,6 +21,8 @@ const Header = () => {
     { name: "Masuk", href: "/login" },
     { name: "Daftar", href: "/register" },
   ];
+
+  const { data: session } = useSession();
 
   return (
     <div className="px-17 shadow-md h-20 w-full flex items-center justify-between bg-white">
@@ -43,8 +46,18 @@ const Header = () => {
         })}
       </div>
       <div className="flex items-center justify-center gap-3">
-        {authButtons.map((button) => {
-          return (
+        {session && session.user ? (
+          <>
+            <span className="font-semibold text-[#7B4019]">{session.user.name}</span>
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="border border-[#7B4019] text-black px-4 py-2 rounded-full"
+            >
+              Keluar
+            </button>
+          </>
+        ) : (
+          authButtons.map((button) => (
             <Link
               key={button.name}
               href={button.href}
@@ -54,8 +67,8 @@ const Header = () => {
             >
               {button.name}
             </Link>
-          );
-        })}
+          ))
+        )}
       </div>
     </div>
   );
