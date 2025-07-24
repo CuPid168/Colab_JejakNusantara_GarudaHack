@@ -64,6 +64,10 @@ function useTypewriter(text: string, active: boolean) {
   return displayed;
 }
 
+function renderWithBold(text: string) {
+  return text.replace(/\*/g, "");
+}
+
 export default function Chatbot() {
   const [chatState, setChatState] = useState({
     input: "",
@@ -185,7 +189,7 @@ export default function Chatbot() {
                 <div
                   className="bg-[#7B4019] text-white rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line self-start"
                 >
-                  {typewriterText}
+                  {renderWithBold(typewriterText)}
                 </div>
               </div>
             );
@@ -198,7 +202,7 @@ export default function Chatbot() {
               <div
                 className={`rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line ${msg.role === "user" ? "bg-white text-black self-end shadow-md !rounded-tr-none" : "bg-[#7b3f00] text-white self-start shadow-md !rounded-tl-none"}`}
               >
-                {msg.text}
+                {msg.role === "ai" ? renderWithBold(msg.text) : msg.text}
               </div>
             </div>
           );
