@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from "react";
 
-const CultureDetail = ({allCulture, selectedProvince, selectedCategory }) => {
+const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }) => {
   const cultureInOneProvince = allCulture.filter(
-    (item) => item.provinsi === selectedProvince && item?.kategori === selectedCategory
+    (item) =>
+      item.provinsi === selectedProvince && item?.kategori === selectedCategory
   );
 
-  const [selectedCulture, setSelectedCulture] = useState(cultureInOneProvince[0]);
+  const [selectedCulture, setSelectedCulture] = useState(
+    cultureInOneProvince[0]
+  );
 
   useEffect(() => {
     setSelectedCulture(cultureInOneProvince[0]);
@@ -21,7 +24,9 @@ const CultureDetail = ({allCulture, selectedProvince, selectedCategory }) => {
             <label
               key={index + 1}
               className={`${
-                selectedCulture && culture?.nama === selectedCulture?.nama ? "font-bold text-[#FF7D29]" : "text-black/50"
+                selectedCulture && culture?.nama === selectedCulture?.nama
+                  ? "font-bold text-[#FF7D29]"
+                  : "text-black/50"
               } cursor-pointer text-lg`}
               onClick={() => setSelectedCulture(culture)}
             >
@@ -33,14 +38,16 @@ const CultureDetail = ({allCulture, selectedProvince, selectedCategory }) => {
         )}
       </div>
       <div className="p-4 flex-1/2 border border-black/10 rounded-lg">
-        {!selectedCulture?.foto === "" && (
-          <img src={selectedCulture?.foto} alt="" className=""/>
+        {selectedCulture?.foto !== "" && (
+          <img src={selectedCulture?.foto} alt="" className="" />
         )}
 
-        
-        <h1 className="text-[#FF7D29] text-2xl font-bold mt-4">{selectedCulture?.nama}</h1>
+        <h1 className="text-[#FF7D29] text-2xl font-bold mt-4">
+          {selectedCulture?.nama}
+        </h1>
         <p className="text-black/50 mt-2">{selectedCulture?.deskripsi}</p>
       </div>
+          
     </div>
   );
 };

@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import dynamic from "next/dynamic";
 import SearchCulture from "./SearchCulture";
 import CultureDetail from "./CultureDetail";
-import allCulture from "./_allCulture/index.ts"; // Import dari file baru
+import allCulture from "./allculture"; 
 
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
@@ -52,9 +52,9 @@ const PetaBudaya = () => {
     "Sulawesi Tengah",
     "Sulawesi Tenggara",
     "Sulawesi Utara",
-    "Sumatera Barat",
-    "Sumatera Selatan",
-    "Sumatera Utara",
+    "Sumatra Barat",
+    "Sumatra Selatan",
+    "Sumatra Utara",
   ];
 
   const dropdownRef = useRef<HTMLDivElement>(null);
