@@ -13,6 +13,8 @@ type SearchCultureProps = {
   setSelectedProvince: (province: string) => void;
   provincesList: string[];
   dropdownRef: React.RefObject<HTMLDivElement>;
+  setSelectedCulture: (culture: any) => void;
+  cultureInOneProvince: any[];
 };
 
 const SearchCulture = ({
@@ -106,7 +108,9 @@ const SearchCulture = ({
                     key={province}
                     className={`px-4 py-2 cursor-pointer transition-colors rounded-md ${
                       isOnlyOne ? "col-span-2 text-center" : ""
-                    } ${selectedCategory ? "bg-[#FF7D29] text-white" : "hover:bg-[#FF7D29] hover:text-white"}`}
+                    } ${
+                      selectedCategory ? "bg-[#FF7D29] text-white" : "hover:bg-[#FF7D29] hover:text-white"
+                    }`}
                     onMouseEnter={() => setHoveredProvince(province)}
                     onMouseLeave={() => setHoveredProvince(null)}
                     onClick={() => {
@@ -129,7 +133,9 @@ const SearchCulture = ({
         {categoryButton.map((category) => (
           <button
             key={category}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => {
+              setSelectedCategory(category);
+            }}
             className={`${
               selectedCategory === category ? "bg-[#FF7D29] text-white" : "border border-[#1918251A]"
             } px-4 py-2 rounded-full text-nowrap cursor-pointer`}

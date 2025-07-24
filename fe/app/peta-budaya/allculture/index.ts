@@ -21,7 +21,7 @@ const allCulture = [
   },
   {
     provinsi: "Aceh",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Mie Aceh",
     deskripsi:
       "Mie kuning tebal dengan irisan daging sapi, daging kambing atau makanan laut (udang dan cumi) yang disajikan dengan kuah kari yang gurih dan pedas.",
@@ -31,17 +31,17 @@ const allCulture = [
   },
   {
     provinsi: "Aceh",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kuah Pliek U",
     deskripsi:
       "Gulai khas Aceh yang menggunakan `pliek u (ampas kelapa tua yang telah difermentasi) sebagai bumbu utamanya, biasanya berisi berbagai sayuran seperti daun melinjo, nangka muda, dan kacang panjang.",
-    foto: "assets/kuahPliek.jpeg",
+    foto: "assets/kuahPliek.jpg",
     latitude: 5.5583,
     longitude: 95.3135,
   },
   {
     provinsi: "Aceh",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Masjid Raya Baiturrahman",
     deskripsi:
       "Masjid ini dibangun pada tahun 1879 dan merupakan simbol agama, budaya, semangat, kekuatan, perjuangan dan nasionalisme rakyat Aceh. Kemudian masjid ini adalah landmark Kota Banda Aceh sejak era Kesultanan Aceh dan Aceh saat ini. ",
@@ -51,7 +51,7 @@ const allCulture = [
   },
   {
     provinsi: "Aceh",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Museum Tsunami Aceh",
     deskripsi:
       "Museum yang dibangun untuk mengenang korban dan yang selamat dari bencana gempa dan tsunami Samudra Hindia pada tahun 2004, sekaligus sebagai pusat pendidikan dan tempat penampungan darurat jika terjadi bencana serupa.",
@@ -75,13 +75,13 @@ const allCulture = [
     nama: "Serune Kalee",
     deskripsi:
       "Alat musik tiup tradisional Aceh yang telah lama berkembang. Biasanya dimainkan bersamaan dengan Rapai dan Geundrang pada acara-acara hiburan, tarian, dan penyambutan tamu kehormatan.",
-    foto: "assets/seruneKalee.jpeg",
+    foto: "assets/seruneKale.jpeg",
     latitude: 5.1325,
     longitude: 95.1235,
   },
   {
     provinsi: "Sumatra Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Arsik",
     deskripsi:
       "Ikan mas dimasak dengan bumbu kuning khas Batak, berbahan andaliman, lengkuas, bawang, dan asam cikala. Rasanya pedas segar dan aromatik. Arsik menjadi hidangan wajib dalam pesta adat Batak sebagai simbol keseimbangan dan keberuntungan.",
@@ -91,7 +91,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Saksang",
     deskripsi:
       "Daging babi atau kerbau yang dimasak dengan darahnya sendiri, dicampur rempah khas Batak termasuk andaliman dan serai. Hidangan ini memiliki rasa kuat dan pedas, disajikan pada pesta adat atau acara penting dalam budaya Batak.",
@@ -141,7 +141,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Toba",
     deskripsi:
       "Danau vulkanik terbesar di Asia Tenggara, terbentuk dari letusan supervolcano. Di tengahnya terdapat Pulau Samosir, pusat budaya Batak. Danau ini menawarkan pemandangan alam luar biasa, wisata budaya, serta ketenangan spiritual yang mendalam.",
@@ -151,7 +151,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Istana Maimun",
     deskripsi:
       "Peninggalan Kesultanan Deli di Medan, memadukan arsitektur Melayu, Eropa, dan Timur Tengah. Dikenal akan warna kuning emas khas Melayu dan nilai sejarah tinggi. Kini menjadi museum dan destinasi edukatif budaya di jantung Kota Medan.",
@@ -161,7 +161,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Rendang",
     deskripsi:
       "Masakan daging sapi dimasak lama dengan santan dan bumbu rempah-rempah. Rasanya kaya, pedas, dan gurih. Rendang adalah simbol kehormatan dan sering dihidangkan dalam acara adat Minangkabau serta telah mendunia sebagai makanan terenak.",
@@ -171,7 +171,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Dendeng Balado",
     deskripsi:
       "Irisan daging sapi tipis yang digoreng kering lalu dilumuri sambal balado pedas. Teksturnya renyah dan cita rasanya kuat. Dendeng balado biasa disajikan dalam perayaan, hari besar, atau sebagai oleh-oleh khas Padang yang populer.",
@@ -221,7 +221,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Jam Gadang",
     deskripsi:
       "Ikon Kota Bukittinggi yang dibangun sejak era kolonial Belanda. Menara jam ini memiliki arsitektur unik dan bernilai sejarah. Menjadi pusat wisata dan titik kumpul warga, dikelilingi taman, pasar, serta tempat kuliner khas Minangkabau.",
@@ -231,7 +231,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatra Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Lembah Harau",
     deskripsi:
       "Lembah yang diapit tebing granit menjulang hingga 100 meter, dengan sawah hijau dan air terjun alami. Terletak di Kabupaten Lima Puluh Kota. Cocok untuk wisata alam, panjat tebing, dan menikmati ketenangan khas pedesaan Minang.",
@@ -241,7 +241,7 @@ const allCulture = [
   },
   {
     provinsi: "Riau",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gulai Ikan Patin",
     deskripsi:
       "Ikan patin dimasak dalam kuah santan kuning dengan bumbu rempah dan asam gelugur. Rasanya gurih dan sedikit asam. Gulai ini merupakan makanan istimewa khas Melayu Riau yang sering disajikan dalam acara keluarga atau perayaan adat.",
@@ -251,7 +251,7 @@ const allCulture = [
   },
   {
     provinsi: "Riau",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Asam Pedas Baung",
     deskripsi:
       "Masakan ikan baung yang dimasak dengan kuah pedas asam, menggunakan cabai, tomat, dan belimbing wuluh. Hidangan ini khas daerah pesisir sungai, menggambarkan cita rasa Melayu yang kuat dan penggunaan hasil alam secara bijaksana.",
@@ -301,7 +301,7 @@ const allCulture = [
   },
   {
     provinsi: "Riau",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Istana Siak Sri Indrapura",
     deskripsi:
       "Istana peninggalan Kerajaan Siak yang megah dan berarsitektur Eropa-Melayu. Menyimpan koleksi kerajaan, seperti meriam, alat musik, dan singgasana. Istana ini menjadi simbol kejayaan Melayu Riau dan objek wisata sejarah yang sangat terkenal.",
@@ -311,7 +311,7 @@ const allCulture = [
   },
   {
     provinsi: "Riau",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Bono Sungai Kampar",
     deskripsi:
       "Fenomena gelombang pasang yang membentuk ombak besar di muara Sungai Kampar. Terjadi beberapa kali dalam sebulan dan menjadi daya tarik wisatawan, terutama peselancar. Lokasinya unik karena menawarkan pengalaman berselancar di sungai.",
@@ -321,7 +321,7 @@ const allCulture = [
   },
   {
     provinsi: "Kepulauan Riau",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Lakse",
     deskripsi:
       "Mie tebal dari tepung sagu yang disajikan dengan kuah santan berbumbu rempah. Lakse biasa disajikan saat lebaran atau acara keluarga. Kuliner ini mencerminkan perpaduan budaya Melayu pesisir dan tradisi kuliner berbasis hasil laut dan sagu.",
@@ -331,7 +331,7 @@ const allCulture = [
   },
   {
     provinsi: "Kepulauan Riau",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Mie Lendir",
     deskripsi:
       "Mie kuning yang disiram kuah kental dari kacang tanah, ubi, dan rempah-rempah. Dilengkapi tauge, telur rebus, dan cabai. Dinikmati saat sarapan atau sore hari, mie ini menjadi makanan merakyat yang mudah ditemukan di Kepulauan Riau.",
@@ -381,7 +381,7 @@ const allCulture = [
   },
   {
     provinsi: "Kepulauan Riau",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pulau Penyengat",
     deskripsi:
       "Pulau bersejarah di Tanjungpinang, pusat Kerajaan Riau-Lingga. Terdapat Masjid Raya Sultan Riau, benteng, dan makam Raja Ali Haji. Pulau ini menjadi situs budaya penting bagi warisan Melayu dan literasi Islam di Nusantara.",
@@ -391,7 +391,7 @@ const allCulture = [
   },
   {
     provinsi: "Kepulauan Riau",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Jembatan Barelang",
     deskripsi:
       "Ikon Batam yang menghubungkan beberapa pulau besar. Dibangun dengan desain megah, jembatan ini menjadi simbol kemajuan dan aksesibilitas antarwilayah. Pemandangannya indah, menjadikannya destinasi favorit untuk foto dan menikmati matahari terbenam.",
@@ -401,7 +401,7 @@ const allCulture = [
   },
   {
     provinsi: "Jambi",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gulai Tepek Ikan",
     deskripsi:
       "Ikan giling dicampur sagu, dibentuk pipih, lalu dimasak dalam kuah gulai kuning berbumbu kunyit dan santan. Rasanya gurih dan sedikit pedas. Gulai ini sering disajikan pada acara adat dan hari besar masyarakat Jambi.",
@@ -411,7 +411,7 @@ const allCulture = [
   },
   {
     provinsi: "Jambi",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Tempoyak",
     deskripsi:
       "Fermentasi daging durian yang dimasak bersama ikan patin, cabai, dan bawang. Rasanya asam, pedas, dan khas. Tempoyak menjadi ciri kuliner tradisional Jambi yang memanfaatkan hasil alam dan diwariskan secara turun-temurun di berbagai daerah.",
@@ -461,7 +461,7 @@ const allCulture = [
   },
   {
     provinsi: "Jambi",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Candi Muaro Jambi",
     deskripsi:
       "Kompleks candi Buddha terbesar di Sumatera yang dibangun pada abad ke-7. Terletak di tepi Sungai Batanghari. Situs ini merupakan pusat pendidikan dan keagamaan pada masa lalu, serta menjadi warisan budaya nasional yang penting.",
@@ -471,7 +471,7 @@ const allCulture = [
   },
   {
     provinsi: "Jambi",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Kerinci",
     deskripsi:
       "Danau vulkanik di kaki Gunung Raja, dikelilingi perbukitan dan desa tradisional. Menawarkan pemandangan indah, budaya masyarakat adat Kerinci, serta potensi wisata agro dan ekowisata. Tempat ini menjadi ikon alam Jambi yang memikat.",
@@ -481,7 +481,7 @@ const allCulture = [
   },
   {
     provinsi: "Bengkulu",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Pendap",
     deskripsi:
       "Ikan laut dibungkus daun talas dan dimasak dengan kelapa parut, bawang, dan cabai. Dikukus hingga beraroma khas. Pendap adalah makanan tradisional Bengkulu yang kaya rasa dan sering disajikan dalam acara adat atau hari besar.",
@@ -491,7 +491,7 @@ const allCulture = [
   },
   {
     provinsi: "Bengkulu",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Lempuk Durian",
     deskripsi:
       "Makanan manis dari durian matang yang dimasak hingga mengental seperti dodol. Rasanya legit dan aromanya kuat. Lempuk menjadi oleh-oleh khas Bengkulu yang populer, terutama saat musim durian tiba di berbagai wilayah provinsi ini.",
@@ -541,7 +541,7 @@ const allCulture = [
   },
   {
     provinsi: "Bengkulu",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Marlborough",
     deskripsi:
       "Peninggalan kolonial Inggris yang megah di tepi pantai Bengkulu. Dibangun pada abad ke-18 sebagai pusat pertahanan. Kini menjadi situs sejarah yang menyimpan koleksi artefak dan panorama menarik ke Samudra Hindia.",
@@ -551,7 +551,7 @@ const allCulture = [
   },
   {
     provinsi: "Bengkulu",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Panjang",
     deskripsi:
       "Pantai ikonik di Kota Bengkulu yang membentang hingga 7 kilometer. Dikenal dengan pasir putih, ombak sedang, dan deretan pohon cemara. Menjadi lokasi favorit wisatawan untuk bersantai, berolahraga, dan menikmati matahari terbenam.",
@@ -561,7 +561,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatera Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Pempek",
     deskripsi:
       "Olahan ikan tenggiri dan sagu yang dibentuk, direbus lalu digoreng, disajikan dengan cuko (saus asam pedas manis). Pempek merupakan ikon kuliner Palembang dan disantap di berbagai kesempatan, dari camilan hingga sajian hari besar.",
@@ -571,7 +571,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatera Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Laksan",
     deskripsi:
       "Irisan pempek lenjer yang disajikan dalam kuah santan gurih berbumbu rempah. Rasanya lembut dan beraroma khas. Laksan biasa dihidangkan saat sarapan atau perayaan keluarga, mencerminkan kekayaan kuliner Palembang berbasis ikan dan santan.",
@@ -621,7 +621,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatera Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Jembatan Ampera",
     deskripsi:
       "Ikon Kota Palembang yang membentang di atas Sungai Musi. Dibangun pada era Soekarno, jembatan ini menghubungkan dua bagian kota dan menjadi simbol kemajuan serta daya tarik wisata, terutama saat malam hari dengan pencahayaan indah.",
@@ -631,7 +631,7 @@ const allCulture = [
   },
   {
     provinsi: "Sumatera Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pulau Kemaro",
     deskripsi:
       "Pulau kecil di tengah Sungai Musi, terkenal dengan pagoda dan kisah legenda cinta Tan Bun An dan Siti Fatimah. Menjadi tempat wisata religi dan budaya Tionghoa, ramai dikunjungi saat Cap Go Meh dan Imlek.",
@@ -641,7 +641,7 @@ const allCulture = [
   },
   {
     provinsi: "Bangka Belitung",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Lempah Kuning",
     deskripsi:
       "Ikan laut dimasak dalam kuah kuning berbumbu nanas, kunyit, dan cabai. Rasanya segar, pedas, dan sedikit asam. Lempah kuning adalah ikon kuliner Bangka Belitung yang menggambarkan kekayaan laut dan selera khas masyarakat Melayu.",
@@ -651,7 +651,7 @@ const allCulture = [
   },
   {
     provinsi: "Bangka Belitung",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kemplang",
     deskripsi:
       "Kerupuk dari ikan tenggiri yang dipanggang, bukan digoreng. Bertekstur renyah dan ringan, biasa disantap sebagai camilan atau pelengkap makanan. Kemplang menjadi oleh-oleh favorit dari Bangka dan merepresentasikan tradisi olahan laut daerah ini.",
@@ -701,7 +701,7 @@ const allCulture = [
   },
   {
     provinsi: "Bangka Belitung",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Tanjung Tinggi",
     deskripsi:
       "Pantai berpasir putih dengan batu granit besar yang ikonik, terkenal lewat film Laskar Pelangi. Air lautnya jernih dan cocok untuk berenang atau fotografi. Salah satu destinasi utama wisata bahari di Belitung yang sangat memesona.",
@@ -711,7 +711,7 @@ const allCulture = [
   },
   {
     provinsi: "Bangka Belitung",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Museum Timah Pangkalpinang",
     deskripsi:
       "Museum yang menyimpan sejarah panjang pertambangan timah di Bangka Belitung. Menampilkan peralatan tambang, dokumen, dan artefak. Menjadi tempat edukatif dan bersejarah yang penting, mengingat tambang timah adalah tulang punggung ekonomi daerah",
@@ -721,7 +721,7 @@ const allCulture = [
   },
   {
     provinsi: "Lampung",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Seruit",
     deskripsi:
       "Olahan ikan bakar yang dicampur sambal terasi, tempoyak (fermentasi durian), dan lalapan. Makanan ini simbol kebersamaan, karena biasa disantap beramai-ramai. Seruit adalah ikon kuliner tradisional Lampung yang mencerminkan cita rasa khas masyarakatnya.",
@@ -731,7 +731,7 @@ const allCulture = [
   },
   {
     provinsi: "Lampung",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gulai Taboh",
     deskripsi:
       "Sayur santan kental berisi kacang-kacangan, daun melinjo, rebung, dan ikan laut atau udang. Rasanya gurih dan kaya rempah. Gulai ini sering disajikan dalam acara keluarga atau adat sebagai wujud kelimpahan dan kehangatan.",
@@ -781,7 +781,7 @@ const allCulture = [
   },
   {
     provinsi: "Lampung",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Way Kambas",
     deskripsi:
       "Kawasan konservasi gajah Sumatera yang dilindungi. Wisatawan dapat menyaksikan pelatihan gajah, edukasi lingkungan, dan melihat satwa liar. Taman ini menjadi ikon pelestarian satwa khas Sumatera dan daya tarik wisata edukatif dan ekologis.",
@@ -791,7 +791,7 @@ const allCulture = [
   },
   {
     provinsi: "Lampung",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pahawang Island",
     deskripsi:
       "Pulau dengan air laut jernih dan terumbu karang indah, cocok untuk snorkeling dan diving. Terletak di Teluk Lampung, destinasi ini menawarkan pesona laut tropis, pantai putih, dan kekayaan biota bawah laut yang memikat wisatawan.",
@@ -801,7 +801,7 @@ const allCulture = [
   },
   {
     provinsi: "Banten",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Rabeg",
     deskripsi:
       "Masakan berbahan daging kambing dengan bumbu rempah kuat seperti lada, bawang, dan cengkih. Cita rasanya gurih pedas khas Timur Tengah. Rabeg merupakan peninggalan kuliner Kesultanan Banten yang masih populer hingga kini.",
@@ -811,7 +811,7 @@ const allCulture = [
   },
   {
     provinsi: "Banten",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sate Bandeng",
     deskripsi:
       "Ikan bandeng tanpa duri diolah dengan bumbu kelapa dan rempah, lalu dibakar seperti sate. Rasanya gurih, manis, dan bertekstur lembut. Hidangan ini menjadi simbol kuliner Banten dan sering disajikan saat acara penting.",
@@ -861,7 +861,7 @@ const allCulture = [
   },
   {
     provinsi: "Banten",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Anyer",
     deskripsi:
       "Pantai berpasir putih dengan panorama laut Selat Sunda. Cocok untuk berenang dan bermain air. Keindahannya menjadikan Anyer sebagai destinasi wisata favorit keluarga di Banten sejak era kolonial Belanda.",
@@ -871,7 +871,7 @@ const allCulture = [
   },
   {
     provinsi: "Banten",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Speelwijk",
     deskripsi:
       "Benteng peninggalan Belanda di Kota Banten Lama. Dikelilingi kanal dan tembok tebal, menjadi saksi sejarah kolonialisme. Lokasi ini sering dikunjungi wisatawan pencinta sejarah dan budaya masa lampau.",
@@ -881,7 +881,7 @@ const allCulture = [
   },
   {
     provinsi: "DKI Jakarta",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kerak Telor",
     deskripsi:
       "Makanan ikonik Betawi berbahan telur bebek, beras ketan, dan serundeng kelapa. Dimasak di atas wajan arang hingga garing. Kerak telor identik dengan perayaan budaya Jakarta dan sering dijajakan di festival.",
@@ -891,7 +891,7 @@ const allCulture = [
   },
   {
     provinsi: "DKI Jakarta",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Soto Betawi",
     deskripsi:
       "Soto khas Betawi dengan kuah santan atau susu, diisi daging sapi dan jeroan. Rasanya gurih dan kaya rempah. Hidangan ini mencerminkan kekayaan kuliner masyarakat urban Betawi yang dipengaruhi berbagai budaya.",
@@ -941,7 +941,7 @@ const allCulture = [
   },
   {
     provinsi: "DKI Jakarta",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Monumen Nasional (Monas)",
     deskripsi:
       "Tugu setinggi 132 meter di jantung Jakarta, simbol perjuangan kemerdekaan. Dikelilingi taman luas dan museum sejarah. Monas menjadi ikon ibu kota sekaligus tempat wisata edukatif bagi semua kalangan.",
@@ -951,7 +951,7 @@ const allCulture = [
   },
   {
     provinsi: "DKI Jakarta",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Kota Tua Jakarta",
     deskripsi:
       "Kawasan berarsitektur kolonial Belanda dengan museum, kafe, dan pelataran sejarah. Menjadi pusat wisata budaya yang menampilkan jejak Batavia tempo dulu. Cocok untuk berjalan santai sambil mengenal sejarah Jakarta.",
@@ -961,7 +961,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sate Maranggi",
     deskripsi:
       "Sate daging sapi khas Purwakarta, dibumbui kecap, bawang, dan ketumbar, lalu dibakar hingga beraroma harum. Rasanya manis-gurih dan juicy. Biasanya disajikan dengan nasi atau ketan serta sambal oncom yang khas.",
@@ -971,7 +971,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Mie Kocok Bandung",
     deskripsi:
       "Mie kuning disajikan dengan kikil, bakso, dan kuah kaldunya yang gurih. Dilengkapi tauge, seledri, dan bawang goreng. Hidangan khas Bandung ini cocok dinikmati hangat, menggambarkan selera kuliner Sunda yang kaya rasa.",
@@ -1021,7 +1021,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Kawah Putih Ciwidey",
     deskripsi:
       "Danau kawah vulkanik berair kehijauan dengan kabut mistis dan aroma belerang. Dikelilingi hutan pegunungan yang sejuk. Kawah Putih menjadi destinasi favorit untuk wisata alam dan fotografi di Bandung Selatan.",
@@ -1031,7 +1031,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Wisata Alam Gunung Tangkuban Parahu",
     deskripsi:
       "Gunung dengan kawah aktif dan legenda Sangkuriang. Pengunjung bisa menikmati pemandangan kawah, belerang, dan wisata edukatif geologi. Tempat ini menyatukan keindahan alam dan cerita rakyat yang melegenda.",
@@ -1041,7 +1041,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gudeg",
     deskripsi:
       "Olahan nangka muda dimasak dengan santan dan gula merah hingga manis legit. Disajikan dengan telur, ayam, dan sambal krecek. Gudeg menjadi ikon kuliner Yogyakarta dan Solo yang mencerminkan kehalusan rasa masyarakat Jawa.",
@@ -1051,7 +1051,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Tahu Gimbal",
     deskripsi:
       "Tahu goreng disajikan dengan bakwan udang (gimbal), lontong, kol, dan tauge, disiram bumbu kacang. Hidangan khas Semarang ini menawarkan kombinasi gurih, manis, dan renyah yang menggugah selera.",
@@ -1101,7 +1101,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Candi Borobudur",
     deskripsi:
       "Candi Buddha terbesar di dunia, warisan dunia UNESCO, dengan relief dan stupa megah. Terletak di Magelang, menjadi pusat wisata religi, budaya, dan sejarah yang mengagumkan. Destinasi utama wisata Jawa Tengah.",
@@ -1111,7 +1111,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Dieng Plateau",
     deskripsi:
       "Dataran tinggi vulkanik dengan kawah, telaga warna, dan candi-candi kuno. Udara dingin dan pemandangan magis menjadikan Dieng tempat ideal untuk refleksi dan eksplorasi budaya spiritual Jawa kuno.",
@@ -1121,7 +1121,7 @@ const allCulture = [
   },
   {
     provinsi: "Daerah Istimewa Yogyakarta",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gudeg",
     deskripsi:
       "Olahan nangka muda dimasak dengan santan, daun jati, dan gula merah hingga kering. Disajikan dengan ayam, telur, dan sambal krecek. Rasa manis gurihnya khas, menjadikan gudeg ikon kuliner tradisional khas Yogyakarta yang melegenda.",
@@ -1131,7 +1131,7 @@ const allCulture = [
   },
   {
     provinsi: "Daerah Istimewa Yogyakarta",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Bakpia Pathok",
     deskripsi:
       "Kue isi kacang hijau yang dibungkus adonan tepung lembut. Kini tersedia dalam berbagai varian rasa. Bakpia menjadi oleh-oleh wajib dari Yogyakarta, mencerminkan perpaduan pengaruh budaya Tionghoa dan adaptasi lokal masyarakat Jawa.",
@@ -1181,7 +1181,7 @@ const allCulture = [
   },
   {
     provinsi: "Daerah Istimewa Yogyakarta",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Keraton Yogyakarta",
     deskripsi:
       "Istana resmi Kesultanan Yogyakarta yang masih aktif. Menampilkan arsitektur Jawa, museum budaya, dan kegiatan tradisional keraton. Menjadi pusat pelestarian budaya dan simbol pemerintahan khas DIY yang memadukan sistem kerajaan dan republik.",
@@ -1191,7 +1191,7 @@ const allCulture = [
   },
   {
     provinsi: "Daerah Istimewa Yogyakarta",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Candi Prambanan",
     deskripsi:
       "Kompleks candi Hindu terbesar di Indonesia, dibangun pada abad ke-9. Terdiri dari candi utama (Siwa, Brahma, Wisnu) dan penuh relief kisah Ramayana. Diakui UNESCO, Prambanan adalah simbol warisan spiritual dan arsitektur Jawa kuno.",
@@ -1201,7 +1201,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Rawon",
     deskripsi:
       "Sup daging sapi berkuah hitam dari kluwek, berpadu rempah khas Jawa Timur. Rasanya gurih, kaya, dan sedikit pahit. Rawon biasanya disajikan dengan nasi, sambal, dan telur asin, menjadi ikon kuliner Surabaya.",
@@ -1211,7 +1211,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Rujak Cingur",
     deskripsi:
       "Campuran sayur, buah, tempe, tahu, lontong, dan irisan cingur (hidung sapi), disiram bumbu petis hitam. Rujak khas Surabaya ini menyajikan rasa kompleks dan unik yang menggambarkan keberanian rasa masyarakat setempat.",
@@ -1261,7 +1261,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Gunung Bromo",
     deskripsi:
       "Gunung berapi aktif dengan pemandangan kawah dan lautan pasir yang memesona. Disakralkan oleh masyarakat Tengger, Bromo menjadi tujuan wisata alam dan budaya paling ikonik di Jawa Timur.",
@@ -1271,7 +1271,7 @@ const allCulture = [
   },
   {
     provinsi: "Jawa Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pulau Madura – Bukit Jaddih",
     deskripsi:
       "Bukit kapur bekas tambang dengan panorama putih memukau dan kolam biru alami. Destinasi unik ini jadi favorit wisatawan lokal, menggambarkan keindahan tersembunyi di balik kerasnya alam Madura.",
@@ -1281,7 +1281,7 @@ const allCulture = [
   },
   {
     provinsi: "Bali",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ayam Betutu",
     deskripsi:
       "Ayam utuh dibumbui base genep (rempah Bali), dibungkus daun pisang, lalu dipanggang atau dikukus hingga meresap. Rasanya pedas dan aromatik. Hidangan ini sering disajikan dalam upacara adat dan perayaan keluarga.",
@@ -1291,7 +1291,7 @@ const allCulture = [
   },
   {
     provinsi: "Bali",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Lawar",
     deskripsi:
       "Campuran sayuran, daging cincang, kelapa parut, dan bumbu khas Bali. Ada lawar putih (non-darah) dan lawar merah (dengan darah). Disajikan saat upacara adat, mencerminkan keseimbangan spiritual dan budaya Bali.",
@@ -1341,7 +1341,7 @@ const allCulture = [
   },
   {
     provinsi: "Bali",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pura Ulun Danu Beratan",
     deskripsi:
       "Pura ikonik di tepi Danau Beratan, dikelilingi kabut dan pegunungan. Tempat pemujaan Dewi Danu, dewi air dan kesuburan. Menjadi simbol keharmonisan spiritual dan keindahan alam Bali yang damai.",
@@ -1351,7 +1351,7 @@ const allCulture = [
   },
   {
     provinsi: "Bali",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Kuta",
     deskripsi:
       "Pantai berpasir putih dengan ombak ideal untuk berselancar. Pusat wisata internasional Bali dengan panorama matahari terbenam yang memesona. Kuta mencerminkan pesona tropis dan semangat pariwisata Pulau Dewata.",
@@ -1361,7 +1361,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ayam Taliwang",
     deskripsi:
       "Ayam kampung muda dibakar dengan bumbu khas Lombok berbahan cabai, bawang, dan terasi. Rasanya pedas gurih dan menggugah selera. Ayam Taliwang menjadi ikon kuliner Lombok yang mencerminkan cita rasa berani dan khas.",
@@ -1371,7 +1371,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Beberuk Terong",
     deskripsi:
       "Sambal segar dari terong ungu mentah, tomat, dan cabai, disajikan sebagai lalapan. Rasanya pedas segar dan cocok menemani ayam bakar atau ikan. Hidangan ini mencerminkan kesederhanaan dan kekayaan rasa lokal NTB.",
@@ -1421,7 +1421,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Senggigi",
     deskripsi:
       "Pantai eksotis di Lombok Barat dengan pasir putih dan laut biru jernih. Cocok untuk berenang, snorkeling, dan menikmati matahari terbenam. Senggigi merupakan gerbang utama wisata bahari NTB sebelum ke Gili.",
@@ -1431,7 +1431,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Gunung Rinjani",
     deskripsi:
       "Gunung tertinggi kedua di Indonesia, dengan kawah dan danau Segara Anak yang indah. Destinasi favorit pendaki dan pecinta alam. Rinjani juga memiliki makna spiritual bagi masyarakat sekitar sebagai gunung suci.",
@@ -1441,7 +1441,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Se'i",
     deskripsi:
       "Irisan daging sapi atau babi yang diasap dengan teknik tradisional, menghasilkan aroma khas dan tekstur lembut. Se'i adalah makanan populer di NTT dan sering disajikan dengan sambal luat dan bunga pepaya.",
@@ -1451,7 +1451,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Jagung Bose",
     deskripsi:
       "Jagung putih yang dimasak hingga lembut dan sering menjadi makanan pokok pengganti nasi, terutama di daerah Timor. Biasanya disantap dengan lauk pauk seperti sei, ikan, atau sayuran.",
@@ -1501,7 +1501,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Kelimutu",
     deskripsi:
       "Danau kawah gunung berapi di Flores yang terkenal dengan tiga warna airnya yang dapat berubah-ubah: merah, biru, dan putih. Keunikan fenomena alam ini menjadikan Kelimutu destinasi yang memukau.",
@@ -1511,7 +1511,7 @@ const allCulture = [
   },
   {
     provinsi: "Nusa Tenggara Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Komodo",
     deskripsi:
       "Situs Warisan Dunia UNESCO yang menjadi habitat asli komodo, kadal terbesar di dunia. Terdiri dari beberapa pulau seperti Pulau Komodo, Rinca, dan Padar, tempat ini menawarkan pemandangan savana, pantai pink, dan keindahan bawah laut.",
@@ -1521,7 +1521,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Pengkang",
     deskripsi:
       "Ketan isi ebi (udang kering) yang dibungkus daun pisang dan dibakar. Disajikan dengan sambal kerang. Makanan ini populer di Pontianak dan sekitarnya, menjadi camilan atau bekal perjalanan yang menggambarkan keunikan kuliner Melayu dan Dayak.",
@@ -1531,7 +1531,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Bubur Pedas Sambas",
     deskripsi:
       "Bubur dari beras tumbuk, dimasak dengan beragam sayur, rempah, dan daun-daunan. Rasanya gurih dan aromatik. Disajikan saat Ramadan atau acara adat. Kuliner ini mencerminkan kekayaan cita rasa masyarakat Sambas yang bernuansa tradisional.",
@@ -1581,7 +1581,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Danau Sentarum",
     deskripsi:
       "Merupakan kawasan rawa dan danau musiman yang menjadi surga keanekaragaman hayati. Terletak di Kapuas Hulu, cocok untuk wisata alam dan budaya Dayak. Rumah bagi ikan endemik, burung liar, dan tradisi nelayan lokal yang masih lestari.",
@@ -1591,7 +1591,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Tugu Khatulistiwa",
     deskripsi:
       "Ikon Pontianak yang menandai garis khatulistiwa. Di sini, wisatawan bisa menyaksikan fenomena unik matahari tepat di atas kepala saat kulminasi. Tugu ini menjadi simbol geografis sekaligus destinasi edukatif yang menarik wisatawan domestik dan asing.",
@@ -1601,7 +1601,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Juhu Umbut Rotan",
     deskripsi:
       "Masakan khas Dayak dari rotan muda yang direbus bersama rempah-rempah. Rasanya sedikit pahit namun gurih. Sering disajikan dengan ikan bakar atau nasi. Makanan ini menggambarkan kearifan lokal dalam mengolah hasil hutan yang berlimpah.",
@@ -1611,7 +1611,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kalumpe",
     deskripsi:
       "Sayur daun singkong yang ditumbuk halus, dimasak dengan santan, terasi, bawang, dan cabai. Rasanya gurih pedas dan biasa disantap dengan nasi. Kalumpe merupakan hidangan khas Dayak yang penuh gizi dan mudah ditemukan di rumah-rumah warga.",
@@ -1661,7 +1661,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Tanjung Puting",
     deskripsi:
       "Habitat orangutan terbesar di dunia, terletak di Kotawaringin Barat. Wisatawan dapat menyusuri sungai dengan klotok dan menyaksikan kehidupan liar. Taman ini adalah simbol konservasi satwa endemik dan edukasi lingkungan tropis Kalimantan Tengah.",
@@ -1671,7 +1671,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Bukit Tangkiling",
     deskripsi:
       "Terletak di Palangka Raya, bukit ini dikenal sebagai tempat meditasi spiritual dan pendakian ringan. Dikelilingi hutan dan memiliki pemandangan kota dari atas. Juga terdapat kompleks ziarah religi yang dihormati oleh warga setempat.",
@@ -1681,7 +1681,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Soto Banjar",
     deskripsi:
       "Soto khas suku Banjar ini memakai ayam kampung, ketupat, perkedel, dan telur rebus. Kuah beningnya kaya rempah seperti cengkeh, kayu manis, dan kapulaga. Disajikan hangat, soto ini menjadi sajian utama saat acara keluarga maupun adat.",
@@ -1691,7 +1691,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ketupat Kandangan",
     deskripsi:
       "Ketupat disajikan dengan ikan gabus atau patin yang dimasak dalam kuah santan berbumbu kunyit, serai, dan bawang. Rasanya gurih dan aromatik. Makanan ini biasa dihidangkan saat Lebaran atau acara adat di Hulu Sungai dan Kandangan.",
@@ -1701,7 +1701,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gangan Asam Banjar",
     deskripsi:
       "Sup ikan berkuah bening asam segar dari asam jawa, dilengkapi irisan nanas, cabai, dan timun. Biasanya menggunakan ikan haruan. Gangan asam menjadi hidangan khas sehari-hari masyarakat Banjar karena cita rasanya menyegarkan dan menyehatkan.",
@@ -1771,7 +1771,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pasar Terapung Lok Baintan",
     deskripsi:
       "Pasar tradisional di atas Sungai Martapura di mana pedagang menjual hasil bumi dari atas perahu. Aktivitas jual beli dimulai sejak fajar. Pasar ini menjadi simbol ekonomi sungai dan daya tarik budaya masyarakat Banjar.",
@@ -1781,7 +1781,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Loksado dan Pegunungan Meratus",
     deskripsi:
       "Kawasan perbukitan yang dihuni suku Dayak Meratus. Dikenal karena keindahan alam, air terjun Haratai, dan atraksi bamboo rafting. Loksado juga memiliki balai adat (rumah panjang) dan ritual spiritual yang masih lestari hingga kini.",
@@ -1791,7 +1791,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Museum Wasaka",
     deskripsi:
       "Museum sejarah perjuangan rakyat Kalimantan Selatan yang terletak di Banjarmasin. Namanya singkatan dari 'Waja Sampai Ka Puting', semangat juang masyarakat Banjar. Bangunannya berbentuk rumah adat, menyimpan senjata, dokumen, dan pakaian pejuang.",
@@ -1801,7 +1801,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Nasi Bekepor",
     deskripsi:
       "Nasi khas Kutai yang dimasak dengan santan dan rempah seperti serai dan bawang merah. Biasanya disajikan bersama ikan asin atau daging masak bumi hangus (mirip semur). Nasi ini menjadi sajian kerajaan Kesultanan Kutai pada zaman dahulu.",
@@ -1811,7 +1811,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sate Payau",
     deskripsi:
       "Sate daging rusa yang dibumbui rempah khas lalu dibakar hingga empuk. Sate ini merupakan hidangan khas suku Dayak dan sering disajikan dalam upacara adat atau perayaan panen. Kini mulai sulit ditemukan karena rusa termasuk hewan dilindungi.",
@@ -1821,7 +1821,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sayur Asam Kutai",
     deskripsi:
       "Berbeda dari sayur asem Jawa, versi Kutai memakai ikan gabus, terong, dan nanas, dengan kuah bening berasa asam segar. Dimasak bersama daun kemangi, makanan ini populer sebagai hidangan rumahan dan perjamuan adat di daerah pesisir Kutai.",
@@ -1891,7 +1891,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pulau Derawan",
     deskripsi:
       "Destinasi wisata bahari dengan pantai berpasir putih dan laut jernih. Terkenal sebagai habitat penyu hijau, ubur-ubur tak menyengat, dan diving spot kelas dunia. Pulau ini sering menjadi tujuan utama wisatawan lokal dan mancanegara.",
@@ -1901,7 +1901,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Desa Budaya Pampang",
     deskripsi:
       "Desa adat suku Dayak Kenyah yang terletak di Samarinda. Wisatawan dapat menyaksikan pertunjukan tari tradisional, melihat rumah lamin, serta mengenal kehidupan dan kerajinan masyarakat Dayak. Lokasi ini jadi pusat pelestarian budaya Dayak urban.",
@@ -1911,7 +1911,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Timur",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Kutai",
     deskripsi:
       "Kawasan konservasi hutan tropis yang menjadi habitat orangutan liar. Pengunjung dapat menjelajahi hutan, menyusuri sungai, dan melihat flora-fauna langka. Lokasinya di dekat Sangatta, dan menjadi contoh hutan dataran rendah Kalimantan yang masih asli.",
@@ -1921,7 +1921,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Nasi Subut",
     deskripsi:
       "Nasi berwarna ungu alami dari ubi ungu dan nasi putih yang dicampur parutan kelapa serta sedikit garam. Disajikan dengan ikan asin, sambal, dan lauk lainnya. Nasi ini populer di daerah Tidung dan sering hadir saat perayaan adat.",
@@ -1931,7 +1931,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ikan Asam Pedas Tidung",
     deskripsi:
       "Masakan khas Suku Tidung yang memakai ikan laut atau ikan air tawar, dimasak dengan kuah asam pedas dari belimbing wuluh dan cabai. Rasanya segar dan berempah, sering disajikan sebagai menu utama dalam acara adat dan keluarga.",
@@ -1941,7 +1941,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kapah Singgang",
     deskripsi:
       "Hidangan laut khas pesisir Kalimantan Utara, berupa kerang atau ikan yang dibumbui kunyit, bawang putih, dan jahe, lalu dipanggang. Makanan ini populer di Tarakan dan Nunukan, menggambarkan gaya hidup bahari masyarakat Kalimantan Utara.",
@@ -2011,7 +2011,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pulau Sapi",
     deskripsi:
       "Pulau kecil di perairan Tarakan yang memiliki pasir putih, terumbu karang, dan spot snorkeling. Sering dijadikan lokasi piknik dan rekreasi oleh warga lokal. Airnya jernih, cocok untuk ekowisata bahari dan fotografi bawah laut.",
@@ -2021,7 +2021,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Long Bawan (Krayan)",
     deskripsi:
       "Wilayah perbatasan dengan Malaysia yang dikenal dengan keindahan alam pegunungan dan pertanian organik seperti beras adan. Desa ini dihuni suku Dayak Lundayeh dan masih memegang teguh tradisi serta sistem pertanian berkelanjutan secara turun-temurun.",
@@ -2031,7 +2031,7 @@ const allCulture = [
   },
   {
     provinsi: "Kalimantan Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Hutan Mangrove Tarakan",
     deskripsi:
       "Area konservasi mangrove terbesar di kota Tarakan, sekaligus tempat wisata edukasi dan ekowisata. Pengunjung bisa menyusuri jembatan kayu di tengah hutan mangrove sambil melihat monyet bekantan, burung liar, dan menikmati udara segar alami.",
@@ -2041,7 +2041,7 @@ const allCulture = [
   },
   {
     provinsi: "Gorontalo",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Binte Biluhuta (Milu Siram)",
     deskripsi:
       "Sup jagung khas Gorontalo yang berisi jagung manis serut, udang, ikan cakalang, dan kelapa parut. Kuahnya gurih dan asam segar. Binte Biluhuta adalah simbol persatuan suku Gorontalo dan sering disajikan pada acara penting.",
@@ -2051,7 +2051,7 @@ const allCulture = [
   },
   {
     provinsi: "Gorontalo",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ilabulo",
     deskripsi:
       "Olahan sagu yang dicampur ayam cincang, telur, santan, dan rempah, lalu dibungkus daun pisang dan dikukus. Teksturnya kenyal, gurih, dan kaya rasa. Ilabulo sering dianggap sebagai 'pepes-nya Gorontalo' dan disantap sebagai camilan atau lauk.",
@@ -2101,7 +2101,7 @@ const allCulture = [
   },
   {
     provinsi: "Gorontalo",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Otanaha",
     deskripsi:
       "Benteng peninggalan abad ke-16 di atas bukit Kota Gorontalo. Dibangun dari pasir, batu kapur, dan putih telur. Pemandangan dari atas mencakup Danau Limboto dan kota. Tempat ini menyimpan nilai sejarah dan simbol perjuangan rakyat Gorontalo.",
@@ -2111,7 +2111,7 @@ const allCulture = [
   },
   {
     provinsi: "Gorontalo",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Limboto",
     deskripsi:
       "Danau air tawar terbesar di Gorontalo, dulunya menjadi jalur kapal kerajaan. Kini menjadi lokasi wisata dan penelitian ekosistem. Dikelilingi sawah dan kampung nelayan, dan sering menjadi lokasi festival budaya serta pengamatan burung liar.",
@@ -2121,7 +2121,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Tinutuan (Bubur Manado)",
     deskripsi:
       "Bubur khas Manado berbahan nasi, labu kuning, bayam, kangkung, dan daun kemangi. Disajikan tanpa daging, cocok untuk vegetarian. Rasanya gurih segar, sering dinikmati saat sarapan bersama sambal roa dan perkedel jagung.",
@@ -2131,7 +2131,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Rica-Rica",
     deskripsi:
       "Sambal rica-rica merupakan bumbu dasar pedas khas Minahasa. Umumnya digunakan untuk mengolah ayam, ikan, atau daging. Rasanya sangat pedas, berpadu dengan jeruk nipis dan rempah segar. Hidangan ini mencerminkan selera kuliner berani orang Minahasa.",
@@ -2181,7 +2181,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Laut Bunaken",
     deskripsi:
       "Destinasi selam kelas dunia dengan keanekaragaman terumbu karang dan biota laut. Terletak di Teluk Manado, taman laut ini cocok untuk snorkeling dan diving. Bunaken menjadi ikon wisata bahari Indonesia yang terkenal hingga mancanegara.",
@@ -2191,7 +2191,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Tondano",
     deskripsi:
       "Danau terbesar di Sulawesi Utara, dikelilingi pegunungan dan sawah. Menyuguhkan panorama sejuk dan cocok untuk wisata keluarga. Terdapat rumah makan terapung dan warung ikan bakar di sekeliling danau, menjadikannya favorit wisata kuliner alam.",
@@ -2201,7 +2201,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kaledo (Kaki Lembu Donggala)",
     deskripsi:
       "Sup tulang kaki sapi dengan sumsum, berasal dari Donggala. Kuahnya bening, gurih, dan sedikit asam dari perasan jeruk nipis. Dinikmati dengan nasi atau singkong rebus. Kaledo merupakan simbol kekayaan kuliner khas Sulteng yang unik dan ikonik.",
@@ -2211,7 +2211,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Uta Dada",
     deskripsi:
       "Masakan ayam bakar khas suku Kaili, dimasak dengan santan, kemiri, dan rempah-rempah. Daging ayam yang empuk berpadu dengan kuah kental beraroma gurih. Hidangan ini biasa disajikan dalam acara keluarga, syukuran, dan hajatan tradisional.",
@@ -2261,7 +2261,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Poso",
     deskripsi:
       "Danau tertua ketiga di Indonesia dengan air jernih kebiruan, terletak di pegunungan. Dikelilingi desa adat dan kebun cengkeh. Tempat ini cocok untuk ekowisata, rekreasi, dan mengenal budaya suku Pamona yang masih terjaga.",
@@ -2271,7 +2271,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Lembah Bada (Lore Lindu)",
     deskripsi:
       "Lembah arkeologis yang menyimpan patung megalitikum berusia ribuan tahun. Terletak di Taman Nasional Lore Lindu. Tempat ini menyimpan jejak sejarah prasejarah dan menjadi tujuan wisata budaya dan edukasi yang mendunia.",
@@ -2281,7 +2281,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Coto Makassar",
     deskripsi:
       "Sup daging sapi berkuah kental berbumbu kacang, bawang putih, lengkuas, dan ketumbar. Disajikan bersama ketupat dan sambal tauco. Hidangan legendaris ini berasal dari Makassar dan menjadi sajian penting dalam jamuan adat serta keseharian masyarakat.",
@@ -2291,7 +2291,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Pallubasa",
     deskripsi:
       "Mirip Coto, namun menggunakan parutan kelapa sangrai dalam kuahnya. Daging sapi atau jeroan direbus lama agar empuk. Disajikan dengan nasi dan telur mentah yang dicampur dalam kuah panas. Khas Makassar, Pallubasa punya cita rasa lebih gurih dan dalam.",
@@ -2341,7 +2341,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Tana Toraja",
     deskripsi:
       "Wilayah pegunungan dengan tradisi kematian yang unik. Wisatawan dapat melihat rumah tongkonan, makam batu, dan upacara Rambu Solo’. Toraja juga dikenal akan pemandangan alamnya yang indah dan kaya warisan budaya.",
@@ -2351,7 +2351,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Bira",
     deskripsi:
       "Pantai berpasir putih di Kabupaten Bulukumba. Airnya jernih biru kehijauan, cocok untuk berenang, snorkeling, dan diving. Pantai ini juga terkenal sebagai tempat pembuatan perahu pinisi — warisan budaya maritim Bugis yang mendunia.",
@@ -2361,7 +2361,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tenggara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sinonggi",
     deskripsi:
       "Makanan pokok khas suku Tolaki, terbuat dari tepung sagu yang dimasak kental dan kenyal. Disantap bersama sayur dan ikan kuah asam pedas. Sinonggi menggambarkan ketergantungan masyarakat pesisir terhadap sagu sebagai sumber karbohidrat utama.",
@@ -2371,7 +2371,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tenggara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Kabuto",
     deskripsi:
       "Olahan singkong parut yang difermentasi lalu dikukus, disajikan dengan kelapa parut dan gula merah. Makanan ini dulunya pengganti nasi saat paceklik. Kini menjadi camilan tradisional yang digemari di perkampungan masyarakat Buton dan sekitarnya.",
@@ -2421,7 +2421,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tenggara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Wakatobi",
     deskripsi:
       "Taman Nasional laut terkenal dengan keindahan terumbu karang dan biota lautnya. Tempat ini menjadi surga bagi penyelam dari seluruh dunia dan simbol konservasi laut Indonesia. Terdiri dari empat pulau utama: Wangi-Wangi, Kaledupa, Tomia, Binongko.",
@@ -2431,7 +2431,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Tenggara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Keraton Buton",
     deskripsi:
       "Benteng batu terbesar di dunia menurut UNESCO. Terletak di Kota Baubau, dulunya pusat pemerintahan Kesultanan Buton. Selain panorama laut yang indah, tempat ini menyimpan sejarah kerajaan Islam lokal dan budaya Buton yang masih lestari.",
@@ -2441,7 +2441,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Jepa",
     deskripsi:
       "Makanan pokok masyarakat Mandar yang terbuat dari singkong parut yang dipipihkan lalu dipanggang. Disajikan bersama ikan teri goreng atau kuah ikan. Jepa mencerminkan kearifan lokal dalam mengolah hasil bumi sebagai sumber energi sehari-hari.",
@@ -2451,7 +2451,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Bau Peapi",
     deskripsi:
       "Masakan ikan khas Mandar yang dimasak dalam kuah kuning asam pedas. Menggunakan ikan laut segar, kunyit, serai, dan tomat. Rasanya segar dan kaya rempah, sering disajikan dalam acara adat dan perjamuan keluarga besar.",
@@ -2501,7 +2501,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Dato’ Majene",
     deskripsi:
       "Pantai berpasir putih dengan batu karang besar yang menjorong ke laut. Cocok untuk berenang, memancing, atau sekadar menikmati matahari terbenam. Lokasinya dekat pusat kota, menjadikannya destinasi favorit warga lokal dan wisatawan.",
@@ -2511,7 +2511,7 @@ const allCulture = [
   },
   {
     provinsi: "Sulawesi Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Air Terjun Limbong Kamandang",
     deskripsi:
       "Terletak di Mamasa, air terjun ini berada di kawasan pegunungan yang sejuk dan hijau. Dikelilingi hutan pinus dan jalur trekking. Tempat ini menjadi destinasi alam sekaligus lokasi menenangkan untuk menikmati keindahan Sulawesi Barat.",
@@ -2521,7 +2521,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Papeda",
     deskripsi:
       "Makanan pokok dari sagu yang dimasak hingga menjadi bubur kental dan lengket. Disantap dengan ikan kuah kuning dan sayuran. Papeda mencerminkan tradisi pangan masyarakat pesisir yang menggantungkan hidup pada hasil laut dan sagu.",
@@ -2531,7 +2531,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ikan Asar",
     deskripsi:
       "Ikan cakalang atau tongkol yang diasap di atas bara api hingga kering. Aromanya khas dan tahan lama. Biasanya disajikan dengan sambal colo-colo dan nasi. Hidangan ini mencerminkan keahlian nelayan Maluku dalam mengawetkan hasil tangkapan laut.",
@@ -2581,7 +2581,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Ora",
     deskripsi:
       "Terletak di Pulau Seram, pantai ini terkenal dengan air laut jernih, pasir putih, dan bungalow terapung. Cocok untuk snorkeling, diving, atau sekadar bersantai. Ora sering dijuluki 'Maldives-nya Indonesia' karena keindahannya yang luar biasa.",
@@ -2591,7 +2591,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Amsterdam",
     deskripsi:
       "Peninggalan kolonial Belanda di Ambon yang dibangun pada abad ke-17. Benteng ini menjadi saksi sejarah rempah-rempah di Maluku. Dari atas benteng, pengunjung dapat melihat panorama Teluk Ambon dan mengenang masa penjajahan Eropa di Indonesia.",
@@ -2601,7 +2601,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Gohu Ikan",
     deskripsi:
       "Sering disebut 'sashimi-nya Ternate,' gohu ikan adalah potongan ikan mentah (biasanya tuna), dibumbui perasan jeruk, bawang merah, cabe rawit, dan minyak kelapa panas. Rasanya segar dan pedas, biasa disajikan sebagai hidangan pembuka khas pesisir.",
@@ -2611,7 +2611,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku Utara",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Papeda Kuah Kuning",
     deskripsi:
       "Papeda disajikan dengan ikan tongkol atau mubara yang dimasak dalam kuah kuning berbumbu kunyit dan rempah. Teksturnya kenyal, berpadu dengan rasa gurih dan asam segar. Makanan ini mencerminkan budaya pangan berbasis sagu dan laut.",
@@ -2661,7 +2661,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Kepulauan Morotai",
     deskripsi:
       "Pulau bersejarah yang menjadi pangkalan militer Sekutu saat Perang Dunia II. Kini terkenal dengan pantai pasir putih, diving spot, dan situs sejarah. Morotai adalah surga tropis yang menyatukan keindahan alam dan peninggalan sejarah global.",
@@ -2671,7 +2671,7 @@ const allCulture = [
   },
   {
     provinsi: "Maluku Utara",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Benteng Oranje",
     deskripsi:
       "Benteng peninggalan Belanda di Ternate yang dibangun pada awal abad ke-17. Menjadi pusat pemerintahan VOC di Maluku Utara. Kini difungsikan sebagai situs wisata sejarah dan museum yang menyimpan artefak rempah dan peninggalan kolonial.",
@@ -2681,7 +2681,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ikan Bakar Manokwari",
     deskripsi:
       "Ikan tongkol dibakar lalu disajikan dengan sambal khas dari cabai rawit, bawang merah, dan tomat mentah yang dihaluskan kasar. Rasanya pedas segar dan sangat populer di Manokwari. Cocok disantap bersama papeda atau nasi putih hangat.",
@@ -2691,7 +2691,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sagu Lempeng",
     deskripsi:
       "Makanan pokok masyarakat pesisir Papua Barat. Terbuat dari sagu yang dibakar menjadi lempengan padat, sering disantap dengan ikan kuah kuning. Teksturnya padat dan sedikit kenyal, mencerminkan pola makan masyarakat berbasis pangan lokal non-beras.",
@@ -2741,7 +2741,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Raja Ampat",
     deskripsi:
       "Gugusan pulau di Papua Barat yang dikenal sebagai surga bawah laut dunia. Memiliki ratusan spot diving dan snorkeling, biota laut eksotik, serta pemandangan alam luar biasa. Raja Ampat adalah ikon wisata kelas dunia Indonesia bagian timur.",
@@ -2751,7 +2751,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pegunungan Arfak",
     deskripsi:
       "Terletak di Manokwari, pegunungan ini memiliki hutan hujan, danau, dan budaya lokal suku Arfak. Cocok untuk ekowisata, trekking, dan pengamatan burung cenderawasih. Arfak juga menyimpan rumah adat kaki seribu yang unik dan ramah lingkungan.",
@@ -2761,7 +2761,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Papeda dengan ikan kuah kuning",
     deskripsi:
       "Papeda dari sagu disajikan dengan ikan kuah kuning berbumbu kunyit, jeruk nipis, dan cabai. Kombinasi tekstur kenyal dan cita rasa asam-gurih mencerminkan khasnya kuliner pesisir Papua.",
@@ -2771,7 +2771,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Udang selingkuh",
     deskripsi:
       "Udang air tawar khas Wamena, dipanggang sederhana dengan sedikit garam. Rasanya manis alami, kaya protein, disajikan hangat dengan nasi atau sambal colo‑colo khas Papua tengah.",
@@ -2821,7 +2821,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Teluk Cenderawasih",
     deskripsi:
       "Taman nasional laut di perbatasan Papua Tengah–Papua, habitat hiu paus dan terumbu karang, destinasi selam dengan keanekaragaman laut eksotik.",
@@ -2831,7 +2831,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Gunung Puncak Jaya",
     deskripsi:
       "Puncak tertinggi di Indonesia (4.884 m), berada di jajaran Jayawijaya, terkenal bagi pendaki dunia dan simbol kebanggaan alam Papua.",
@@ -2841,7 +2841,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Papeda dan Ikan Kuah Kuning",
     deskripsi:
       "Papeda terbuat dari sagu yang dimasak menjadi bubur kenyal. Di Papua Tengah, makanan ini disantap dengan ikan mujair atau nila berkuah kuning, dimasak bersama kunyit, serai, dan jeruk nipis. Rasanya gurih dan menyegarkan.",
@@ -2851,7 +2851,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Tengah",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sagu Bakar (Sagu Bol)",
     deskripsi:
       "Sagu digulung menjadi bola kecil lalu dibakar atau dipanggang. Umumnya disantap bersama kelapa parut, sayur daun ubi, atau ikan asap. Makanan ini praktis dibawa bepergian dan menjadi sumber energi utama masyarakat pedalaman Papua Tengah.",
@@ -2901,7 +2901,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Lembah Baliem",
     deskripsi:
       "Terletak di Wamena, lembah ini dihuni oleh suku Dani dan dikelilingi pegunungan. Dikenal karena budaya tradisionalnya yang masih lestari, seperti rumah honai, pakaian koteka, dan sistem pertanian khas. Cocok untuk wisata budaya dan alam.",
@@ -2911,7 +2911,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Tengah",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pegunungan Jayawijaya",
     deskripsi:
       "Pegunungan tertinggi di Indonesia dengan Puncak Jaya yang diselimuti es abadi. Dikenal di kalangan pendaki dunia, kawasan ini juga menjadi rumah bagi flora-fauna endemik dan suku-suku asli yang hidup harmonis dengan alam sekitar.",
@@ -2921,7 +2921,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Pegunungan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Bakar Batu (Barapen)",
     deskripsi:
       "Makanan hasil tradisi memasak di lubang tanah dengan batu panas. Ubi, sayur, dan daging babi dimasak bersama. Bakar batu dilakukan dalam perayaan adat sebagai bentuk syukur, kebersamaan, dan penyambutan tamu penting.",
@@ -2931,7 +2931,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Pegunungan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Udang Selingkuh",
     deskripsi:
       "Udang air tawar besar yang memiliki capit seperti kepiting, khas wilayah pegunungan Wamena. Biasanya direbus atau dibakar tanpa banyak bumbu. Rasanya manis dan gurih, disajikan dengan sambal atau sayur lokal dalam acara adat atau jamuan.",
@@ -2981,7 +2981,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Pegunungan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Lembah Baliem",
     deskripsi:
       "Dikelilingi pegunungan tinggi, lembah ini dihuni suku Dani yang masih memegang tradisi nenek moyang. Wisatawan dapat melihat kehidupan adat, rumah honai, serta sistem pertanian khas pegunungan yang unik dan menarik secara budaya.",
@@ -2991,7 +2991,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Pegunungan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Danau Habema",
     deskripsi:
       "Danau tertinggi di Indonesia, berada di kawasan Pegunungan Jayawijaya. Dikelilingi padang rumput dan kabut tipis, danau ini memiliki keindahan mistis. Merupakan tempat sakral bagi suku Dani dan lokasi trekking favorit para pendaki.",
@@ -3001,7 +3001,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Sagu Lempeng",
     deskripsi:
       "Sagu dibakar menjadi lempengan padat dan kering, disantap bersama ikan asap, sambal, atau kelapa parut. Makanan pokok masyarakat pesisir dan pedalaman Papua Selatan ini mencerminkan kearifan lokal dalam mengolah sagu sebagai sumber utama karbohidrat.",
@@ -3011,7 +3011,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Selatan",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ikan Asap Kuah",
     deskripsi:
       "Ikan hasil tangkapan sungai seperti ikan gabus diasapi, lalu dimasak dalam kuah rempah ringan. Disajikan bersama papeda atau sagu bakar. Hidangan ini umum dijumpai di Merauke dan mencerminkan pengaruh budaya Marind dan perairan sekitar.",
@@ -3061,7 +3061,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Nasional Wasur",
     deskripsi:
       "Terletak di Merauke, dikenal sebagai 'Serengeti-nya Papua.' Memiliki padang rumput luas, rawa, dan hutan dataran rendah. Menjadi habitat burung migran, kanguru pohon, dan buaya. Cocok untuk ekowisata dan pengamatan satwa langka.",
@@ -3071,7 +3071,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Selatan",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Pantai Lampu Satu",
     deskripsi:
       "Pantai berpasir putih di Merauke dengan mercusuar peninggalan Belanda. Menjadi tempat favorit warga lokal untuk menikmati matahari terbenam. Pantai ini juga menjadi simbol ujung paling timur Indonesia dan lokasi perayaan nasional tahunan.",
@@ -3081,7 +3081,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat Daya",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Papeda Ikan Kuah Kuning",
     deskripsi:
       "Makanan utama dari sagu yang dimasak menjadi bubur lengket. Disajikan bersama ikan laut seperti tongkol atau mubara dalam kuah kuning berbumbu kunyit dan rempah. Papeda mencerminkan kebiasaan makan sehat masyarakat pesisir Sorong dan sekitarnya.",
@@ -3091,7 +3091,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat Daya",
-    kategori: "Makanan",
+    kategori: "Makanan Daerah",
     nama: "Ikan Bakar Sambal Colo-Colo",
     deskripsi:
       "Ikan segar hasil tangkapan laut Papua Barat Daya dibakar langsung di atas bara, disajikan dengan sambal colo-colo khas Maluku-Papua. Rasa gurih ikan berpadu dengan sambal asam pedas menciptakan kelezatan sederhana yang digemari masyarakat lokal.",
@@ -3141,7 +3141,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat Daya",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Kepulauan Raja Ampat (bagian Sorong)",
     deskripsi:
       "Meskipun sebagian besar masuk Papua Barat, sebagian wilayah Raja Ampat berada di Papua Barat Daya, seperti Kota Sorong sebagai pintu masuk utama. Dikenal dengan keanekaragaman laut tertinggi di dunia, jadi destinasi diving dan snorkeling populer.",
@@ -3151,7 +3151,7 @@ const allCulture = [
   },
   {
     provinsi: "Papua Barat Daya",
-    kategori: "Wisata",
+    kategori: "Tempat Wisata",
     nama: "Taman Wisata Alam Sorong",
     deskripsi:
       "Kawasan hutan tropis di pinggiran Kota Sorong yang menyajikan keindahan alam, jalur trekking, dan habitat burung cenderawasih. Cocok untuk wisata edukatif dan pengenalan ekosistem hutan Papua kepada pengunjung lokal maupun mancanegara.",

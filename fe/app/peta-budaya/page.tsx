@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import dynamic from "next/dynamic";
 import SearchCulture from "./SearchCulture";
 import CultureDetail from "./CultureDetail";
-import allCulture from "./_allCulture/index.ts"; // Import dari file baru
+import allCulture from "./allculture";
 
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
@@ -15,7 +15,11 @@ const PetaBudaya = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedProvince, setSelectedProvince] = useState("Aceh");
   const [hoveredProvince, setHoveredProvince] = useState<string | null>(null);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");  
+  const cultureInOneProvince = allCulture.filter(
+    (item) => item.provinsi === selectedProvince && item?.kategori === selectedCategory
+  );
+  const [selectedCulture, setSelectedCulture] = useState(cultureInOneProvince[0]);
 
   const provincesList = [
     "Aceh",
@@ -64,8 +68,6 @@ const PetaBudaya = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsDropdownOpen(false);
         setHoveredProvince(null);
-
-        // Kalau tidak ada yang diketik, kembalikan ke yang terakhir dipilih
         if (searchTerm.trim() === "") {
           setSearchTerm(selectedProvince);
         }
@@ -99,6 +101,9 @@ const PetaBudaya = () => {
           setIsDropdownOpen={setIsDropdownOpen}
           setSelectedProvince={setSelectedProvince}
           provincesList={provincesList}
+          selectedCulture={selectedCulture}
+          setSelectedCulture={setSelectedCulture}
+          cultureInOneProvince={cultureInOneProvince}
           dropdownRef={dropdownRef}
         />
       </div>
@@ -106,6 +111,8 @@ const PetaBudaya = () => {
         allCulture={allCulture}
         selectedProvince={selectedProvince}
         selectedCategory={selectedCategory}
+        selectedCulture={selectedCulture}
+        setSelectedCulture={setSelectedCulture}
       />
     </div>
   );

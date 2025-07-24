@@ -7,6 +7,7 @@ interface Culture {
   kategori: string;
   nama: string;
   deskripsi: string;
+  foto: string;
   // add other fields if needed
 }
 
@@ -14,18 +15,24 @@ interface CultureDetailProps {
   allCulture: Culture[];
   selectedProvince: string;
   selectedCategory: string;
+  selectedCulture: Culture | null;
+  setSelectedCulture: (culture: Culture) => void;
 }
 
-const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }: CultureDetailProps) => {
+const CultureDetail = ({
+  allCulture,
+  selectedProvince,
+  selectedCategory,
+  selectedCulture,
+  setSelectedCulture,
+}: CultureDetailProps) => {
   const cultureInOneProvince = allCulture.filter(
     (item) => item.provinsi === selectedProvince && item?.kategori === selectedCategory
   );
 
-  const [selectedCulture, setSelectedCulture] = useState(cultureInOneProvince[0]);
-
   useEffect(() => {
     setSelectedCulture(cultureInOneProvince[0]);
-  }, [selectedProvince || selectedCategory]);
+  }, [selectedProvince, selectedCategory]);
 
   return (
     <div className="flex gap-5">
@@ -35,7 +42,7 @@ const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }: Cultu
             <label
               key={index + 1}
               className={`${
-                selectedCulture && culture?.nama === selectedCulture?.nama ? "font-bold text-[#FF7D29]" : "text-black/50"
+                culture?.nama === selectedCulture?.nama ? "font-bold text-[#FF7D29]" : "text-black/50"
               } cursor-pointer text-lg`}
               onClick={() => setSelectedCulture(culture)}
             >
@@ -47,11 +54,8 @@ const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }: Cultu
         )}
       </div>
       <div className="p-4 flex-1/2 border border-black/10 rounded-lg">
-        {!selectedCulture?.foto === "" && (
-          <img src={selectedCulture?.foto} alt="" className=""/>
-        )}
+        {selectedCulture?.foto !== "" && <img src={selectedCulture?.foto} alt="" className="w-full h-80 object-cover rounded-lg" />}
 
-        
         <h1 className="text-[#FF7D29] text-2xl font-bold mt-4">{selectedCulture?.nama}</h1>
         <p className="text-black/50 mt-2">{selectedCulture?.deskripsi}</p>
       </div>

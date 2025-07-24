@@ -64,10 +64,10 @@ const getIconByCategory = (category: string) => {
     case "Alat Musik":
       iconFile = "alat-musik.png";
       break;
-    case "Makanan":
+    case "Makanan Daerah":
       iconFile = "makanan.png";
       break;
-    case "Wisata":
+    case "Tempat Wisata":
       iconFile = "wisata.png";
       break;
     default:
