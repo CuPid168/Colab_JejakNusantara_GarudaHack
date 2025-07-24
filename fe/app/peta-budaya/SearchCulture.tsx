@@ -21,7 +21,7 @@ const SearchCulture = ({
   );
 
   return (
-    <div className="flex gap-20 justify-between">
+    <div className="flex gap-6 justify-between">
       <div ref={dropdownRef} className="relative rounded-full w-full h-12">
         <input
           placeholder="Cari daerah ..."
@@ -111,14 +111,14 @@ const SearchCulture = ({
         )}
       </div>
 
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex w-full items-center justify-between gap-2">
         {categoryButton.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`${
               selectedCategory === category ? "bg-[#FF7D29] text-white" : "border border-[#1918251A]"
-            } px-4 py-2 rounded-full text-nowrap`}
+            } px-4 py-2 rounded-full text-nowrap cursor-pointer`}
           >
             {category}
           </button>
