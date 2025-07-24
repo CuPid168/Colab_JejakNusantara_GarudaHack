@@ -47,7 +47,11 @@ const CultureDetail = ({ allCulture, selectedProvince, selectedCategory }: Cultu
         )}
       </div>
       <div className="p-4 flex-1/2 border border-black/10 rounded-lg">
-        <img src="images/ritual-seblang.png" alt="" className=""/>
+        {!selectedCulture?.foto === "" && (
+          <img src={selectedCulture?.foto} alt="" className=""/>
+        )}
+
+        
         <h1 className="text-[#FF7D29] text-2xl font-bold mt-4">{selectedCulture?.nama}</h1>
         <p className="text-black/50 mt-2">{selectedCulture?.deskripsi}</p>
       </div>
