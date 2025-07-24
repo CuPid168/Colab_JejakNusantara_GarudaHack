@@ -39,7 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const posts = await prisma.post.findMany({
       orderBy: { createdAt: 'desc' },
       include: {
-        user: { select: { id: true, name: true, image: true, email: true } },
+        user: { select: { id: true, name: true, image: true, email: true, domisili: true } },
         likes: true,
         upvotes: true,
         comments: true,
