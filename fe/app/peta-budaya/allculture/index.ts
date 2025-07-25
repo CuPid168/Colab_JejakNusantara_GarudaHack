@@ -527,7 +527,7 @@ const allCulture = [
     nama: "Dol Bengkulu",
     deskripsi:
       "Alat musik pukul berbentuk seperti drum besar, dimainkan secara berkelompok. Digunakan dalam Festival Tabot dan berbagai acara budaya. Suaranya keras dan ritmis, menciptakan semangat serta menjadi identitas musik tradisional masyarakat Bengkulu.",
-    foto: "",
+    foto: "assets/dolBengkulu.jpg",
     latitude: -3.4526,
     longitude: 102.6433,
   },
@@ -537,7 +537,7 @@ const allCulture = [
     nama: "Serunai",
     deskripsi:
       "Alat musik tiup dari bambu atau kayu, menghasilkan nada-nada tinggi yang digunakan dalam iringan tari atau acara adat. Serunai mencerminkan unsur melankolis dalam musik tradisional Bengkulu dan sering dikombinasikan dengan dol atau rebana.",
-    foto: "",
+    foto: "assets/serunai.jpg",
     latitude: -3.8004,
     longitude: 102.53231,
   },
@@ -547,7 +547,7 @@ const allCulture = [
     nama: "Benteng Marlborough",
     deskripsi:
       "Peninggalan kolonial Inggris yang megah di tepi pantai Bengkulu. Dibangun pada abad ke-18 sebagai pusat pertahanan. Kini menjadi situs sejarah yang menyimpan koleksi artefak dan panorama menarik ke Samudra Hindia.",
-    foto: "",
+    foto: "assets/bentengMarlborough.jpeg",
     latitude: -3.6542,
     longitude: 102.4613,
   },
@@ -557,7 +557,7 @@ const allCulture = [
     nama: "Pantai Panjang",
     deskripsi:
       "Pantai ikonik di Kota Bengkulu yang membentang hingga 7 kilometer. Dikenal dengan pasir putih, ombak sedang, dan deretan pohon cemara. Menjadi lokasi favorit wisatawan untuk bersantai, berolahraga, dan menikmati matahari terbenam.",
-    foto: "",
+    foto: "assets/pantaiPanjang.jpg",
     latitude: -3.4361,
     longitude: 102.5624,
   },
@@ -567,7 +567,7 @@ const allCulture = [
     nama: "Pempek",
     deskripsi:
       "Olahan ikan tenggiri dan sagu yang dibentuk, direbus lalu digoreng, disajikan dengan cuko (saus asam pedas manis). Pempek merupakan ikon kuliner Palembang dan disantap di berbagai kesempatan, dari camilan hingga sajian hari besar.",
-    foto: "",
+    foto: "assets/pempek.jpg",
     latitude: -2.65423,
     longitude: 104.54324,
   },
@@ -577,17 +577,17 @@ const allCulture = [
     nama: "Laksan",
     deskripsi:
       "Irisan pempek lenjer yang disajikan dalam kuah santan gurih berbumbu rempah. Rasanya lembut dan beraroma khas. Laksan biasa dihidangkan saat sarapan atau perayaan keluarga, mencerminkan kekayaan kuliner Palembang berbasis ikan dan santan.",
-    foto: "",
+    foto: "assets/laksan.jpg",
     latitude: -2.4623,
     longitude: 104.64316,
   },
   {
     provinsi: "Sumatra Selatan",
     kategori: "Budaya",
-    nama: "Tabot",
+    nama: "Mandi kasai",
     deskripsi:
-      "Tradisi tahunan masyarakat Bengkulu keturunan India-Persia untuk memperingati wafatnya cucu Nabi Muhammad SAW, Husein bin Ali. Diiringi bunyi dol, arak-arakan, dan ritual adat. Tabot adalah peristiwa budaya dan religi yang sangat meriah.",
-    foto: "",
+      "salah satu ritual adat yang dilakukan sebelum pernikahan di beberapa daerah di Sumatera Selatan, khususnya di Lubuklinggau. Tradisi ini memiliki makna yang dalam, yaitu sebagai simbol pembersihan diri, baik secara fisik maupun spiritual, bagi calon pengantin sebelum memasuki babak baru dalam hidup mereka.",
+    foto: "assets/mandiKasai.jpeg",
     latitude: -2.3416,
     longitude: 104.6547,
   },
@@ -597,17 +597,17 @@ const allCulture = [
     nama: "Sedekah Rame",
     deskripsi:
       "Tradisi masyarakat desa untuk mensyukuri hasil panen dan meminta keberkahan. Disertai doa, makan bersama, serta pertunjukan seni tradisional. Upacara ini mempererat hubungan sosial dan mencerminkan nilai gotong royong masyarakat agraris Sumatra Selatan.",
-    foto: "",
+    foto: "assets/sedekahRame.jpg",
     latitude: -2.567,
     longitude: 104.7862,
   },
   {
     provinsi: "Sumatra Selatan",
     kategori: "Alat Musik",
-    nama: "Gambus Palembang",
+    nama: "Genggong",
     deskripsi:
-      "Alat musik petik mirip gitar dengan sentuhan nada Arab. Digunakan untuk mengiringi lagu-lagu Melayu dan syair religius. Gambus mencerminkan perpaduan budaya lokal dan pengaruh Timur Tengah dalam tradisi musik Sumatra Selatan.",
-    foto: "",
+      "Alat musik tiup kecil yang terbuat dari bambu, kayu, pelepah pohon enau, atau bahkan besi/logam. Bentuknya unik dan menghasilkan suara mirip harmonika.",
+    foto: "assets/genggong.jpg",
     latitude: -2.85421,
     longitude: 104.5747,
   },
@@ -617,7 +617,7 @@ const allCulture = [
     nama: "Kolintang Kayu",
     deskripsi:
       "Alat musik pukul dari bilah kayu yang disusun dan dipukul menghasilkan nada melodis. Digunakan dalam pertunjukan tradisional dan pengiring tarian. Kolintang menggambarkan harmoni musik rakyat yang sederhana namun sarat makna.",
-    foto: "",
+    foto: "assets/kolintangKayu.jpeg",
     latitude: -2.541574,
     longitude: 104.754542,
   },
@@ -627,7 +627,7 @@ const allCulture = [
     nama: "Jembatan Ampera",
     deskripsi:
       "Ikon Kota Palembang yang membentang di atas Sungai Musi. Dibangun pada era Soekarno, jembatan ini menghubungkan dua bagian kota dan menjadi simbol kemajuan serta daya tarik wisata, terutama saat malam hari dengan pencahayaan indah.",
-    foto: "",
+    foto: "assets/jembatanAmpera.jpg",
     latitude: -2.3146,
     longitude: 104.7534,
   },
@@ -637,87 +637,87 @@ const allCulture = [
     nama: "Pulau Kemaro",
     deskripsi:
       "Pulau kecil di tengah Sungai Musi, terkenal dengan pagoda dan kisah legenda cinta Tan Bun An dan Siti Fatimah. Menjadi tempat wisata religi dan budaya Tionghoa, ramai dikunjungi saat Cap Go Meh dan Imlek.",
-    foto: "",
+    foto: "assets/pulauKemaro.jpg",
     latitude: -2.64137,
     longitude: 104.7537,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Makanan Daerah",
     nama: "Lempah Kuning",
     deskripsi:
       "Ikan laut dimasak dalam kuah kuning berbumbu nanas, kunyit, dan cabai. Rasanya segar, pedas, dan sedikit asam. Lempah kuning adalah ikon kuliner Bangka Belitung yang menggambarkan kekayaan laut dan selera khas masyarakat Melayu.",
-    foto: "",
+    foto: "assets/lempahKuning.jpeg",
     latitude: -2.1754,
     longitude: 106.12357,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Makanan Daerah",
     nama: "Kemplang",
     deskripsi:
       "Kerupuk dari ikan tenggiri yang dipanggang, bukan digoreng. Bertekstur renyah dan ringan, biasa disantap sebagai camilan atau pelengkap makanan. Kemplang menjadi oleh-oleh favorit dari Bangka dan merepresentasikan tradisi olahan laut daerah ini.",
-    foto: "",
+    foto: "assets/kemplang.jpg",
     latitude: -2.7534,
     longitude: 106.7431,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Budaya",
     nama: "Nganggung",
     deskripsi:
       "Tradisi membawa dulang berisi makanan ke masjid atau rumah tetangga untuk dimakan bersama dalam acara keagamaan atau sosial. Tradisi ini mencerminkan semangat kebersamaan, gotong royong, dan solidaritas dalam kehidupan masyarakat Bangka Belitung",
-    foto: "",
+    foto: "assets/nganggung.jpg",
     latitude: -2.1643,
     longitude: 106.7423,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Budaya",
     nama: "Perang Ketupat",
     deskripsi:
       "Upacara adat masyarakat Belinyu yang dilakukan sebagai ungkapan syukur dan tolak bala. Masyarakat saling melempar ketupat secara simbolik. Tradisi ini menjadi atraksi budaya yang unik dan menggambarkan warisan spiritual masyarakat pesisir.",
-    foto: "",
+    foto: "assets/perangKetupat.jpeg",
     latitude: -1.7423,
     longitude: 105.7709,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Alat Musik",
     nama: "Rebana Bangka",
     deskripsi:
       "Alat musik pukul berbentuk bundar dengan lapisan kulit di salah satu sisinya. Digunakan untuk mengiringi zikir, shalawat, dan pertunjukan seni Islam. Rebana merefleksikan perpaduan budaya Melayu dan pengaruh keagamaan yang kuat di masyarakat.",
-    foto: "",
+    foto: "assets/rebanaBangka.jpg",
     latitude: -2.1287,
     longitude: 106.1187,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Alat Musik",
     nama: "Dambus",
     deskripsi:
       "Dambus merupakan salah satu ikon alat musik Bangka Belitung yang paling populer. Berjenis alat musik petik seperti gitar, Dambus memiliki keunikan pada bagian kepalanya yang seringkali dihiasi dengan ukiran berbentuk kepala rusa atau kijang. Alat musik ini terbuat dari kayu, seperti kayu nangka atau ludai, dengan badan yang menyerupai buah labu dibelah dua. Dambus biasanya memiliki 3 hingga 12 senar dan dimainkan untuk mengiringi nyanyian dan tarian Melayu, terutama dalam kesenian Musik Dambus.",
-    foto: "",
+    foto: "assets/dambus.jpg",
     latitude: -2.5312,
     longitude: 106.6542,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Tempat Wisata",
     nama: "Pantai Tanjung Tinggi",
     deskripsi:
       "Pantai berpasir putih dengan batu granit besar yang ikonik, terkenal lewat film Laskar Pelangi. Air lautnya jernih dan cocok untuk berenang atau fotografi. Salah satu destinasi utama wisata bahari di Belitung yang sangat memesona.",
-    foto: "",
+    foto: "assets/pantaiTanjungTinggi.jpg",
     latitude: -2.6411,
     longitude: 107.5683,
   },
   {
-    provinsi: "Bangka Belitung",
+    provinsi: "Kepulauan Bangka Belitung",
     kategori: "Tempat Wisata",
     nama: "Museum Timah Pangkalpinang",
     deskripsi:
       "Museum yang menyimpan sejarah panjang pertambangan timah di Bangka Belitung. Menampilkan peralatan tambang, dokumen, dan artefak. Menjadi tempat edukatif dan bersejarah yang penting, mengingat tambang timah adalah tulang punggung ekonomi daerah",
-    foto: "",
+    foto: "assets/museumTimah.jpg",
     latitude: -2.7856,
     longitude: 106.8574,
   },
@@ -727,7 +727,7 @@ const allCulture = [
     nama: "Seruit",
     deskripsi:
       "Olahan ikan bakar yang dicampur sambal terasi, tempoyak (fermentasi durian), dan lalapan. Makanan ini simbol kebersamaan, karena biasa disantap beramai-ramai. Seruit adalah ikon kuliner tradisional Lampung yang mencerminkan cita rasa khas masyarakatnya.",
-    foto: "",
+    foto: "assets/seruit.jpg",
     latitude: -5.5475,
     longitude: 105.57254,
   },
@@ -737,7 +737,7 @@ const allCulture = [
     nama: "Gulai Taboh",
     deskripsi:
       "Sayur santan kental berisi kacang-kacangan, daun melinjo, rebung, dan ikan laut atau udang. Rasanya gurih dan kaya rempah. Gulai ini sering disajikan dalam acara keluarga atau adat sebagai wujud kelimpahan dan kehangatan.",
-    foto: "",
+    foto: "assets/gulaiTaboh.jpg",
     latitude: -5.45,
     longitude: 105.9786,
   },
@@ -747,7 +747,7 @@ const allCulture = [
     nama: "Sekura Cakak Buah",
     deskripsi:
       "Tradisi topeng Sekura dalam Festival Cakak Buah saat Idul Fitri. Warga berdandan unik dan beradu buah (saling memukul secara simbolis). Tradisi ini mempererat silaturahmi dan merefleksikan nilai budaya, keceriaan, dan persaudaraan. ",
-    foto: "",
+    foto: "assets/sekuraCakakBuah.jpeg",
     latitude: -5.45,
     longitude: 105.78967,
   },
@@ -757,7 +757,7 @@ const allCulture = [
     nama: "Adat Sai Batin dan Pepadun",
     deskripsi:
       "Dua sistem adat utama di Lampung, masing-masing dengan struktur sosial, upacara, dan pakaian adat berbeda. Adat ini mengatur kehidupan masyarakat, seperti pernikahan, pewarisan, dan gelar kehormatan. Jadi identitas budaya Lampung yang kuat.",
-    foto: "",
+    foto: "assets/adatSaiBatin.jpg",
     latitude: -5.45,
     longitude: 105.97647,
   },
@@ -767,7 +767,7 @@ const allCulture = [
     nama: "Gamolan",
     deskripsi:
       "Alat musik pukul dari bambu seperti kolintang. Memiliki bilah nada dan dimainkan dalam pertunjukan musik tradisional. Gamolan adalah warisan budaya Lampung yang telah diakui UNESCO sebagai alat musik tertua khas wilayah Sumatra bagian selatan.",
-    foto: "",
+    foto: "assets/gamolan.jpg",
     latitude: -5.7634,
     longitude: 105.125,
   },
@@ -777,7 +777,7 @@ const allCulture = [
     nama: "Serdam",
     deskripsi:
       "Alat musik tiup bambu kecil mirip suling. Ditiup melodius dan digunakan dalam pengiring lagu atau pertunjukan tari. Serdam mencerminkan sisi lembut dari ekspresi seni masyarakat Lampung, sering dimainkan secara tunggal untuk menenangkan hati.",
-    foto: "",
+    foto: "assets/serdam.jpg",
     latitude: -5.45,
     longitude: 105.4637,
   },
@@ -787,7 +787,7 @@ const allCulture = [
     nama: "Taman Nasional Way Kambas",
     deskripsi:
       "Kawasan konservasi gajah Sumatra yang dilindungi. Wisatawan dapat menyaksikan pelatihan gajah, edukasi lingkungan, dan melihat satwa liar. Taman ini menjadi ikon pelestarian satwa khas Sumatra dan daya tarik wisata edukatif dan ekologis.",
-    foto: "",
+    foto: "assets/tamanWayKambas.jpg",
     latitude: -5.0933,
     longitude: 105.8573,
   },
@@ -797,7 +797,7 @@ const allCulture = [
     nama: "Pahawang Island",
     deskripsi:
       "Pulau dengan air laut jernih dan terumbu karang indah, cocok untuk snorkeling dan diving. Terletak di Teluk Lampung, destinasi ini menawarkan pesona laut tropis, pantai putih, dan kekayaan biota bawah laut yang memikat wisatawan.",
-    foto: "",
+    foto: "assets/pahawangIsland.jpeg",
     latitude: -5.5898,
     longitude: 105.17542,
   },
@@ -807,7 +807,7 @@ const allCulture = [
     nama: "Rabeg",
     deskripsi:
       "Masakan berbahan daging kambing dengan bumbu rempah kuat seperti lada, bawang, dan cengkih. Cita rasanya gurih pedas khas Timur Tengah. Rabeg merupakan peninggalan kuliner Kesultanan Banten yang masih populer hingga kini.",
-    foto: "",
+    foto: "assets/rabeg.jpg",
     latitude: -6.1,
     longitude: 106.53871,
   },
@@ -817,7 +817,7 @@ const allCulture = [
     nama: "Sate Bandeng",
     deskripsi:
       "Ikan bandeng tanpa duri diolah dengan bumbu kelapa dan rempah, lalu dibakar seperti sate. Rasanya gurih, manis, dan bertekstur lembut. Hidangan ini menjadi simbol kuliner Banten dan sering disajikan saat acara penting.",
-    foto: "",
+    foto: "assets/sateBandeng.jpg",
     latitude: -6.757,
     longitude: 106.583429,
   },
@@ -827,7 +827,7 @@ const allCulture = [
     nama: "Ubung-ubung",
     deskripsi:
       "Seni pertunjukan teater tradisional yang mirip dengan lenong, diiringi oleh gamelan dan sering kali mengangkat cerita-cerita rakyat atau kehidupan sehari-hari dengan sentuhan komedi.",
-    foto: "",
+    foto: "assets/ubungUbung.jpg",
     latitude: -6.75347,
     longitude: 106.8591,
   },
@@ -837,7 +837,7 @@ const allCulture = [
     nama: "Pepe-Pepean",
     deskripsi:
       "Tradisi masyarakat Baduy Luar untuk mengenang leluhur dengan berkeliling kampung sambil membawa obor. Ritual ini dilaksanakan malam hari dan menjadi simbol penghormatan terhadap alam dan spiritualitas lokal.",
-    foto: "",
+    foto: "assets/pepean.png",
     latitude: -6.5891,
     longitude: 106.9876,
   },
@@ -847,7 +847,7 @@ const allCulture = [
     nama: "Angklung Buhun",
     deskripsi:
       "Angklung dari bambu tua yang dimainkan oleh masyarakat adat Baduy. Digunakan dalam ritual dan upacara tradisional. Suaranya khas dan sakral, mencerminkan kesederhanaan serta kearifan lokal masyarakat pedalaman Banten.",
-    foto: "",
+    foto: "assets/angklungBuhun.jpg",
     latitude: -6.974,
     longitude: 106.9875,
   },
@@ -857,7 +857,7 @@ const allCulture = [
     nama: "Rampak Bedug",
     deskripsi:
       "Alat musik pukul besar yang digunakan di masjid dan acara tradisional. Di Banten, bedug tidak hanya untuk penanda waktu salat, tetapi juga bagian dari kesenian rakyat seperti tabuhan pengiring debus dan rampak bedug.",
-    foto: "",
+    foto: "assets/rampagBedug.jpg",
     latitude: -6.5452,
     longitude: 106.9986,
   },
@@ -867,7 +867,7 @@ const allCulture = [
     nama: "Pantai Anyer",
     deskripsi:
       "Pantai berpasir putih dengan panorama laut Selat Sunda. Cocok untuk berenang dan bermain air. Keindahannya menjadikan Anyer sebagai destinasi wisata favorit keluarga di Banten sejak era kolonial Belanda.",
-    foto: "",
+    foto: "assets/pantaiAnyer.jpg",
     latitude: -6.0494,
     longitude: 105.9221,
   },
@@ -877,7 +877,7 @@ const allCulture = [
     nama: "Benteng Speelwijk",
     deskripsi:
       "Benteng peninggalan Belanda di Kota Banten Lama. Dikelilingi kanal dan tembok tebal, menjadi saksi sejarah kolonialisme. Lokasi ini sering dikunjungi wisatawan pencinta sejarah dan budaya masa lampau.",
-    foto: "",
+    foto: "assets/bentengSpeelwijk.jpg",
     latitude: -6.0354,
     longitude: 106.634,
   },
@@ -887,7 +887,7 @@ const allCulture = [
     nama: "Kerak Telor",
     deskripsi:
       "Makanan ikonik Betawi berbahan telur bebek, beras ketan, dan serundeng kelapa. Dimasak di atas wajan arang hingga garing. Kerak telor identik dengan perayaan budaya Jakarta dan sering dijajakan di festival.",
-    foto: "",
+    foto: "assets/kerakTelor.jpg",
     latitude: -6.13566,
     longitude: 106.7545,
   },
@@ -897,7 +897,7 @@ const allCulture = [
     nama: "Soto Betawi",
     deskripsi:
       "Soto khas Betawi dengan kuah santan atau susu, diisi daging sapi dan jeroan. Rasanya gurih dan kaya rempah. Hidangan ini mencerminkan kekayaan kuliner masyarakat urban Betawi yang dipengaruhi berbagai budaya.",
-    foto: "",
+    foto: "assets/sotoBetawi.png",
     latitude: -6.776,
     longitude: 106.974673,
   },
@@ -907,7 +907,7 @@ const allCulture = [
     nama: "Ondel-Ondel",
     deskripsi:
       "Boneka raksasa berwajah merah dan biru, diarak saat perayaan adat atau penyambutan tamu. Simbol pelindung dari roh jahat. Ondel-ondel menjadi ikon budaya Betawi yang kerap tampil dalam pertunjukan jalanan.",
-    foto: "",
+    foto: "assets/ondelOndel.jpg",
     latitude: -6.68488,
     longitude: 106.79554,
   },
@@ -917,7 +917,7 @@ const allCulture = [
     nama: "Palang Pintu",
     deskripsi:
       "Tradisi Betawi saat pernikahan, berupa adu pantun dan silat antara pihak mempelai pria dan penjaga mempelai wanita. Palang pintu mencerminkan humor, keahlian bela diri, dan kehangatan adat Betawi dalam menjalin relasi.",
-    foto: "",
+    foto: "assets/palangPintu.jpg",
     latitude: -6.63573,
     longitude: 106.86499,
   },
@@ -927,7 +927,7 @@ const allCulture = [
     nama: "Gambang Kromong",
     deskripsi:
       "Gabungan alat musik tradisional Tionghoa dan Betawi seperti gambang, kromong, gong, dan suling. Digunakan untuk mengiringi lagu-lagu rakyat. Musik ini mencerminkan akulturasi budaya yang hidup di masyarakat Jakarta.",
-    foto: "",
+    foto: "assets/gambangKromong.jpg",
     latitude: -6.68458,
     longitude: 106.9852,
   },
@@ -937,7 +937,7 @@ const allCulture = [
     nama: "Tanjidor",
     deskripsi:
       "Ansambel musik tiup warisan Belanda, dimainkan masyarakat Betawi dalam acara perayaan. Instrumennya mirip marching band, namun dibawakan dengan irama khas. Tanjidor mencerminkan adaptasi lokal terhadap budaya Eropa.",
-    foto: "",
+    foto: "assets/tanjidor.jpg",
     latitude: -6.27645,
     longitude: 106.864,
   },
@@ -947,7 +947,7 @@ const allCulture = [
     nama: "Monumen Nasional (Monas)",
     deskripsi:
       "Tugu setinggi 132 meter di jantung Jakarta, simbol perjuangan kemerdekaan. Dikelilingi taman luas dan museum sejarah. Monas menjadi ikon ibu kota sekaligus tempat wisata edukatif bagi semua kalangan.",
-    foto: "",
+    foto: "assets/monas.jpeg",
     latitude: -6.9785,
     longitude: 106.7843,
   },
@@ -957,7 +957,7 @@ const allCulture = [
     nama: "Kota Tua Jakarta",
     deskripsi:
       "Kawasan berarsitektur kolonial Belanda dengan museum, kafe, dan pelataran sejarah. Menjadi pusat wisata budaya yang menampilkan jejak Batavia tempo dulu. Cocok untuk berjalan santai sambil mengenal sejarah Jakarta.",
-    foto: "",
+    foto: "assets/kotaTuaJakarta.jpg",
     latitude: -6.1363,
     longitude: 106.8143,
   },
@@ -967,7 +967,7 @@ const allCulture = [
     nama: "Sate Maranggi",
     deskripsi:
       "Sate daging sapi khas Purwakarta, dibumbui kecap, bawang, dan ketumbar, lalu dibakar hingga beraroma harum. Rasanya manis-gurih dan juicy. Biasanya disajikan dengan nasi atau ketan serta sambal oncom yang khas.",
-    foto: "",
+    foto: "assets/sateMaranggi.jpg",
     latitude: -6.9034,
     longitude: 107.6186,
   },
@@ -977,7 +977,7 @@ const allCulture = [
     nama: "Mie Kocok Bandung",
     deskripsi:
       "Mie kuning disajikan dengan kikil, bakso, dan kuah kaldunya yang gurih. Dilengkapi tauge, seledri, dan bawang goreng. Hidangan khas Bandung ini cocok dinikmati hangat, menggambarkan selera kuliner Sunda yang kaya rasa.",
-    foto: "",
+    foto: "assets/mieKocok.jpg",
     latitude: -6.9034,
     longitude: 107.6186,
   },
@@ -987,7 +987,7 @@ const allCulture = [
     nama: "Seren Taun",
     deskripsi:
       "Ritual adat panen masyarakat Sunda di Kuningan dan Cianjur. Menyampaikan syukur kepada Sang Hyang atas hasil bumi, diiringi upacara dan seni tradisi. Seren Taun menjadi simbol keharmonisan manusia dengan alam.",
-    foto: "",
+    foto: "assets/serenTaun.jpg",
     latitude: -6.9034,
     longitude: 107.6186,
   },
@@ -997,7 +997,7 @@ const allCulture = [
     nama: "Ngabako",
     deskripsi:
       "Tradisi petani tembakau di Garut dan sekitarnya saat mengolah tembakau secara bersama-sama. Diselingi hiburan seperti kacapi suling dan tembang Sunda. Tradisi ini memperkuat ikatan sosial dan menjaga budaya bertani.",
-    foto: "",
+    foto: "assets/ngabako.jpg",
     latitude: -7.2185,
     longitude: 107.9048,
   },
@@ -1007,7 +1007,7 @@ const allCulture = [
     nama: "Angklung",
     deskripsi:
       "Alat musik dari bambu yang dibunyikan dengan digoyang. Tiap angklung menghasilkan satu nada, sehingga dimainkan berkelompok. Warisan budaya takbenda UNESCO ini menggambarkan kolaborasi, harmoni, dan kreativitas masyarakat Sunda.",
-    foto: "",
+    foto: "assets/angklung.jpg",
     latitude: -6.9034,
     longitude: 107.6186,
   },
@@ -1017,7 +1017,7 @@ const allCulture = [
     nama: "Kecapi Suling",
     deskripsi:
       "Perpaduan alat petik (kecapi) dan tiup (suling) yang menghasilkan musik lembut dan meditatif. Sering mengiringi tembang Sunda. Musik ini mencerminkan nuansa ketenangan dan keindahan batin dalam budaya Jawa Barat.",
-    foto: "",
+    foto: "assets/kecapiSuling.jpg",
     latitude: -6.9034,
     longitude: 107.6186,
   },
@@ -1027,7 +1027,7 @@ const allCulture = [
     nama: "Kawah Putih Ciwidey",
     deskripsi:
       "Danau kawah vulkanik berair kehijauan dengan kabut mistis dan aroma belerang. Dikelilingi hutan pegunungan yang sejuk. Kawah Putih menjadi destinasi favorit untuk wisata alam dan fotografi di Bandung Selatan.",
-    foto: "",
+    foto: "assets/kawahPutihCiwidey.jpg",
     latitude: -7.1652,
     longitude: 107.4022,
   },
@@ -1037,7 +1037,7 @@ const allCulture = [
     nama: "Taman Wisata Alam Gunung Tangkuban Parahu",
     deskripsi:
       "Gunung dengan kawah aktif dan legenda Sangkuriang. Pengunjung bisa menikmati pemandangan kawah, belerang, dan wisata edukatif geologi. Tempat ini menyatukan keindahan alam dan cerita rakyat yang melegenda.",
-    foto: "",
+    foto: "assets/tangkubanParahu.jpg",
     latitude: -6.7712,
     longitude: 107.6046,
   },
@@ -1047,7 +1047,7 @@ const allCulture = [
     nama: "Gudeg",
     deskripsi:
       "Olahan nangka muda dimasak dengan santan dan gula merah hingga manis legit. Disajikan dengan telur, ayam, dan sambal krecek. Gudeg menjadi ikon kuliner Yogyakarta dan Solo yang mencerminkan kehalusan rasa masyarakat Jawa.",
-    foto: "",
+    foto: "assets/gudeg.jpeg",
     latitude: -7.0,
     longitude: 110.42,
   },
@@ -1057,7 +1057,7 @@ const allCulture = [
     nama: "Tahu Gimbal",
     deskripsi:
       "Tahu goreng disajikan dengan bakwan udang (gimbal), lontong, kol, dan tauge, disiram bumbu kacang. Hidangan khas Semarang ini menawarkan kombinasi gurih, manis, dan renyah yang menggugah selera.",
-    foto: "",
+    foto: "assets/tahuGimbal.jpeg",
     latitude: -6.9922,
     longitude: 110.4203,
   },
@@ -1067,7 +1067,7 @@ const allCulture = [
     nama: "Grebeg Maulud",
     deskripsi:
       "Tradisi Keraton Yogyakarta dan Surakarta yang memperingati Maulid Nabi. Gunungan hasil bumi diarak dan diperebutkan warga sebagai simbol berkah. Tradisi ini menampilkan kekayaan budaya dan spiritualitas masyarakat Jawa.",
-    foto: "",
+    foto: "assets/grebegMaulud.jpg",
     latitude: -7.0,
     longitude: 110.42,
   },
@@ -1077,7 +1077,7 @@ const allCulture = [
     nama: "Sekaten",
     deskripsi:
       "Perayaan tahunan di alun-alun keraton yang menampilkan gamelan sekaten, pasar malam, dan ritual keagamaan. Merupakan perpaduan antara dakwah Islam dan budaya Jawa, yang diwariskan sejak masa Wali Songo.",
-    foto: "",
+    foto: "assets/sekaten.jpeg",
     latitude: -7.0,
     longitude: 110.42,
   },
@@ -1087,7 +1087,7 @@ const allCulture = [
     nama: "Gamelan Jawa",
     deskripsi:
       "Ansambel musik tradisional dengan instrumen gong, saron, kendang, dan gender. Digunakan dalam upacara adat, tari, dan wayang. Gamelan mencerminkan filosofi harmoni dan keseimbangan dalam kehidupan masyarakat Jawa.",
-    foto: "",
+    foto: "assets/gamelanJawa.jpg",
     latitude: -7.0,
     longitude: 110.42,
   },
@@ -1097,7 +1097,7 @@ const allCulture = [
     nama: "Rebab",
     deskripsi:
       "Alat musik gesek berdawai dua, dimainkan untuk mengiringi tembang dan wayang. Rebab memiliki suara melankolis yang mendalam, menggambarkan nuansa rasa dan kehalusan dalam seni tradisi Jawa Tengah.",
-    foto: "",
+    foto: "assets/rebab.jpg",
     latitude: -7.0,
     longitude: 110.42,
   },
@@ -1107,7 +1107,7 @@ const allCulture = [
     nama: "Candi Borobudur",
     deskripsi:
       "Candi Buddha terbesar di dunia, warisan dunia UNESCO, dengan relief dan stupa megah. Terletak di Magelang, menjadi pusat wisata religi, budaya, dan sejarah yang mengagumkan. Destinasi utama wisata Jawa Tengah.",
-    foto: "",
+    foto: "assets/candiBorobudur.jpeg",
     latitude: -7.6074,
     longitude: 110.2038,
   },
@@ -1117,7 +1117,7 @@ const allCulture = [
     nama: "Dieng Plateau",
     deskripsi:
       "Dataran tinggi vulkanik dengan kawah, telaga warna, dan candi-candi kuno. Udara dingin dan pemandangan magis menjadikan Dieng tempat ideal untuk refleksi dan eksplorasi budaya spiritual Jawa kuno.",
-    foto: "",
+    foto: "assets/diengPlateau.jpg",
     latitude: -7.2995,
     longitude: 109.9149,
   },
@@ -1127,7 +1127,7 @@ const allCulture = [
     nama: "Gudeg",
     deskripsi:
       "Olahan nangka muda dimasak dengan santan, daun jati, dan gula merah hingga kering. Disajikan dengan ayam, telur, dan sambal krecek. Rasa manis gurihnya khas, menjadikan gudeg ikon kuliner tradisional khas Yogyakarta yang melegenda.",
-    foto: "",
+    foto: "assets/gudeg.jpeg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1137,7 +1137,7 @@ const allCulture = [
     nama: "Bakpia Pathok",
     deskripsi:
       "Kue isi kacang hijau yang dibungkus adonan tepung lembut. Kini tersedia dalam berbagai varian rasa. Bakpia menjadi oleh-oleh wajib dari Yogyakarta, mencerminkan perpaduan pengaruh budaya Tionghoa dan adaptasi lokal masyarakat Jawa.",
-    foto: "",
+    foto: "assets/bakpiaPatok.jpg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1147,7 +1147,7 @@ const allCulture = [
     nama: "Sekaten",
     deskripsi:
       "Tradisi keraton untuk memperingati Maulid Nabi Muhammad SAW. Dirayakan dengan pasar malam, gamelan pusaka, dan arak-arakan gunungan. Sekaten mencerminkan perpaduan antara budaya Islam dan adat Jawa yang dilestarikan sejak era Kesultanan Mataram.",
-    foto: "",
+    foto: "assets/sekaten.jpeg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1157,7 +1157,7 @@ const allCulture = [
     nama: "Upacara Labuhan",
     deskripsi:
       "Ritual persembahan ke laut atau gunung oleh Keraton Yogyakarta. Bertujuan memohon keselamatan kepada penguasa alam gaib. Dilakukan di Gunung Merapi dan Pantai Parangkusumo, mencerminkan kearifan lokal dan spiritualitas masyarakat Jawa.",
-    foto: "",
+    foto: "assets/upacaraLabuhan.jpg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1167,7 +1167,7 @@ const allCulture = [
     nama: "Gamelan Jawa",
     deskripsi:
       "Ansambel musik tradisional terdiri dari gong, kendang, saron, dan bonang. Digunakan dalam wayang, tari, dan upacara keraton. Gamelan memiliki filosofi mendalam tentang harmoni dan keseimbangan dalam hidup menurut ajaran Jawa klasik.",
-    foto: "",
+    foto: "assets/gamelanJawa.jpg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1177,7 +1177,7 @@ const allCulture = [
     nama: "Rebab",
     deskripsi:
       "Alat musik gesek berdawai dua, sering dimainkan dalam gamelan. Suaranya lirih dan ekspresif, digunakan untuk mengiringi tembang dan tari tradisional. Rebab menjadi simbol kelembutan dan ekspresi rasa dalam budaya musik Jawa.",
-    foto: "",
+    foto: "assets/rebab.jpg",
     latitude: -7.7956,
     longitude: 110.3695,
   },
@@ -1187,7 +1187,7 @@ const allCulture = [
     nama: "Keraton Yogyakarta",
     deskripsi:
       "Istana resmi Kesultanan Yogyakarta yang masih aktif. Menampilkan arsitektur Jawa, museum budaya, dan kegiatan tradisional keraton. Menjadi pusat pelestarian budaya dan simbol pemerintahan khas DIY yang memadukan sistem kerajaan dan republik.",
-    foto: "",
+    foto: "assets/keraton.jpg",
     latitude: -7.8059,
     longitude: 110.3659,
   },
@@ -1197,7 +1197,7 @@ const allCulture = [
     nama: "Candi Prambanan",
     deskripsi:
       "Kompleks candi Hindu terbesar di Indonesia, dibangun pada abad ke-9. Terdiri dari candi utama (Siwa, Brahma, Wisnu) dan penuh relief kisah Ramayana. Diakui UNESCO, Prambanan adalah simbol warisan spiritual dan arsitektur Jawa kuno.",
-    foto: "",
+    foto: "assets/candiPrambanan.jpg",
     latitude: -7.752,
     longitude: 110.4915,
   },
@@ -1207,7 +1207,7 @@ const allCulture = [
     nama: "Rawon",
     deskripsi:
       "Sup daging sapi berkuah hitam dari kluwek, berpadu rempah khas Jawa Timur. Rasanya gurih, kaya, dan sedikit pahit. Rawon biasanya disajikan dengan nasi, sambal, dan telur asin, menjadi ikon kuliner Surabaya.",
-    foto: "",
+    foto: "assets/rawon.jpg",
     latitude: -7.2575,
     longitude: 112.7521,
   },
@@ -1217,7 +1217,7 @@ const allCulture = [
     nama: "Rujak Cingur",
     deskripsi:
       "Campuran sayur, buah, tempe, tahu, lontong, dan irisan cingur (hidung sapi), disiram bumbu petis hitam. Rujak khas Surabaya ini menyajikan rasa kompleks dan unik yang menggambarkan keberanian rasa masyarakat setempat.",
-    foto: "",
+    foto: "assets/rujakCingur.jpg",
     latitude: -7.2575,
     longitude: 112.7521,
   },
@@ -1227,7 +1227,7 @@ const allCulture = [
     nama: "Ludruk",
     deskripsi:
       "Teater rakyat berbahasa Jawa khas Jawa Timur, menampilkan kisah keseharian dengan humor dan pesan moral. Diiringi musik gamelan dan tari remo, ludruk menjadi sarana hiburan dan kritik sosial yang merakyat.",
-    foto: "",
+    foto: "assets/ludruk.jpg",
     latitude: -7.2575,
     longitude: 112.7521,
   },
@@ -1237,7 +1237,7 @@ const allCulture = [
     nama: "Reog Ponorogo",
     deskripsi:
       "Kesenian spektakuler dengan topeng singa besar (barong), penari warok, dan jathilan. Reog mencerminkan kekuatan, keberanian, dan kearifan lokal. Pertunjukan ini berasal dari Ponorogo dan dikenal secara nasional.",
-    foto: "",
+    foto: "assets/reogPonorogo.jpg",
     latitude: -7.8767,
     longitude: 111.4782,
   },
@@ -1247,7 +1247,7 @@ const allCulture = [
     nama: "Angklung Caruk",
     deskripsi:
       "Angklung khas Banyuwangi yang dimainkan berpasangan sebagai adu kreativitas musik. Suaranya harmonis dan dinamis. Tradisi ini mencerminkan semangat kompetisi sehat dan kekompakan dalam budaya masyarakat Osing.",
-    foto: "",
+    foto: "assets/angklungCaruk.jpg",
     latitude: -8.2144,
     longitude: 114.3608,
   },
@@ -1257,7 +1257,7 @@ const allCulture = [
     nama: "Terbang Gede",
     deskripsi:
       "Rebana besar digunakan dalam tradisi Islam dan seni hadrah di Jawa Timur. Dipukul dengan ritme cepat dalam pertunjukan religi dan perayaan adat. Terbang Gede memperlihatkan peran musik dalam spiritualitas masyarakat.",
-    foto: "",
+    foto: "assets/terbangGede.jpeg",
     latitude: -7.2575,
     longitude: 112.7521,
   },
@@ -1267,7 +1267,7 @@ const allCulture = [
     nama: "Gunung Bromo",
     deskripsi:
       "Gunung berapi aktif dengan pemandangan kawah dan lautan pasir yang memesona. Disakralkan oleh masyarakat Tengger, Bromo menjadi tujuan wisata alam dan budaya paling ikonik di Jawa Timur.",
-    foto: "",
+    foto: "assets/gunungBromo.jpg",
     latitude: -7.9424,
     longitude: 112.9531,
   },
@@ -1277,7 +1277,7 @@ const allCulture = [
     nama: "Pulau Madura – Bukit Jaddih",
     deskripsi:
       "Bukit kapur bekas tambang dengan panorama putih memukau dan kolam biru alami. Destinasi unik ini jadi favorit wisatawan lokal, menggambarkan keindahan tersembunyi di balik kerasnya alam Madura.",
-    foto: "",
+    foto: "assets/bukitJaddih.jpg",
     latitude: -7.0326,
     longitude: 112.8727,
   },
@@ -1287,7 +1287,7 @@ const allCulture = [
     nama: "Ayam Betutu",
     deskripsi:
       "Ayam utuh dibumbui base genep (rempah Bali), dibungkus daun pisang, lalu dipanggang atau dikukus hingga meresap. Rasanya pedas dan aromatik. Hidangan ini sering disajikan dalam upacara adat dan perayaan keluarga.",
-    foto: "",
+    foto: "assets/ayamBetutu.jpeg",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1297,7 +1297,7 @@ const allCulture = [
     nama: "Lawar",
     deskripsi:
       "Campuran sayuran, daging cincang, kelapa parut, dan bumbu khas Bali. Ada lawar putih (non-darah) dan lawar merah (dengan darah). Disajikan saat upacara adat, mencerminkan keseimbangan spiritual dan budaya Bali.",
-    foto: "",
+    foto: "assets/lawar.jpeg",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1307,7 +1307,7 @@ const allCulture = [
     nama: "Ngaben",
     deskripsi:
       "Upacara kremasi umat Hindu Bali untuk mengembalikan roh ke alam spiritual. Dilaksanakan meriah dengan iringan gamelan dan prosesi simbolis. Ngaben mencerminkan filosofi hidup dan kematian dalam ajaran Hindu Dharma.",
-    foto: "",
+    foto: "assets/ngaben.png",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1317,7 +1317,7 @@ const allCulture = [
     nama: "Melasti",
     deskripsi:
       "Ritual penyucian diri dan alam semesta menjelang Nyepi. Umat membawa pratima ke laut untuk disucikan. Tradisi ini menggambarkan hubungan manusia, alam, dan Sang Pencipta dalam harmoni sakral masyarakat Bali.",
-    foto: "",
+    foto: "assets/Melasti.jpg",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1327,7 +1327,7 @@ const allCulture = [
     nama: "Gamelan Gong Kebyar",
     deskripsi:
       "Ansambel musik khas Bali dengan tempo dinamis dan hentakan cepat. Digunakan dalam tari kebyar dan upacara adat. Musik ini mencerminkan semangat dan kekuatan ekspresi seni masyarakat Bali.",
-    foto: "",
+    foto: "assets/gamelanGongKebyar.jpg",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1337,7 +1337,7 @@ const allCulture = [
     nama: "Ceng-Ceng",
     deskripsi:
       "Alat musik logam kecil berbentuk simbal, dimainkan dengan cara diketukkan cepat. Menghasilkan suara ritmis dalam pertunjukan tari dan upacara. Ceng-Ceng memperkuat dinamika gamelan dan nuansa sakral seni Bali.",
-    foto: "",
+    foto: "assets/cengCeng.png",
     latitude: -8.4095,
     longitude: 115.1889,
   },
@@ -1347,7 +1347,7 @@ const allCulture = [
     nama: "Pura Ulun Danu Beratan",
     deskripsi:
       "Pura ikonik di tepi Danau Beratan, dikelilingi kabut dan pegunungan. Tempat pemujaan Dewi Danu, dewi air dan kesuburan. Menjadi simbol keharmonisan spiritual dan keindahan alam Bali yang damai.",
-    foto: "",
+    foto: "assets/danuBeratan.jpg",
     latitude: -8.2752,
     longitude: 115.1669,
   },
@@ -1357,7 +1357,7 @@ const allCulture = [
     nama: "Pantai Kuta",
     deskripsi:
       "Pantai berpasir putih dengan ombak ideal untuk berselancar. Pusat wisata internasional Bali dengan panorama matahari terbenam yang memesona. Kuta mencerminkan pesona tropis dan semangat pariwisata Pulau Dewata.",
-    foto: "",
+    foto: "assets/pantaiKuta.jpg",
     latitude: -8.723,
     longitude: 115.1681,
   },
@@ -1367,7 +1367,7 @@ const allCulture = [
     nama: "Ayam Taliwang",
     deskripsi:
       "Ayam kampung muda dibakar dengan bumbu khas Lombok berbahan cabai, bawang, dan terasi. Rasanya pedas gurih dan menggugah selera. Ayam Taliwang menjadi ikon kuliner Lombok yang mencerminkan cita rasa berani dan khas.",
-    foto: "",
+    foto: "assets/ayamTaliwang.jpg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1377,7 +1377,7 @@ const allCulture = [
     nama: "Beberuk Terong",
     deskripsi:
       "Sambal segar dari terong ungu mentah, tomat, dan cabai, disajikan sebagai lalapan. Rasanya pedas segar dan cocok menemani ayam bakar atau ikan. Hidangan ini mencerminkan kesederhanaan dan kekayaan rasa lokal NTB.",
-    foto: "",
+    foto: "assets/beberukTerong.jpg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1387,7 +1387,7 @@ const allCulture = [
     nama: "Peresean",
     deskripsi:
       "Tradisi adu ketangkasan dua pria menggunakan rotan (penjalin) dan perisai kulit. Diiringi musik tradisional, Peresean menggambarkan nilai sportivitas, keberanian, dan penghormatan dalam budaya Sasak Lombok.",
-    foto: "",
+    foto: "assets/peresean.jpeg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1397,7 +1397,7 @@ const allCulture = [
     nama: "Begawe",
     deskripsi:
       "Upacara adat suku Sasak yang dilaksanakan saat pernikahan atau panen raya. Disertai prosesi adat, musik, dan tarian tradisional. Begawe mencerminkan semangat gotong royong dan kekompakan masyarakat pedesaan NTB.",
-    foto: "",
+    foto: "assets/begawe.jpeg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1407,7 +1407,7 @@ const allCulture = [
     nama: "Gendang Beleq",
     deskripsi:
       "Gendang besar yang dimainkan dalam barisan, dipukul sambil berjalan. Digunakan dalam upacara adat, penyambutan, dan festival. Gendang Beleq mencerminkan semangat kebersamaan dan kebanggaan budaya Sasak.",
-    foto: "",
+    foto: "assets/gendangBeleq.jpg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1417,7 +1417,7 @@ const allCulture = [
     nama: "Suling Rarak",
     deskripsi:
       "Suling bambu kecil dengan suara lembut, sering dimainkan dalam pertunjukan tradisional. Digunakan untuk mengiringi tarian atau nyanyian daerah. Suling ini menciptakan nuansa tenang khas alam dan budaya NTB.",
-    foto: "",
+    foto: "assets/sulingRarak.jpeg",
     latitude: -8.5833,
     longitude: 116.1167,
   },
@@ -1427,7 +1427,7 @@ const allCulture = [
     nama: "Pantai Senggigi",
     deskripsi:
       "Pantai eksotis di Lombok Barat dengan pasir putih dan laut biru jernih. Cocok untuk berenang, snorkeling, dan menikmati matahari terbenam. Senggigi merupakan gerbang utama wisata bahari NTB sebelum ke Gili.",
-    foto: "",
+    foto: "assets/pantaiSenggigi.jpg",
     latitude: -8.514,
     longitude: 116.0594,
   },
@@ -1437,7 +1437,7 @@ const allCulture = [
     nama: "Gunung Rinjani",
     deskripsi:
       "Gunung tertinggi kedua di Indonesia, dengan kawah dan danau Segara Anak yang indah. Destinasi favorit pendaki dan pecinta alam. Rinjani juga memiliki makna spiritual bagi masyarakat sekitar sebagai gunung suci.",
-    foto: "",
+    foto: "assets/gunungRinjani.jpg",
     latitude: -8.4116,
     longitude: 116.4674,
   },
@@ -1447,7 +1447,7 @@ const allCulture = [
     nama: "Se'i",
     deskripsi:
       "Irisan daging sapi atau babi yang diasap dengan teknik tradisional, menghasilkan aroma khas dan tekstur lembut. Se'i adalah makanan populer di NTT dan sering disajikan dengan sambal luat dan bunga pepaya.",
-    foto: "",
+    foto: "assets/sei.jpg",
     latitude: -10.1818,
     longitude: 123.597,
   },
@@ -1457,7 +1457,7 @@ const allCulture = [
     nama: "Jagung Bose",
     deskripsi:
       "Jagung putih yang dimasak hingga lembut dan sering menjadi makanan pokok pengganti nasi, terutama di daerah Timor. Biasanya disantap dengan lauk pauk seperti sei, ikan, atau sayuran.",
-    foto: "",
+    foto: "assets/jagungBose.jpg",
     latitude: -10.1818,
     longitude: 123.597,
   },
@@ -1467,7 +1467,7 @@ const allCulture = [
     nama: "Ritus Pasola",
     deskripsi:
       "Upacara adat perang-perangan berkuda antara dua kelompok pria yang saling melempar lembing kayu. Tradisi masyarakat Sumba ini diadakan untuk merayakan musim tanam padi, memohon kesuburan tanah, dan kesejahteraan.",
-    foto: "",
+    foto: "assets/ritusPasola.jpg",
     latitude: -9.6667,
     longitude: 119.8333,
   },
@@ -1477,7 +1477,7 @@ const allCulture = [
     nama: "Tari Bonet",
     deskripsi:
       "Tarian tradisional suku Dawan yang dibawakan secara melingkar sambil menyanyikan pantun atau puisi. Tari Bonet sering ditampilkan dalam upacara adat seperti kelahiran, pernikahan, atau kematian, melambangkan kebersamaan dan persatuan.",
-    foto: "",
+    foto: "assets/tariBonet.jpg",
     latitude: -10.1818,
     longitude: 123.597,
   },
@@ -1487,7 +1487,7 @@ const allCulture = [
     nama: "Sasando",
     deskripsi:
       "Alat musik petik khas Pulau Rote yang terbuat dari daun lontar dan bilah bambu. Sasando menghasilkan suara merdu seperti harpa dan sering dimainkan dalam upacara adat atau hiburan.",
-    foto: "",
+    foto: "assets/sasando.jpg",
     latitude: -10.1818,
     longitude: 123.597,
   },
@@ -1497,7 +1497,7 @@ const allCulture = [
     nama: "Foy Doa",
     deskripsi:
       "Alat musik tiup ganda dari bambu kecil yang dimainkan dengan teknik mengalirkan udara secara kontinu. Foy Doa sering dimainkan oleh anak-anak dan remaja, menghasilkan melodi yang indah dan menenangkan.",
-    foto: "",
+    foto: "assets/foyDoa.jpg",
     latitude: -10.1818,
     longitude: 123.597,
   },
@@ -1507,7 +1507,7 @@ const allCulture = [
     nama: "Danau Kelimutu",
     deskripsi:
       "Danau kawah gunung berapi di Flores yang terkenal dengan tiga warna airnya yang dapat berubah-ubah: merah, biru, dan putih. Keunikan fenomena alam ini menjadikan Kelimutu destinasi yang memukau.",
-    foto: "",
+    foto: "assets/danauKelimutu.jpeg",
     latitude: -8.7699,
     longitude: 121.8213,
   },
@@ -1517,7 +1517,7 @@ const allCulture = [
     nama: "Taman Nasional Komodo",
     deskripsi:
       "Situs Warisan Dunia UNESCO yang menjadi habitat asli komodo, kadal terbesar di dunia. Terdiri dari beberapa pulau seperti Pulau Komodo, Rinca, dan Padar, tempat ini menawarkan pemandangan savana, pantai pink, dan keindahan bawah laut.",
-    foto: "",
+    foto: "assets/pulauKomodo.jpg",
     latitude: -8.5414,
     longitude: 119.4975,
   },
@@ -1527,7 +1527,7 @@ const allCulture = [
     nama: "Pengkang",
     deskripsi:
       "Ketan isi ebi (udang kering) yang dibungkus daun pisang dan dibakar. Disajikan dengan sambal kerang. Makanan ini populer di Pontianak dan sekitarnya, menjadi camilan atau bekal perjalanan yang menggambarkan keunikan kuliner Melayu dan Dayak.",
-    foto: "",
+    foto: "assets/pengkang.jpg",
     latitude: -0.0261,
     longitude: 109.3427,
   },
@@ -1537,7 +1537,7 @@ const allCulture = [
     nama: "Bubur Pedas Sambas",
     deskripsi:
       "Bubur dari beras tumbuk, dimasak dengan beragam sayur, rempah, dan daun-daunan. Rasanya gurih dan aromatik. Disajikan saat Ramadan atau acara adat. Kuliner ini mencerminkan kekayaan cita rasa masyarakat Sambas yang bernuansa tradisional.",
-    foto: "",
+    foto: "assets/buburPedasSambas.jpg",
     latitude: 1.35,
     longitude: 109.3,
   },
@@ -1547,7 +1547,7 @@ const allCulture = [
     nama: "Naik Dango",
     deskripsi:
       "Perayaan syukur masyarakat Dayak Kanayatn atas panen padi. Diisi dengan ritual adat, tarian, dan pameran budaya. Tradisi ini memperkuat solidaritas, menjaga kelestarian budaya, dan menghormati roh leluhur serta alam yang memberi kehidupan.",
-    foto: "",
+    foto: "assets/naikDango.jpg",
     latitude: -0.0261,
     longitude: 109.3427,
   },
@@ -1557,7 +1557,7 @@ const allCulture = [
     nama: "Robo-robo",
     deskripsi:
       "Tradisi masyarakat Melayu Sambas untuk mengenang kedatangan Raja Sambas pertama. Dilaksanakan dengan doa bersama, tabur bunga di sungai, dan syukuran. Merupakan wujud penghormatan terhadap leluhur serta sarana menjaga nilai budaya dan keagamaan.",
-    foto: "",
+    foto: "assets/roboRobo.jpeg",
     latitude: 1.35,
     longitude: 109.3,
   },
@@ -1567,7 +1567,7 @@ const allCulture = [
     nama: "Sapek",
     deskripsi:
       "Alat musik petik tradisional Dayak, bentuknya mirip gitar kecil. Suaranya halus dan digunakan untuk mengiringi tarian atau nyanyian tradisional. Sapek mencerminkan kreativitas dan nilai estetika suku Dayak dalam kehidupan spiritual dan seni.",
-    foto: "",
+    foto: "assets/sapek.jpg",
     latitude: -0.0261,
     longitude: 109.3427,
   },
@@ -1577,7 +1577,7 @@ const allCulture = [
     nama: "Tuma",
     deskripsi:
       "Alat musik pukul dari bambu atau kayu, digunakan dalam upacara adat Dayak. Dentumannya menjadi pengiring tari perang atau upacara penyambutan. Tuma berperan penting dalam menjaga irama sekaligus membangkitkan semangat dan suasana sakral.",
-    foto: "",
+    foto: "assets/tuma.png",
     latitude: -0.0261,
     longitude: 109.3427,
   },
@@ -1587,7 +1587,7 @@ const allCulture = [
     nama: "Taman Nasional Danau Sentarum",
     deskripsi:
       "Merupakan kawasan rawa dan danau musiman yang menjadi surga keanekaragaman hayati. Terletak di Kapuas Hulu, cocok untuk wisata alam dan budaya Dayak. Rumah bagi ikan endemik, burung liar, dan tradisi nelayan lokal yang masih lestari.",
-    foto: "",
+    foto: "assets/tamanNasionalDanauSentarum.jpg",
     latitude: 0.8167,
     longitude: 112.2,
   },
@@ -1597,7 +1597,7 @@ const allCulture = [
     nama: "Tugu Khatulistiwa",
     deskripsi:
       "Ikon Pontianak yang menandai garis khatulistiwa. Di sini, wisatawan bisa menyaksikan fenomena unik matahari tepat di atas kepala saat kulminasi. Tugu ini menjadi simbol geografis sekaligus destinasi edukatif yang menarik wisatawan domestik dan asing.",
-    foto: "",
+    foto: "assets/tuguKhatulistiwa.jpg",
     latitude: 0.0,
     longitude: 109.337,
   },
@@ -1607,7 +1607,7 @@ const allCulture = [
     nama: "Juhu Umbut Rotan",
     deskripsi:
       "Masakan khas Dayak dari rotan muda yang direbus bersama rempah-rempah. Rasanya sedikit pahit namun gurih. Sering disajikan dengan ikan bakar atau nasi. Makanan ini menggambarkan kearifan lokal dalam mengolah hasil hutan yang berlimpah.",
-    foto: "",
+    foto: "assets/juhuUmbutRotan.jpg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1617,7 +1617,7 @@ const allCulture = [
     nama: "Kalumpe",
     deskripsi:
       "Sayur daun singkong yang ditumbuk halus, dimasak dengan santan, terasi, bawang, dan cabai. Rasanya gurih pedas dan biasa disantap dengan nasi. Kalumpe merupakan hidangan khas Dayak yang penuh gizi dan mudah ditemukan di rumah-rumah warga.",
-    foto: "",
+    foto: "assets/kalumpe.jpeg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1627,7 +1627,7 @@ const allCulture = [
     nama: "Tiwah",
     deskripsi:
       "Upacara adat suku Dayak Ngaju untuk memuliakan roh leluhur dengan memindahkan tulang ke tempat khusus. Prosesi ini diiringi tari, musik, dan sesaji. Tiwah mencerminkan kepercayaan Kaharingan dan pentingnya hubungan manusia dengan leluhur.",
-    foto: "",
+    foto: "assets/tiwah.jpeg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1637,7 +1637,7 @@ const allCulture = [
     nama: "Tari Giring-Giring",
     deskripsi:
       "Tarian tradisional Dayak Ma'anyan menggunakan bambu kecil berlonceng sebagai alat musik. Gerakannya menggambarkan semangat kerja dan kebersamaan. Ditampilkan saat upacara adat, penyambutan, atau festival budaya untuk melestarikan warisan leluhur.",
-    foto: "",
+    foto: "assets/tariGiringGiring.jpg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1647,7 +1647,7 @@ const allCulture = [
     nama: "Garantung",
     deskripsi:
       "Alat musik pukul mirip gamelan dari logam, terdiri dari bilah nada yang ditata horizontal. Digunakan dalam upacara adat dan pertunjukan tari. Garantung menjadi simbol ekspresi budaya Dayak yang sarat makna dalam musik dan ritual.",
-    foto: "",
+    foto: "assets/garantung.jpg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1657,7 +1657,7 @@ const allCulture = [
     nama: "Kacapi Dayak",
     deskripsi:
       "Alat musik petik dari kayu dan senar logam. Digunakan untuk mengiringi syair atau tarian adat. Suaranya lembut dan menenangkan. Kacapi memainkan peran penting dalam menyampaikan cerita rakyat dan puisi tradisional secara musikal.",
-    foto: "",
+    foto: "assets/kacapiDayak.jpg",
     latitude: -1.8642,
     longitude: 113.8449,
   },
@@ -1667,7 +1667,7 @@ const allCulture = [
     nama: "Taman Nasional Tanjung Puting",
     deskripsi:
       "Habitat orangutan terbesar di dunia, terletak di Kotawaringin Barat. Wisatawan dapat menyusuri sungai dengan klotok dan menyaksikan kehidupan liar. Taman ini adalah simbol konservasi satwa endemik dan edukasi lingkungan tropis Kalimantan Tengah.",
-    foto: "",
+    foto: "assets/tanjungPuting.jpg",
     latitude: -2.871,
     longitude: 111.9167,
   },
@@ -1677,7 +1677,7 @@ const allCulture = [
     nama: "Bukit Tangkiling",
     deskripsi:
       "Terletak di Palangka Raya, bukit ini dikenal sebagai tempat meditasi spiritual dan pendakian ringan. Dikelilingi hutan dan memiliki pemandangan kota dari atas. Juga terdapat kompleks ziarah religi yang dihormati oleh warga setempat.",
-    foto: "",
+    foto: "assets/bukitTangkiling.jpeg",
     latitude: -2.2084,
     longitude: 113.8829,
   },
@@ -1687,7 +1687,7 @@ const allCulture = [
     nama: "Soto Banjar",
     deskripsi:
       "Soto khas suku Banjar ini memakai ayam kampung, ketupat, perkedel, dan telur rebus. Kuah beningnya kaya rempah seperti cengkeh, kayu manis, dan kapulaga. Disajikan hangat, soto ini menjadi sajian utama saat acara keluarga maupun adat.",
-    foto: "",
+    foto: "assets/sotoBanjar.jpg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1697,7 +1697,7 @@ const allCulture = [
     nama: "Ketupat Kandangan",
     deskripsi:
       "Ketupat disajikan dengan ikan gabus atau patin yang dimasak dalam kuah santan berbumbu kunyit, serai, dan bawang. Rasanya gurih dan aromatik. Makanan ini biasa dihidangkan saat Lebaran atau acara adat di Hulu Sungai dan Kandangan.",
-    foto: "",
+    foto: "assets/ketupatKandangan.jpg",
     latitude: -2.8722,
     longitude: 115.2972,
   },
@@ -1707,7 +1707,7 @@ const allCulture = [
     nama: "Gangan Asam Banjar",
     deskripsi:
       "Sup ikan berkuah bening asam segar dari asam jawa, dilengkapi irisan nanas, cabai, dan timun. Biasanya menggunakan ikan haruan. Gangan asam menjadi hidangan khas sehari-hari masyarakat Banjar karena cita rasanya menyegarkan dan menyehatkan.",
-    foto: "",
+    foto: "assets/ganganAsemBanjar.jpeg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1717,7 +1717,7 @@ const allCulture = [
     nama: "Tari Baksa Kembang",
     deskripsi:
       "Tarian ini ditampilkan oleh penari wanita yang membawa bunga bogam sebagai simbol keindahan dan penyambutan. Gerakannya lembut dan anggun. Tarian ini sering ditampilkan saat menyambut tamu penting atau acara pernikahan adat Banjar.",
-    foto: "",
+    foto: "assets/tariBaksaKembang.jpg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1727,17 +1727,7 @@ const allCulture = [
     nama: "Baayun Anak",
     deskripsi:
       "Tradisi masyarakat Banjar untuk mengayunkan bayi atau anak kecil sambil dibacakan doa dan syair. Bertujuan mendoakan kesehatan dan keselamatan anak. Acara ini biasanya dilaksanakan massal di masjid saat Maulid Nabi Muhammad SAW.",
-    foto: "",
-    latitude: -3.3167,
-    longitude: 114.59,
-  },
-  {
-    provinsi: "Kalimantan Selatan",
-    kategori: "Budaya",
-    nama: "Madihin",
-    deskripsi:
-      "Seni sastra lisan khas Banjar berbentuk pantun spontan yang dibawakan oleh satu orang seniman dengan iringan rebana. Biasanya berisi sindiran, dakwah, atau humor. Madihin sering tampil dalam acara pernikahan, pengajian, dan pertunjukan budaya.",
-    foto: "",
+    foto: "assets/baayunAnak.jpg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1747,17 +1737,7 @@ const allCulture = [
     nama: "Kurung-Kurung",
     deskripsi:
       "Alat musik tradisional dari bambu yang dimainkan dengan dipukul ke tanah atau benda keras. Digunakan dalam upacara tanam padi oleh suku Dayak Meratus. Bunyi yang dihasilkan menjadi pengiring kegiatan pertanian dan upacara spiritual.",
-    foto: "",
-    latitude: -3.3167,
-    longitude: 114.59,
-  },
-  {
-    provinsi: "Kalimantan Selatan",
-    kategori: "Alat Musik",
-    nama: "Panting",
-    deskripsi:
-      "Alat musik petik khas Banjar berbentuk seperti mandolin kecil. Biasanya dimainkan untuk mengiringi lagu tradisional dan pertunjukan Madihin. Suaranya ringan dan bernada ceria. Panting adalah bagian penting dari identitas musik rakyat Banjar.",
-    foto: "",
+    foto: "assets/kurungKurung.jpg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1767,7 +1747,7 @@ const allCulture = [
     nama: "Serunai Banjar",
     deskripsi:
       "Alat musik tiup dari kayu dengan lubang nada di tubuhnya. Suaranya nyaring dan sering digunakan dalam arak-arakan pengantin serta pertunjukan budaya. Serunai juga kerap dijumpai dalam pertunjukan tari dan musik tradisional Melayu Banjar.",
-    foto: "",
+    foto: "assets/serunaiBanjar.jpg",
     latitude: -3.3167,
     longitude: 114.59,
   },
@@ -1777,19 +1757,9 @@ const allCulture = [
     nama: "Pasar Terapung Lok Baintan",
     deskripsi:
       "Pasar tradisional di atas Sungai Martapura di mana pedagang menjual hasil bumi dari atas perahu. Aktivitas jual beli dimulai sejak fajar. Pasar ini menjadi simbol ekonomi sungai dan daya tarik budaya masyarakat Banjar.",
-    foto: "",
+    foto: "assets/pasarTerapungLokBaintan.jpg",
     latitude: -3.3175,
     longitude: 114.619,
-  },
-  {
-    provinsi: "Kalimantan Selatan",
-    kategori: "Tempat Wisata",
-    nama: "Loksado dan Pegunungan Meratus",
-    deskripsi:
-      "Kawasan perbukitan yang dihuni suku Dayak Meratus. Dikenal karena keindahan alam, air terjun Haratai, dan atraksi bamboo rafting. Loksado juga memiliki balai adat (rumah panjang) dan ritual spiritual yang masih lestari hingga kini.",
-    foto: "",
-    latitude: -2.8596,
-    longitude: 115.34,
   },
   {
     provinsi: "Kalimantan Selatan",
@@ -1797,7 +1767,7 @@ const allCulture = [
     nama: "Museum Wasaka",
     deskripsi:
       "Museum sejarah perjuangan rakyat Kalimantan Selatan yang terletak di Banjarmasin. Namanya singkatan dari 'Waja Sampai Ka Puting', semangat juang masyarakat Banjar. Bangunannya berbentuk rumah adat, menyimpan senjata, dokumen, dan pakaian pejuang.",
-    foto: "",
+    foto: "assets/museumWasaka.jpg",
     latitude: -3.3194,
     longitude: 114.5886,
   },
@@ -1807,7 +1777,7 @@ const allCulture = [
     nama: "Nasi Bekepor",
     deskripsi:
       "Nasi khas Kutai yang dimasak dengan santan dan rempah seperti serai dan bawang merah. Biasanya disajikan bersama ikan asin atau daging masak bumi hangus (mirip semur). Nasi ini menjadi sajian kerajaan Kesultanan Kutai pada zaman dahulu.",
-    foto: "",
+    foto: "assets/nasiBekepor.jpg",
     latitude: -0.5021,
     longitude: 117.1478,
   },
@@ -1817,17 +1787,7 @@ const allCulture = [
     nama: "Sate Payau",
     deskripsi:
       "Sate daging rusa yang dibumbui rempah khas lalu dibakar hingga empuk. Sate ini merupakan hidangan khas suku Dayak dan sering disajikan dalam upacara adat atau perayaan panen. Kini mulai sulit ditemukan karena rusa termasuk hewan dilindungi.",
-    foto: "",
-    latitude: -0.5021,
-    longitude: 117.1478,
-  },
-  {
-    provinsi: "Kalimantan Timur",
-    kategori: "Makanan Daerah",
-    nama: "Sayur Asam Kutai",
-    deskripsi:
-      "Berbeda dari sayur asem Jawa, versi Kutai memakai ikan gabus, terong, dan nanas, dengan kuah bening berasa asam segar. Dimasak bersama daun kemangi, makanan ini populer sebagai hidangan rumahan dan perjamuan adat di daerah pesisir Kutai.",
-    foto: "",
+    foto: "assets/satePayau.jpeg",
     latitude: -0.5021,
     longitude: 117.1478,
   },
@@ -1837,7 +1797,7 @@ const allCulture = [
     nama: "Erau",
     deskripsi:
       "Festival budaya tahunan Kesultanan Kutai di Tenggarong. Dimeriahkan dengan prosesi adat, tari-tarian, musik, hingga pesta rakyat. Erau berasal dari kata 'eroh' yang berarti ramai. Tradisi ini merupakan bentuk penghormatan kepada leluhur dan raja.",
-    foto: "",
+    foto: "assets/erau.jpg",
     latitude: -0.4262,
     longitude: 116.9922,
   },
@@ -1847,17 +1807,7 @@ const allCulture = [
     nama: "Belian",
     deskripsi:
       "Ritual penyembuhan dan penolak bala oleh suku Dayak Benuaq. Dilakukan oleh seorang belian (dukun) dengan mantra, musik, dan tarian sakral. Ritual ini dipercaya menghubungkan manusia dengan roh leluhur dan alam semesta untuk kesembuhan jiwa-raga.",
-    foto: "",
-    latitude: -0.5021,
-    longitude: 117.1478,
-  },
-  {
-    provinsi: "Kalimantan Timur",
-    kategori: "Budaya",
-    nama: "Hudoq",
-    deskripsi:
-      "Tari topeng tradisional suku Dayak Modang dan Bahau. Penari mengenakan topeng besar menyeramkan, mewakili roh leluhur dan pelindung tanaman. Tarian ini dilakukan saat menanam padi, sebagai permohonan agar hasil panen melimpah dan bebas hama.",
-    foto: "",
+    foto: "assets/belian.jpg",
     latitude: -0.5021,
     longitude: 117.1478,
   },
@@ -1867,7 +1817,7 @@ const allCulture = [
     nama: "Sampe (Sape')",
     deskripsi:
       "Alat musik petik khas Dayak Kenyah, berbentuk seperti gitar dengan ukiran khas. Suaranya lembut dan mendalam. Sampe dimainkan untuk mengiringi tari Dayak, hiburan keluarga, maupun upacara adat seperti pernikahan dan panen raya.",
-    foto: "",
+    foto: "assets/sampe.jpg",
     latitude: -0.5021,
     longitude: 117.1478,
   },
@@ -1877,17 +1827,7 @@ const allCulture = [
     nama: "Kadire",
     deskripsi:
       "Alat musik tiup dari bambu berbentuk seruling panjang, biasa digunakan dalam upacara adat dan hiburan rakyat. Suaranya lembut dan melankolis, digunakan untuk menyampaikan cerita atau mengiringi tarian sakral dalam budaya Dayak di pedalaman.",
-    foto: "",
-    latitude: -0.5021,
-    longitude: 117.1478,
-  },
-  {
-    provinsi: "Kalimantan Timur",
-    kategori: "Alat Musik",
-    nama: "Gendang Dayak",
-    deskripsi:
-      "Gendang kayu berlapis kulit binatang, dimainkan dengan tangan. Fungsinya sebagai pengiring upacara adat, tarian, dan komunikasi antarkampung. Ritme gendang disesuaikan dengan konteks: pengusiran roh jahat, penyambutan tamu, atau pengumuman penting.",
-    foto: "",
+    foto: "assets/kadire.jpg",
     latitude: -0.5021,
     longitude: 117.1478,
   },
@@ -1897,7 +1837,7 @@ const allCulture = [
     nama: "Pulau Derawan",
     deskripsi:
       "Destinasi wisata bahari dengan pantai berpasir putih dan laut jernih. Terkenal sebagai habitat penyu hijau, ubur-ubur tak menyengat, dan diving spot kelas dunia. Pulau ini sering menjadi tujuan utama wisatawan lokal dan mancanegara.",
-    foto: "",
+    foto: "assets/pulauDerawan.jpg",
     latitude: 2.2743,
     longitude: 118.2393,
   },
@@ -1907,7 +1847,7 @@ const allCulture = [
     nama: "Desa Budaya Pampang",
     deskripsi:
       "Desa adat suku Dayak Kenyah yang terletak di Samarinda. Wisatawan dapat menyaksikan pertunjukan tari tradisional, melihat rumah lamin, serta mengenal kehidupan dan kerajinan masyarakat Dayak. Lokasi ini jadi pusat pelestarian budaya Dayak urban.",
-    foto: "",
+    foto: "assets/desaBudayaPampang.jpg",
     latitude: -0.4079,
     longitude: 117.1643,
   },
@@ -1917,7 +1857,7 @@ const allCulture = [
     nama: "Taman Nasional Kutai",
     deskripsi:
       "Kawasan konservasi hutan tropis yang menjadi habitat orangutan liar. Pengunjung dapat menjelajahi hutan, menyusuri sungai, dan melihat flora-fauna langka. Lokasinya di dekat Sangatta, dan menjadi contoh hutan dataran rendah Kalimantan yang masih asli.",
-    foto: "",
+    foto: "assets/tamanNasionalKutai.jpeg",
     latitude: 0.5,
     longitude: 117.25,
   },
@@ -1927,7 +1867,7 @@ const allCulture = [
     nama: "Nasi Subut",
     deskripsi:
       "Nasi berwarna ungu alami dari ubi ungu dan nasi putih yang dicampur parutan kelapa serta sedikit garam. Disajikan dengan ikan asin, sambal, dan lauk lainnya. Nasi ini populer di daerah Tidung dan sering hadir saat perayaan adat.",
-    foto: "",
+    foto: "assets/nasiSubut.jpeg",
     latitude: 2.8333,
     longitude: 117.65,
   },
@@ -1937,17 +1877,7 @@ const allCulture = [
     nama: "Ikan Asam Pedas Tidung",
     deskripsi:
       "Masakan khas Suku Tidung yang memakai ikan laut atau ikan air tawar, dimasak dengan kuah asam pedas dari belimbing wuluh dan cabai. Rasanya segar dan berempah, sering disajikan sebagai menu utama dalam acara adat dan keluarga.",
-    foto: "",
-    latitude: 2.8333,
-    longitude: 117.65,
-  },
-  {
-    provinsi: "Kalimantan Utara",
-    kategori: "Makanan Daerah",
-    nama: "Kapah Singgang",
-    deskripsi:
-      "Hidangan laut khas pesisir Kalimantan Utara, berupa kerang atau ikan yang dibumbui kunyit, bawang putih, dan jahe, lalu dipanggang. Makanan ini populer di Tarakan dan Nunukan, menggambarkan gaya hidup bahari masyarakat Kalimantan Utara.",
-    foto: "",
+    foto: "assets/asamPedasTidung.jpg",
     latitude: 2.8333,
     longitude: 117.65,
   },
@@ -1957,7 +1887,7 @@ const allCulture = [
     nama: "Upacara Adat Iraw Tengkayu",
     deskripsi:
       "Perayaan budaya masyarakat Tidung di Tarakan yang dilakukan setiap dua tahun. Berisi arak-arakan perahu hias, tarian, dan ritual syukuran laut. Upacara ini melambangkan rasa syukur dan doa agar hasil laut melimpah dan selamat dari bencana.",
-    foto: "",
+    foto: "assets/irawTengkayu.jpg",
     latitude: 3.3213,
     longitude: 117.6083,
   },
@@ -1967,17 +1897,7 @@ const allCulture = [
     nama: "Tarian Japin Tembung",
     deskripsi:
       "Tari tradisional yang menggambarkan keharmonisan masyarakat pesisir Kalimantan Utara. Gerakannya lemah gemulai dan berpasangan. Diiringi musik gambus, tarian ini berkembang dari pengaruh budaya Melayu dan Islam, ditampilkan saat pernikahan atau festival.",
-    foto: "",
-    latitude: 2.8333,
-    longitude: 117.65,
-  },
-  {
-    provinsi: "Kalimantan Utara",
-    kategori: "Budaya",
-    nama: "Tarian Jugit",
-    deskripsi:
-      "Tarian Dayak Lundayeh yang menggambarkan kehidupan masyarakat pedalaman, seperti berburu, bertani, dan meramu. Biasanya dibawakan berkelompok oleh laki-laki dan perempuan dengan kostum tradisional dan iringan alat musik seperti sampe dan gong.",
-    foto: "",
+    foto: "assets/japinTembung.jpg",
     latitude: 2.8333,
     longitude: 117.65,
   },
@@ -1987,17 +1907,7 @@ const allCulture = [
     nama: "Sampe (Sape')",
     deskripsi:
       "Alat musik petik dari suku Dayak yang memiliki bentuk panjang dengan ukiran khas. Ditarik menggunakan jari untuk menghasilkan melodi lembut. Digunakan untuk mengiringi tarian atau sebagai hiburan pribadi masyarakat Dayak di pedalaman Kaltara.",
-    foto: "",
-    latitude: 2.8333,
-    longitude: 117.65,
-  },
-  {
-    provinsi: "Kalimantan Utara",
-    kategori: "Alat Musik",
-    nama: "Gendang Dayak Lundayeh",
-    deskripsi:
-      "Gendang ini digunakan dalam berbagai acara adat seperti penyambutan tamu, upacara panen, atau pernikahan. Dimainkan berirama cepat sebagai pengiring tari dan ritual. Biasanya terbuat dari kayu keras dan kulit binatang hutan.",
-    foto: "",
+    foto: "assets/sampe.jpg",
     latitude: 2.8333,
     longitude: 117.65,
   },
@@ -2007,7 +1917,7 @@ const allCulture = [
     nama: "Gong Besar",
     deskripsi:
       "Gong logam yang digantung dan dipukul untuk menandai dimulainya acara atau bagian penting dalam upacara adat. Suaranya bergema dalam jarak jauh, menjadikannya simbol penting dalam komunikasi dan ritus spiritual suku Dayak dan Tidung.",
-    foto: "",
+    foto: "assets/gong.jpg",
     latitude: 2.8333,
     longitude: 117.65,
   },
@@ -2017,19 +1927,9 @@ const allCulture = [
     nama: "Pulau Sapi",
     deskripsi:
       "Pulau kecil di perairan Tarakan yang memiliki pasir putih, terumbu karang, dan spot snorkeling. Sering dijadikan lokasi piknik dan rekreasi oleh warga lokal. Airnya jernih, cocok untuk ekowisata bahari dan fotografi bawah laut.",
-    foto: "",
+    foto: "assets/pulauSapi.jpg",
     latitude: 3.3213,
     longitude: 117.6083,
-  },
-  {
-    provinsi: "Kalimantan Utara",
-    kategori: "Tempat Wisata",
-    nama: "Long Bawan (Krayan)",
-    deskripsi:
-      "Wilayah perbatasan dengan Malaysia yang dikenal dengan keindahan alam pegunungan dan pertanian organik seperti beras adan. Desa ini dihuni suku Dayak Lundayeh dan masih memegang teguh tradisi serta sistem pertanian berkelanjutan secara turun-temurun.",
-    foto: "",
-    latitude: 3.9031,
-    longitude: 115.7003,
   },
   {
     provinsi: "Kalimantan Utara",
@@ -2037,7 +1937,7 @@ const allCulture = [
     nama: "Hutan Mangrove Tarakan",
     deskripsi:
       "Area konservasi mangrove terbesar di kota Tarakan, sekaligus tempat wisata edukasi dan ekowisata. Pengunjung bisa menyusuri jembatan kayu di tengah hutan mangrove sambil melihat monyet bekantan, burung liar, dan menikmati udara segar alami.",
-    foto: "",
+    foto: "assets/mangrove.jpg",
     latitude: 3.3213,
     longitude: 117.6083,
   },
@@ -2047,7 +1947,7 @@ const allCulture = [
     nama: "Binte Biluhuta (Milu Siram)",
     deskripsi:
       "Sup jagung khas Gorontalo yang berisi jagung manis serut, udang, ikan cakalang, dan kelapa parut. Kuahnya gurih dan asam segar. Binte Biluhuta adalah simbol persatuan suku Gorontalo dan sering disajikan pada acara penting.",
-    foto: "",
+    foto: "assets/binteBiluhuta.jpg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2057,7 +1957,7 @@ const allCulture = [
     nama: "Ilabulo",
     deskripsi:
       "Olahan sagu yang dicampur ayam cincang, telur, santan, dan rempah, lalu dibungkus daun pisang dan dikukus. Teksturnya kenyal, gurih, dan kaya rasa. Ilabulo sering dianggap sebagai 'pepes-nya Gorontalo' dan disantap sebagai camilan atau lauk.",
-    foto: "",
+    foto: "assets/ilabulo.jpeg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2067,7 +1967,7 @@ const allCulture = [
     nama: "Mopotilolo",
     deskripsi:
       "Tradisi penyambutan tamu penting atau pemimpin baru di suatu daerah. Diiringi doa adat dan simbolisasi penerimaan masyarakat Gorontalo terhadap kedatangan tokoh tersebut. Mopotilolo menunjukkan nilai-nilai kekerabatan, penghormatan, dan keterbukaan.",
-    foto: "",
+    foto: "assets/mopotilolo.jpeg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2077,7 +1977,7 @@ const allCulture = [
     nama: "Modudu",
     deskripsi:
       "Ritual memandikan bayi yang dilakukan pada usia 40 hari. Dilakukan oleh keluarga dan tetua adat dengan doa-doa. Tradisi ini menjadi bentuk syukur sekaligus perlindungan terhadap bayi agar tumbuh sehat dan jauh dari gangguan roh jahat.",
-    foto: "",
+    foto: "assets/modudu.jpeg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2087,7 +1987,7 @@ const allCulture = [
     nama: "Polopalo",
     deskripsi:
       "Alat musik pukul berbentuk tabung bambu yang menghasilkan bunyi ritmis saat dipukul ke tubuh pemain. Biasanya dimainkan berkelompok sebagai pengiring tarian dan lagu rakyat. Suaranya kuat, unik, dan digunakan dalam acara adat dan pertunjukan budaya.",
-    foto: "",
+    foto: "assets/polopalo.jpg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2097,7 +1997,7 @@ const allCulture = [
     nama: "Gambusi",
     deskripsi:
       "Alat musik petik mirip gitar, dipengaruhi budaya Arab. Digunakan untuk mengiringi lagu-lagu tradisional Gorontalo, terutama dalam acara keagamaan dan pernikahan. Suara gambusi lembut dan mendalam, menciptakan suasana sakral dan khidmat.",
-    foto: "",
+    foto: "assets/gambusi.jpeg",
     latitude: 0.5457,
     longitude: 123.0594,
   },
@@ -2107,7 +2007,7 @@ const allCulture = [
     nama: "Benteng Otanaha",
     deskripsi:
       "Benteng peninggalan abad ke-16 di atas bukit Kota Gorontalo. Dibangun dari pasir, batu kapur, dan putih telur. Pemandangan dari atas mencakup Danau Limboto dan kota. Tempat ini menyimpan nilai sejarah dan simbol perjuangan rakyat Gorontalo.",
-    foto: "",
+    foto: "assets/bentengOtanaha.jpg",
     latitude: 0.5284,
     longitude: 123.0619,
   },
@@ -2117,7 +2017,7 @@ const allCulture = [
     nama: "Danau Limboto",
     deskripsi:
       "Danau air tawar terbesar di Gorontalo, dulunya menjadi jalur kapal kerajaan. Kini menjadi lokasi wisata dan penelitian ekosistem. Dikelilingi sawah dan kampung nelayan, dan sering menjadi lokasi festival budaya serta pengamatan burung liar.",
-    foto: "",
+    foto: "assets/danauLimboto.jpg",
     latitude: 0.5971,
     longitude: 123.0292,
   },
@@ -2127,7 +2027,7 @@ const allCulture = [
     nama: "Tinutuan (Bubur Manado)",
     deskripsi:
       "Bubur khas Manado berbahan nasi, labu kuning, bayam, kangkung, dan daun kemangi. Disajikan tanpa daging, cocok untuk vegetarian. Rasanya gurih segar, sering dinikmati saat sarapan bersama sambal roa dan perkedel jagung.",
-    foto: "",
+    foto: "assets/tinutan.jpg",
     latitude: 1.4748,
     longitude: 124.8421,
   },
@@ -2137,7 +2037,7 @@ const allCulture = [
     nama: "Rica-Rica",
     deskripsi:
       "Sambal rica-rica merupakan bumbu dasar pedas khas Minahasa. Umumnya digunakan untuk mengolah ayam, ikan, atau daging. Rasanya sangat pedas, berpadu dengan jeruk nipis dan rempah segar. Hidangan ini mencerminkan selera kuliner berani orang Minahasa.",
-    foto: "",
+    foto: "assets/ricaRica.jpeg",
     latitude: 1.4748,
     longitude: 124.8421,
   },
@@ -2147,7 +2047,7 @@ const allCulture = [
     nama: "Tari Kabasaran",
     deskripsi:
       "Tarian perang tradisional Minahasa, dibawakan oleh penari pria berpakaian merah dan bersenjata tombak atau pedang. Gerakannya tegas dan gagah. Kabasaran awalnya digunakan untuk menjaga desa dan kini dilestarikan dalam festival budaya dan upacara.",
-    foto: "",
+    foto: "assets/tariKesabaran.jpg",
     latitude: 1.4748,
     longitude: 124.8421,
   },
@@ -2157,7 +2057,7 @@ const allCulture = [
     nama: "Upacara Tulude",
     deskripsi:
       "Perayaan syukur masyarakat Sangihe atas berkat kehidupan setahun terakhir. Dimeriahkan dengan prosesi adat, doa, dan pemotongan kue tamo. Tulude juga mempererat ikatan sosial antarwarga dan menegaskan identitas budaya Sangihe yang religius dan komunal.",
-    foto: "",
+    foto: "assets/upacaraTulude.jpg",
     latitude: 2.7667,
     longitude: 125.75,
   },
@@ -2167,7 +2067,7 @@ const allCulture = [
     nama: "Kolintang",
     deskripsi:
       "Alat musik pukul dari kayu ringan yang disusun seperti xylophone. Memiliki suara nyaring dan merdu. Kolintang digunakan dalam pertunjukan seni, upacara adat, bahkan musik modern. Asalnya dari suku Minahasa dan kini dikenal secara nasional.",
-    foto: "",
+    foto: "assets/kolintang.jpg",
     latitude: 1.4748,
     longitude: 124.8421,
   },
@@ -2177,7 +2077,7 @@ const allCulture = [
     nama: "Salude",
     deskripsi:
       "Alat musik petik tradisional suku Sangir-Talaud, dibuat dari kayu dan senar logam. Bentuknya menyerupai gitar kecil. Salude biasa dimainkan untuk mengiringi lagu rakyat, pujian, dan pengantar tidur anak-anak di kepulauan utara Sulawesi.",
-    foto: "",
+    foto: "assets/salude.jpeg",
     latitude: 1.4748,
     longitude: 124.8421,
   },
@@ -2187,7 +2087,7 @@ const allCulture = [
     nama: "Taman Laut Bunaken",
     deskripsi:
       "Destinasi selam kelas dunia dengan keanekaragaman terumbu karang dan biota laut. Terletak di Teluk Manado, taman laut ini cocok untuk snorkeling dan diving. Bunaken menjadi ikon wisata bahari Indonesia yang terkenal hingga mancanegara.",
-    foto: "",
+    foto: "assets/bunaken.jpg",
     latitude: 1.6242,
     longitude: 124.7797,
   },
@@ -2197,7 +2097,7 @@ const allCulture = [
     nama: "Danau Tondano",
     deskripsi:
       "Danau terbesar di Sulawesi Utara, dikelilingi pegunungan dan sawah. Menyuguhkan panorama sejuk dan cocok untuk wisata keluarga. Terdapat rumah makan terapung dan warung ikan bakar di sekeliling danau, menjadikannya favorit wisata kuliner alam.",
-    foto: "",
+    foto: "assets/danauTondano.jpg",
     latitude: 1.1578,
     longitude: 124.908,
   },
@@ -2207,7 +2107,7 @@ const allCulture = [
     nama: "Kaledo (Kaki Lembu Donggala)",
     deskripsi:
       "Sup tulang kaki sapi dengan sumsum, berasal dari Donggala. Kuahnya bening, gurih, dan sedikit asam dari perasan jeruk nipis. Dinikmati dengan nasi atau singkong rebus. Kaledo merupakan simbol kekayaan kuliner khas Sulteng yang unik dan ikonik.",
-    foto: "",
+    foto: "assets/kaledo.jpg",
     latitude: -0.8906,
     longitude: 119.8732,
   },
@@ -2217,7 +2117,7 @@ const allCulture = [
     nama: "Uta Dada",
     deskripsi:
       "Masakan ayam bakar khas suku Kaili, dimasak dengan santan, kemiri, dan rempah-rempah. Daging ayam yang empuk berpadu dengan kuah kental beraroma gurih. Hidangan ini biasa disajikan dalam acara keluarga, syukuran, dan hajatan tradisional.",
-    foto: "",
+    foto: "assets/utaDada.jpeg",
     latitude: -0.8906,
     longitude: 119.8732,
   },
@@ -2227,7 +2127,7 @@ const allCulture = [
     nama: "Mombowa Tumpe",
     deskripsi:
       "Tradisi masyarakat Banggai dalam mengantar telur burung maleo secara adat ke pemimpin atau raja sebagai simbol penghormatan dan kesuburan. Prosesi diiringi tarian, musik, dan upacara adat yang sarat makna ekologis dan spiritualitas lokal.",
-    foto: "",
+    foto: "assets/mombowaTumpe.jpg",
     latitude: -1.7,
     longitude: 122.9,
   },
@@ -2237,7 +2137,7 @@ const allCulture = [
     nama: "Tari Dero",
     deskripsi:
       "Tari pergaulan dari suku Pamona yang dilakukan secara berkelompok dan berputar searah. Biasanya ditampilkan dalam pesta adat atau panen. Tarian ini mencerminkan semangat kebersamaan, keakraban, dan keharmonisan antaranggota komunitas masyarakat tradisional.",
-    foto: "",
+    foto: "assets/tariDero.jpeg",
     latitude: -0.8906,
     longitude: 119.8732,
   },
@@ -2247,7 +2147,7 @@ const allCulture = [
     nama: "Ganda",
     deskripsi:
       "Gendang tradisional suku Kaili yang dimainkan dengan tangan, sering digunakan untuk mengiringi tarian atau ritual adat. Terbuat dari kayu dan kulit hewan, ganda memiliki suara ritmis kuat yang menambah energi dalam pertunjukan budaya.",
-    foto: "",
+    foto: "assets/ganda.jpeg",
     latitude: -0.8906,
     longitude: 119.8732,
   },
@@ -2257,7 +2157,7 @@ const allCulture = [
     nama: "Pare’e",
     deskripsi:
       "Alat musik bambu ditiup seperti seruling, digunakan oleh masyarakat Lore dan Pamona. Suaranya lembut dan digunakan dalam hiburan atau pengiring lagu-lagu rakyat. Pare’e mencerminkan kesederhanaan namun sarat nilai seni masyarakat pedalaman.",
-    foto: "",
+    foto: "assets/paree.jpeg",
     latitude: -0.8906,
     longitude: 119.8732,
   },
@@ -2267,7 +2167,7 @@ const allCulture = [
     nama: "Danau Poso",
     deskripsi:
       "Danau tertua ketiga di Indonesia dengan air jernih kebiruan, terletak di pegunungan. Dikelilingi desa adat dan kebun cengkeh. Tempat ini cocok untuk ekowisata, rekreasi, dan mengenal budaya suku Pamona yang masih terjaga.",
-    foto: "",
+    foto: "assets/danauPoso.jpg",
     latitude: -2.062,
     longitude: 120.7303,
   },
@@ -2277,7 +2177,7 @@ const allCulture = [
     nama: "Lembah Bada (Lore Lindu)",
     deskripsi:
       "Lembah arkeologis yang menyimpan patung megalitikum berusia ribuan tahun. Terletak di Taman Nasional Lore Lindu. Tempat ini menyimpan jejak sejarah prasejarah dan menjadi tujuan wisata budaya dan edukasi yang mendunia.",
-    foto: "",
+    foto: "assets/lembahBada.jpg",
     latitude: -1.8239,
     longitude: 120.2514,
   },
@@ -2287,7 +2187,7 @@ const allCulture = [
     nama: "Coto Makassar",
     deskripsi:
       "Sup daging sapi berkuah kental berbumbu kacang, bawang putih, lengkuas, dan ketumbar. Disajikan bersama ketupat dan sambal tauco. Hidangan legendaris ini berasal dari Makassar dan menjadi sajian penting dalam jamuan adat serta keseharian masyarakat.",
-    foto: "",
+    foto: "assets/cotoMakasar.jpg",
     latitude: -5.1477,
     longitude: 119.4327,
   },
@@ -2297,7 +2197,7 @@ const allCulture = [
     nama: "Pallubasa",
     deskripsi:
       "Mirip Coto, namun menggunakan parutan kelapa sangrai dalam kuahnya. Daging sapi atau jeroan direbus lama agar empuk. Disajikan dengan nasi dan telur mentah yang dicampur dalam kuah panas. Khas Makassar, Pallubasa punya cita rasa lebih gurih dan dalam.",
-    foto: "",
+    foto: "assets/palluBasa.jpg",
     latitude: -5.1477,
     longitude: 119.4327,
   },
@@ -2307,7 +2207,7 @@ const allCulture = [
     nama: "Upacara Rambu Solo'",
     deskripsi:
       "Ritual pemakaman suku Toraja yang berlangsung berhari-hari. Melibatkan penyembelihan kerbau, tarian adat, prosesi adat, dan penguburan di tebing atau gua. Upacara ini menjadi bentuk penghormatan terakhir sekaligus simbol status sosial keluarga almarhum.",
-    foto: "",
+    foto: "assets/upacaraRambuSolo.jpeg",
     latitude: -2.9734,
     longitude: 119.8978,
   },
@@ -2317,7 +2217,7 @@ const allCulture = [
     nama: "Ma’giri",
     deskripsi:
       "Tradisi Bugis yang dilakukan oleh seorang Bissu (pendeta androgini) untuk memanggil roh leluhur. Dilakukan dengan tarian trans dan tusukan benda tajam. Ma’giri merupakan bagian dari kepercayaan Bugis kuno dan sakral dalam prosesi spiritual.",
-    foto: "",
+    foto: "assets/magiri.jpg",
     latitude: -5.1477,
     longitude: 119.4327,
   },
@@ -2327,7 +2227,7 @@ const allCulture = [
     nama: "Keso-Keso",
     deskripsi:
       "Alat musik gesek dari Sulawesi Selatan yang mirip rebab, terbuat dari kayu dan kulit hewan. Memiliki dua senar dan menghasilkan nada sendu. Keso-keso biasa dimainkan untuk mengiringi tembang Bugis dan pertunjukan kesenian adat.",
-    foto: "",
+    foto: "assets/kesoKeso.jpg",
     latitude: -5.1477,
     longitude: 119.4327,
   },
@@ -2337,7 +2237,7 @@ const allCulture = [
     nama: "Jalappa",
     deskripsi:
       "Alat musik pukul dari logam berbentuk seperti simbal kecil. Digunakan dalam upacara adat dan iringan tari tradisional. Dentingannya kuat dan tajam, menandai momen penting dalam prosesi budaya atau pertunjukan Bugis-Makassar.",
-    foto: "",
+    foto: "assets/jalappa.jpeg",
     latitude: -5.1477,
     longitude: 119.4327,
   },
@@ -2347,7 +2247,7 @@ const allCulture = [
     nama: "Tana Toraja",
     deskripsi:
       "Wilayah pegunungan dengan tradisi kematian yang unik. Wisatawan dapat melihat rumah tongkonan, makam batu, dan upacara Rambu Solo’. Toraja juga dikenal akan pemandangan alamnya yang indah dan kaya warisan budaya.",
-    foto: "",
+    foto: "assets/tanaToraja.jpg",
     latitude: -2.9734,
     longitude: 119.8978,
   },
@@ -2357,7 +2257,7 @@ const allCulture = [
     nama: "Pantai Bira",
     deskripsi:
       "Pantai berpasir putih di Kabupaten Bulukumba. Airnya jernih biru kehijauan, cocok untuk berenang, snorkeling, dan diving. Pantai ini juga terkenal sebagai tempat pembuatan perahu pinisi — warisan budaya maritim Bugis yang mendunia.",
-    foto: "",
+    foto: "assets/pantaiBira.jpg",
     latitude: -5.617,
     longitude: 120.37,
   },
@@ -2367,7 +2267,7 @@ const allCulture = [
     nama: "Sinonggi",
     deskripsi:
       "Makanan pokok khas suku Tolaki, terbuat dari tepung sagu yang dimasak kental dan kenyal. Disantap bersama sayur dan ikan kuah asam pedas. Sinonggi menggambarkan ketergantungan masyarakat pesisir terhadap sagu sebagai sumber karbohidrat utama.",
-    foto: "",
+    foto: "assets/sinonggi.jpg",
     latitude: -3.9961,
     longitude: 122.5181,
   },
@@ -2377,7 +2277,7 @@ const allCulture = [
     nama: "Kabuto",
     deskripsi:
       "Olahan singkong parut yang difermentasi lalu dikukus, disajikan dengan kelapa parut dan gula merah. Makanan ini dulunya pengganti nasi saat paceklik. Kini menjadi camilan tradisional yang digemari di perkampungan masyarakat Buton dan sekitarnya.",
-    foto: "",
+    foto: "assets/kabuto.jpg",
     latitude: -4.6667,
     longitude: 122.6333,
   },
@@ -2387,7 +2287,7 @@ const allCulture = [
     nama: "Tari Lulo",
     deskripsi:
       "Tarian pergaulan dari suku Tolaki. Penari bergandengan tangan membentuk lingkaran dan menari mengikuti irama gendang. Tarian ini menjadi simbol persatuan dan sering dimainkan dalam pesta rakyat atau penyambutan tamu kehormatan.",
-    foto: "",
+    foto: "assets/tariLulo.jpeg",
     latitude: -3.9961,
     longitude: 122.5181,
   },
@@ -2397,7 +2297,7 @@ const allCulture = [
     nama: "Karia’a",
     deskripsi:
       "Upacara adat peralihan gadis menjadi dewasa, dilakukan oleh suku Tolaki. Diiringi doa, tari-tarian, dan pemberian petuah. Karia’a merupakan momen penting dalam kehidupan perempuan, melambangkan kesiapan memasuki kehidupan rumah tangga.",
-    foto: "",
+    foto: "assets/kariaa.jpeg",
     latitude: -3.9961,
     longitude: 122.5181,
   },
@@ -2407,7 +2307,7 @@ const allCulture = [
     nama: "Gambus Buton",
     deskripsi:
       "Alat musik petik dari Buton, bentuknya mirip gitar dan dipengaruhi budaya Timur Tengah. Digunakan untuk mengiringi syair keagamaan, zikir, atau pertunjukan tari tradisional. Suaranya lembut dan religius, sangat khas dalam kesenian Buton.",
-    foto: "",
+    foto: "assets/gambus.jpg",
     latitude: -4.6667,
     longitude: 122.6333,
   },
@@ -2417,7 +2317,7 @@ const allCulture = [
     nama: "Ore-Ore",
     deskripsi:
       "Alat musik tiup tradisional suku Tolaki dari bambu kecil. Menghasilkan nada tinggi dan dimainkan dalam acara adat atau hiburan rakyat. Ore-ore biasa dimainkan bersama alat musik ritmis lainnya dalam pertunjukan kesenian lokal Sulawesi Tenggara.",
-    foto: "",
+    foto: "assets/oreOre.jpeg",
     latitude: -3.9961,
     longitude: 122.5181,
   },
@@ -2427,7 +2327,7 @@ const allCulture = [
     nama: "Wakatobi",
     deskripsi:
       "Taman Nasional laut terkenal dengan keindahan terumbu karang dan biota lautnya. Tempat ini menjadi surga bagi penyelam dari seluruh dunia dan simbol konservasi laut Indonesia. Terdiri dari empat pulau utama: Wangi-Wangi, Kaledupa, Tomia, Binongko.",
-    foto: "",
+    foto: "assets/wakatobi.jpg",
     latitude: -5.8333,
     longitude: 123.5,
   },
@@ -2437,7 +2337,7 @@ const allCulture = [
     nama: "Benteng Keraton Buton",
     deskripsi:
       "Benteng batu terbesar di dunia menurut UNESCO. Terletak di Kota Baubau, dulunya pusat pemerintahan Kesultanan Buton. Selain panorama laut yang indah, tempat ini menyimpan sejarah kerajaan Islam lokal dan budaya Buton yang masih lestari.",
-    foto: "",
+    foto: "assets/keratonButon.jpg",
     latitude: -5.4623,
     longitude: 122.6074,
   },
@@ -2447,7 +2347,7 @@ const allCulture = [
     nama: "Jepa",
     deskripsi:
       "Makanan pokok masyarakat Mandar yang terbuat dari singkong parut yang dipipihkan lalu dipanggang. Disajikan bersama ikan teri goreng atau kuah ikan. Jepa mencerminkan kearifan lokal dalam mengolah hasil bumi sebagai sumber energi sehari-hari.",
-    foto: "",
+    foto: "assets/jepa.jpg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2457,7 +2357,7 @@ const allCulture = [
     nama: "Bau Peapi",
     deskripsi:
       "Masakan ikan khas Mandar yang dimasak dalam kuah kuning asam pedas. Menggunakan ikan laut segar, kunyit, serai, dan tomat. Rasanya segar dan kaya rempah, sering disajikan dalam acara adat dan perjamuan keluarga besar.",
-    foto: "",
+    foto: "assets/bauPeapi.jpeg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2467,7 +2367,7 @@ const allCulture = [
     nama: "Sayyang Pattuqduq",
     deskripsi:
       "Tradisi menunggang kuda yang dihias meriah oleh anak yang telah khatam Al-Qur'an. Diiringi musik rebana dan arak-arakan keliling kampung. Tradisi ini menggabungkan nilai Islam dan budaya Mandar dalam bentuk penghormatan dan syukur.",
-    foto: "",
+    foto: "assets/sayyang.jpg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2477,7 +2377,7 @@ const allCulture = [
     nama: "Passandeq",
     deskripsi:
       "Tradisi pelayaran nelayan Mandar menggunakan perahu sandeq untuk menangkap ikan di laut lepas. Passandeq juga menjadi simbol ketangguhan, keberanian, dan kecintaan masyarakat Mandar terhadap laut. Kini dilombakan dalam Festival Sandeq tahunan.",
-    foto: "",
+    foto: "assets/passandeq.jpg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2487,7 +2387,7 @@ const allCulture = [
     nama: "Gongga Lima",
     deskripsi:
       "Alat musik pukul tradisional suku Mandar yang terdiri dari lima gong kecil. Digunakan dalam upacara adat dan pertunjukan tari. Suaranya harmonis dan ritmis, mencerminkan kesatuan dan kekompakan dalam budaya musik tradisional Mandar.",
-    foto: "",
+    foto: "assets/gonggaLima.jpeg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2497,7 +2397,7 @@ const allCulture = [
     nama: "Pakkacaping",
     deskripsi:
       "Alat musik petik dari Mandar, dimainkan untuk mengiringi syair atau puisi adat. Bentuknya mirip kecapi, terbuat dari kayu dengan senar logam. Permainannya biasanya bersifat solo, menggambarkan refleksi, cinta, dan kisah kehidupan.",
-    foto: "",
+    foto: "assets/pakKacaping.jpg",
     latitude: -2.714,
     longitude: 118.9142,
   },
@@ -2507,7 +2407,7 @@ const allCulture = [
     nama: "Pantai Dato’ Majene",
     deskripsi:
       "Pantai berpasir putih dengan batu karang besar yang menjorong ke laut. Cocok untuk berenang, memancing, atau sekadar menikmati matahari terbenam. Lokasinya dekat pusat kota, menjadikannya destinasi favorit warga lokal dan wisatawan.",
-    foto: "",
+    foto: "assets/pantaiDato.jpeg",
     latitude: -3.5385,
     longitude: 118.9409,
   },
@@ -2517,7 +2417,7 @@ const allCulture = [
     nama: "Air Terjun Limbong Kamandang",
     deskripsi:
       "Terletak di Mamasa, air terjun ini berada di kawasan pegunungan yang sejuk dan hijau. Dikelilingi hutan pinus dan jalur trekking. Tempat ini menjadi destinasi alam sekaligus lokasi menenangkan untuk menikmati keindahan Sulawesi Barat.",
-    foto: "",
+    foto: "assets/kamandang.jpg",
     latitude: -2.9698,
     longitude: 119.38,
   },
@@ -2527,7 +2427,7 @@ const allCulture = [
     nama: "Papeda",
     deskripsi:
       "Makanan pokok dari sagu yang dimasak hingga menjadi bubur kental dan lengket. Disantap dengan ikan kuah kuning dan sayuran. Papeda mencerminkan tradisi pangan masyarakat pesisir yang menggantungkan hidup pada hasil laut dan sagu.",
-    foto: "",
+    foto: "assets/papeda.jpg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2537,7 +2437,7 @@ const allCulture = [
     nama: "Ikan Asar",
     deskripsi:
       "Ikan cakalang atau tongkol yang diasap di atas bara api hingga kering. Aromanya khas dan tahan lama. Biasanya disajikan dengan sambal colo-colo dan nasi. Hidangan ini mencerminkan keahlian nelayan Maluku dalam mengawetkan hasil tangkapan laut.",
-    foto: "",
+    foto: "assets/ikanAsar.jpg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2547,7 +2447,7 @@ const allCulture = [
     nama: "Pela Gandong",
     deskripsi:
       "Tradisi persaudaraan antardesa di Maluku yang berbeda agama atau suku. Mengikat dua kampung sebagai saudara kandung secara adat. Pela Gandong menjadi simbol toleransi dan persatuan, serta diwariskan turun-temurun melalui upacara dan perjanjian sakral.",
-    foto: "",
+    foto: "assets/pelaGandong.jpg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2557,7 +2457,7 @@ const allCulture = [
     nama: "Cakalele",
     deskripsi:
       "Tari perang tradisional Maluku yang dibawakan oleh pria dengan pakaian perang, parang, dan perisai. Menggambarkan keberanian dan semangat juang. Tari ini ditampilkan saat upacara adat atau penyambutan tamu sebagai bentuk kebanggaan identitas budaya.",
-    foto: "",
+    foto: "assets/cakalele.jpg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2567,7 +2467,7 @@ const allCulture = [
     nama: "Tifa",
     deskripsi:
       "Alat musik pukul berbentuk tabung kayu berlapis kulit. Umumnya dimainkan untuk mengiringi tari Cakalele atau upacara adat. Bunyi tifa menghentak kuat dan ritmis, digunakan untuk menyatukan semangat dalam komunitas atau saat acara sakral.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2577,7 +2477,7 @@ const allCulture = [
     nama: "Totobuang",
     deskripsi:
       "Sekelompok gong kecil yang disusun horizontal dan dipukul dengan stik kayu. Digunakan dalam orkes tradisional Maluku untuk mengiringi tarian dan lagu daerah. Totobuang mencerminkan pengaruh budaya Melayu dan kekayaan musikal lokal Maluku.",
-    foto: "",
+    foto: "assets/totoBuang.jpg",
     latitude: -3.65,
     longitude: 128.1667,
   },
@@ -2587,7 +2487,7 @@ const allCulture = [
     nama: "Pantai Ora",
     deskripsi:
       "Terletak di Pulau Seram, pantai ini terkenal dengan air laut jernih, pasir putih, dan bungalow terapung. Cocok untuk snorkeling, diving, atau sekadar bersantai. Ora sering dijuluki 'Maldives-nya Indonesia' karena keindahannya yang luar biasa.",
-    foto: "",
+    foto: "assets/pantaiOra.jpg",
     latitude: -2.9926,
     longitude: 129.2133,
   },
@@ -2597,7 +2497,7 @@ const allCulture = [
     nama: "Benteng Amsterdam",
     deskripsi:
       "Peninggalan kolonial Belanda di Ambon yang dibangun pada abad ke-17. Benteng ini menjadi saksi sejarah rempah-rempah di Maluku. Dari atas benteng, pengunjung dapat melihat panorama Teluk Ambon dan mengenang masa penjajahan Eropa di Indonesia.",
-    foto: "",
+    foto: "assets/bentengAmsterdam.jpg",
     latitude: -3.6267,
     longitude: 128.1693,
   },
@@ -2607,7 +2507,7 @@ const allCulture = [
     nama: "Gohu Ikan",
     deskripsi:
       "Sering disebut 'sashimi-nya Ternate,' gohu ikan adalah potongan ikan mentah (biasanya tuna), dibumbui perasan jeruk, bawang merah, cabe rawit, dan minyak kelapa panas. Rasanya segar dan pedas, biasa disajikan sebagai hidangan pembuka khas pesisir.",
-    foto: "",
+    foto: "assets/gohuIkan.jpg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2617,7 +2517,7 @@ const allCulture = [
     nama: "Papeda Kuah Kuning",
     deskripsi:
       "Papeda disajikan dengan ikan tongkol atau mubara yang dimasak dalam kuah kuning berbumbu kunyit dan rempah. Teksturnya kenyal, berpadu dengan rasa gurih dan asam segar. Makanan ini mencerminkan budaya pangan berbasis sagu dan laut.",
-    foto: "",
+    foto: "assets/papedaKuahKuning.jpg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2627,7 +2527,7 @@ const allCulture = [
     nama: "Fagogoru",
     deskripsi:
       "Filosofi hidup orang Maluku Utara, khususnya suku Tobelo-Galela, tentang kerja keras, persatuan, dan hormat pada leluhur. Nilai ini diwujudkan dalam kehidupan sehari-hari, seperti gotong royong, penyelesaian sengketa, dan upacara adat komunitas.",
-    foto: "",
+    foto: "assets/fagogoru.jpeg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2637,7 +2537,7 @@ const allCulture = [
     nama: "Tari Soya-Soya",
     deskripsi:
       "Tarian perang tradisional dari Ternate yang menggambarkan semangat kepahlawanan rakyat melawan penjajah. Dibawakan oleh pria dengan pedang dan perisai, diiringi musik tifa dan gong. Sering ditampilkan dalam penyambutan dan festival budaya daerah.",
-    foto: "",
+    foto: "assets/tariSoyaSoya.jpg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2647,7 +2547,7 @@ const allCulture = [
     nama: "Tifa Maluku Utara",
     deskripsi:
       "Tifa di Maluku Utara memiliki bunyi khas yang digunakan untuk mengiringi tari Soya-Soya dan upacara adat. Dibuat dari kayu dan kulit rusa, tifa menciptakan ritme yang membangkitkan semangat dan kohesi sosial dalam komunitas adat.",
-    foto: "",
+    foto: "assets/tifaMalukuUtara.jpeg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2657,7 +2557,7 @@ const allCulture = [
     nama: "Nafiri",
     deskripsi:
       "Alat musik tiup dari kerang laut besar yang ditiup menghasilkan suara keras dan bergema. Digunakan sebagai alat komunikasi atau penanda waktu dalam kegiatan adat atau kerajaan. Nafiri memiliki makna spiritual dan status simbol dalam masyarakat.",
-    foto: "",
+    foto: "assets/nafiri.jpeg",
     latitude: 0.7693,
     longitude: 127.3653,
   },
@@ -2667,7 +2567,7 @@ const allCulture = [
     nama: "Kepulauan Morotai",
     deskripsi:
       "Pulau bersejarah yang menjadi pangkalan militer Sekutu saat Perang Dunia II. Kini terkenal dengan pantai pasir putih, diving spot, dan situs sejarah. Morotai adalah surga tropis yang menyatukan keindahan alam dan peninggalan sejarah global.",
-    foto: "",
+    foto: "assets/kepulauanMorotai.jpg",
     latitude: 2.25,
     longitude: 128.5,
   },
@@ -2677,7 +2577,7 @@ const allCulture = [
     nama: "Benteng Oranje",
     deskripsi:
       "Benteng peninggalan Belanda di Ternate yang dibangun pada awal abad ke-17. Menjadi pusat pemerintahan VOC di Maluku Utara. Kini difungsikan sebagai situs wisata sejarah dan museum yang menyimpan artefak rempah dan peninggalan kolonial.",
-    foto: "",
+    foto: "assets/bentengOranje.jpg",
     latitude: 0.7933,
     longitude: 127.3916,
   },
@@ -2687,7 +2587,7 @@ const allCulture = [
     nama: "Ikan Bakar Manokwari",
     deskripsi:
       "Ikan tongkol dibakar lalu disajikan dengan sambal khas dari cabai rawit, bawang merah, dan tomat mentah yang dihaluskan kasar. Rasanya pedas segar dan sangat populer di Manokwari. Cocok disantap bersama papeda atau nasi putih hangat.",
-    foto: "",
+    foto: "assets/ikanBakarManokwari.jpeg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2697,7 +2597,7 @@ const allCulture = [
     nama: "Sagu Lempeng",
     deskripsi:
       "Makanan pokok masyarakat pesisir Papua Barat. Terbuat dari sagu yang dibakar menjadi lempengan padat, sering disantap dengan ikan kuah kuning. Teksturnya padat dan sedikit kenyal, mencerminkan pola makan masyarakat berbasis pangan lokal non-beras.",
-    foto: "",
+    foto: "assets/saguLempeng.jpg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2707,7 +2607,7 @@ const allCulture = [
     nama: "Tarian Salai",
     deskripsi:
       "Tarian tradisional suku Arfak yang menggambarkan kehidupan masyarakat, seperti berburu dan bercocok tanam. Ditampilkan dengan gerakan dinamis, busana dari daun dan bulu burung. Salai sering ditampilkan dalam acara adat dan penyambutan tamu resmi.",
-    foto: "",
+    foto: "assets/tarianSalai.jpeg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2717,7 +2617,7 @@ const allCulture = [
     nama: "Upacara Injak Piring Arfak",
     deskripsi:
       "Ritual pernikahan suku Arfak, di mana mempelai wanita menginjak piring sebagai simbol kesiapan membangun rumah tangga. Diiringi tarian dan nyanyian adat, prosesi ini mencerminkan kepercayaan, nilai keluarga, dan kesakralan ikatan pernikahan adat.",
-    foto: "",
+    foto: "assets/injakPiring.jpg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2727,7 +2627,7 @@ const allCulture = [
     nama: "Tifa Papua Barat",
     deskripsi:
       "Alat musik pukul berbentuk tabung dari kayu dan kulit rusa. Tifa dimainkan dalam upacara adat, tarian, dan pertunjukan budaya. Bunyi ritmisnya membangkitkan semangat kolektif dan menjadi simbol komunikasi spiritual dalam masyarakat Papua Barat.",
-    foto: "",
+    foto: "assets/tifaPapuaBarat.jpg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2737,7 +2637,7 @@ const allCulture = [
     nama: "Triton",
     deskripsi:
       "Alat musik tiup dari cangkang kerang laut besar. Digunakan untuk memanggil warga, memulai upacara, atau sebagai simbol penghubung manusia dengan alam. Triton menggambarkan kedekatan masyarakat pesisir dengan laut dan lingkungan sekitarnya.",
-    foto: "",
+    foto: "assets/triton.jpg",
     latitude: -0.8667,
     longitude: 134.0667,
   },
@@ -2747,7 +2647,7 @@ const allCulture = [
     nama: "Raja Ampat",
     deskripsi:
       "Gugusan pulau di Papua Barat yang dikenal sebagai surga bawah laut dunia. Memiliki ratusan spot diving dan snorkeling, biota laut eksotik, serta pemandangan alam luar biasa. Raja Ampat adalah ikon wisata kelas dunia Indonesia bagian timur.",
-    foto: "",
+    foto: "assets/rajaAmpat.jpg",
     latitude: -0.5833,
     longitude: 130.8333,
   },
@@ -2757,7 +2657,7 @@ const allCulture = [
     nama: "Pegunungan Arfak",
     deskripsi:
       "Terletak di Manokwari, pegunungan ini memiliki hutan hujan, danau, dan budaya lokal suku Arfak. Cocok untuk ekowisata, trekking, dan pengamatan burung cenderawasih. Arfak juga menyimpan rumah adat kaki seribu yang unik dan ramah lingkungan.",
-    foto: "",
+    foto: "assets/pegununganArfak.jpg",
     latitude: -0.9167,
     longitude: 134.05,
   },
@@ -2767,7 +2667,7 @@ const allCulture = [
     nama: "Papeda dengan ikan kuah kuning",
     deskripsi:
       "Papeda dari sagu disajikan dengan ikan kuah kuning berbumbu kunyit, jeruk nipis, dan cabai. Kombinasi tekstur kenyal dan cita rasa asam-gurih mencerminkan khasnya kuliner pesisir Papua.",
-    foto: "",
+    foto: "assets/papedaKuahKuning.jpg",
     latitude: -2.5744,
     longitude: 140.707,
   },
@@ -2777,7 +2677,7 @@ const allCulture = [
     nama: "Udang selingkuh",
     deskripsi:
       "Udang air tawar khas Wamena, dipanggang sederhana dengan sedikit garam. Rasanya manis alami, kaya protein, disajikan hangat dengan nasi atau sambal colo‑colo khas Papua tengah.",
-    foto: "",
+    foto: "assets/udangSelingkuh.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2787,7 +2687,7 @@ const allCulture = [
     nama: "Tradisi Ararem",
     deskripsi:
       "Prosesi pemberian mas kawin masyarakat Biak berupa hadiah simbolis. Diiringi doa serta tari adat, Ararem menegaskan solidaritas keluarga dan nilai budaya pernikahan di Papua.",
-    foto: "",
+    foto: "assets/ararem.jpg",
     latitude: -0.9,
     longitude: 135.8,
   },
@@ -2797,7 +2697,7 @@ const allCulture = [
     nama: "Festival Danau Sentani",
     deskripsi:
       "Festival tahunan di sekitar Danau Sentani, menampilkan parade perahu adat, tarian, musik, dan ritual masyarakat lokal sebagai bentuk syukur dan pelestarian budaya.",
-    foto: "",
+    foto: "assets/festivalDanauSentani.jpg",
     latitude: -2.5975,
     longitude: 140.4075,
   },
@@ -2807,7 +2707,7 @@ const allCulture = [
     nama: "Tifa Papua",
     deskripsi:
       "Alat musik pukul dari kayu keras dan kulit hewan, digunakan dalam upacara adat, sambutan tamu, dan tarian ritual, seperti Cenderawasih dan Yospan.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -2.5744,
     longitude: 140.707,
   },
@@ -2817,7 +2717,7 @@ const allCulture = [
     nama: "Triton",
     deskripsi:
       "Kerang besar yang ditiup menghasilkan suara gema. Awalnya alat penanda atau komunikasi adat, kini juga berfungsi sebagai alat musik simbolik masyarakat pesisir Papua.",
-    foto: "",
+    foto: "assets/triton.jpg",
     latitude: -2.5744,
     longitude: 140.707,
   },
@@ -2827,7 +2727,7 @@ const allCulture = [
     nama: "Teluk Cenderawasih",
     deskripsi:
       "Taman nasional laut di perbatasan Papua Tengah–Papua, habitat hiu paus dan terumbu karang, destinasi selam dengan keanekaragaman laut eksotik.",
-    foto: "",
+    foto: "assets/telukCendrawasih.jpg",
     latitude: -2.0,
     longitude: 135.0,
   },
@@ -2837,7 +2737,7 @@ const allCulture = [
     nama: "Gunung Puncak Jaya",
     deskripsi:
       "Puncak tertinggi di Indonesia (4.884 m), berada di jajaran Jayawijaya, terkenal bagi pendaki dunia dan simbol kebanggaan alam Papua.",
-    foto: "",
+    foto: "assets/jayawijaya.jpg",
     latitude: -4.0833,
     longitude: 137.1667,
   },
@@ -2847,7 +2747,7 @@ const allCulture = [
     nama: "Papeda dan Ikan Kuah Kuning",
     deskripsi:
       "Papeda terbuat dari sagu yang dimasak menjadi bubur kenyal. Di Papua Tengah, makanan ini disantap dengan ikan mujair atau nila berkuah kuning, dimasak bersama kunyit, serai, dan jeruk nipis. Rasanya gurih dan menyegarkan.",
-    foto: "",
+    foto: "assets/papedaKuahKuning.jpg",
     latitude: -3.9961,
     longitude: 136.3333,
   },
@@ -2857,7 +2757,7 @@ const allCulture = [
     nama: "Sagu Bakar (Sagu Bol)",
     deskripsi:
       "Sagu digulung menjadi bola kecil lalu dibakar atau dipanggang. Umumnya disantap bersama kelapa parut, sayur daun ubi, atau ikan asap. Makanan ini praktis dibawa bepergian dan menjadi sumber energi utama masyarakat pedalaman Papua Tengah.",
-    foto: "",
+    foto: "assets/saguBakar.jpg",
     latitude: -3.9961,
     longitude: 136.3333,
   },
@@ -2867,7 +2767,7 @@ const allCulture = [
     nama: "Barapen (Bakar Batu)",
     deskripsi:
       "Tradisi memasak bersama di tanah menggunakan batu panas. Makanan seperti babi, ubi, dan sayur dimasak dalam lubang tanah. Barapen adalah simbol kebersamaan, syukur, dan penyambutan tamu dalam upacara adat suku Dani dan sekitarnya.",
-    foto: "",
+    foto: "assets/barapen.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2877,7 +2777,7 @@ const allCulture = [
     nama: "Festival Lembah Baliem",
     deskripsi:
       "Digelar di Wamena setiap Agustus, festival ini menampilkan simulasi perang antar suku, tarian tradisional, dan lomba karapan babi. Tujuannya melestarikan budaya asli suku Dani, Lani, dan Yali serta menarik wisatawan dari seluruh dunia.",
-    foto: "",
+    foto: "assets/lembahBaliem.jpeg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2887,7 +2787,7 @@ const allCulture = [
     nama: "Tifa Papua",
     deskripsi:
       "Tifa berbentuk tabung kayu berlapis kulit hewan, dimainkan dengan tangan. Digunakan untuk mengiringi tarian perang, upacara adat, dan penyambutan tamu. Tifa menciptakan ritme kuat yang membangkitkan semangat dan kekompakan dalam komunitas adat.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -3.9961,
     longitude: 136.3333,
   },
@@ -2897,17 +2797,17 @@ const allCulture = [
     nama: "Suling Bambu",
     deskripsi:
       "Alat musik tiup sederhana dari bambu, menghasilkan nada lembut dan melodius. Digunakan dalam ritual adat, lagu rakyat, dan pertunjukan budaya. Suling bambu mencerminkan kedekatan masyarakat Papua Tengah dengan alam dan kehidupan spiritual.",
-    foto: "",
+    foto: "assets/sulingBambu.jpeg",
     latitude: -3.9961,
     longitude: 136.3333,
   },
   {
     provinsi: "Papua Tengah",
     kategori: "Tempat Wisata",
-    nama: "Lembah Baliem",
+    nama: "Pantai Monalisa (Nabire)",
     deskripsi:
-      "Terletak di Wamena, lembah ini dihuni oleh suku Dani dan dikelilingi pegunungan. Dikenal karena budaya tradisionalnya yang masih lestari, seperti rumah honai, pakaian koteka, dan sistem pertanian khas. Cocok untuk wisata budaya dan alam.",
-    foto: "",
+      "Terkenal dengan pemandangan matahari terbenam yang memukau dan keberadaan jembatan kayu yang membentang ke laut, menjadikannya tempat ideal untuk bersantai atau fotografi.",
+    foto: "assets/pantaiMonalise.jpeg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2917,7 +2817,7 @@ const allCulture = [
     nama: "Pegunungan Jayawijaya",
     deskripsi:
       "Pegunungan tertinggi di Indonesia dengan Puncak Jaya yang diselimuti es abadi. Dikenal di kalangan pendaki dunia, kawasan ini juga menjadi rumah bagi flora-fauna endemik dan suku-suku asli yang hidup harmonis dengan alam sekitar.",
-    foto: "",
+    foto: "assets/jayawijaya.jpg",
     latitude: -4.0833,
     longitude: 137.1667,
   },
@@ -2927,7 +2827,7 @@ const allCulture = [
     nama: "Bakar Batu (Barapen)",
     deskripsi:
       "Makanan hasil tradisi memasak di lubang tanah dengan batu panas. Ubi, sayur, dan daging babi dimasak bersama. Bakar batu dilakukan dalam perayaan adat sebagai bentuk syukur, kebersamaan, dan penyambutan tamu penting.",
-    foto: "",
+    foto: "assets/barapen.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2937,7 +2837,7 @@ const allCulture = [
     nama: "Udang Selingkuh",
     deskripsi:
       "Udang air tawar besar yang memiliki capit seperti kepiting, khas wilayah pegunungan Wamena. Biasanya direbus atau dibakar tanpa banyak bumbu. Rasanya manis dan gurih, disajikan dengan sambal atau sayur lokal dalam acara adat atau jamuan.",
-    foto: "",
+    foto: "assets/udangSelingkuh.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2947,7 +2847,7 @@ const allCulture = [
     nama: "Rumah Honai",
     deskripsi:
       "Rumah tradisional suku Dani, berbentuk bundar dan beratap ilalang, tahan dingin pegunungan. Digunakan untuk tidur, berkumpul, atau menyimpan barang berharga. Honai mencerminkan nilai kebersamaan dan filosofi hidup masyarakat Papua Pegunungan.",
-    foto: "",
+    foto: "assets/rumahHonai.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2957,7 +2857,7 @@ const allCulture = [
     nama: "Festival Budaya Lembah Baliem",
     deskripsi:
       "Perayaan budaya tahunan yang menampilkan perang-perangan adat, tari-tarian suku Dani, Lani, dan Yali, serta lomba tradisional seperti panahan dan karapan babi. Festival ini menarik wisatawan dan menjadi sarana pelestarian identitas lokal.",
-    foto: "",
+    foto: "assets/lembahBaliem.jpeg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2967,7 +2867,7 @@ const allCulture = [
     nama: "Tifa Pegunungan",
     deskripsi:
       "Tifa khas wilayah pegunungan memiliki ukuran lebih kecil dan ringan, terbuat dari kayu lokal dan kulit binatang. Digunakan dalam tari perang dan upacara adat, menciptakan irama kuat yang mengiringi gerakan dan semangat kolektif.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2977,17 +2877,17 @@ const allCulture = [
     nama: "Pikon",
     deskripsi:
       "Alat musik tiup dari bambu kecil, dimainkan dengan teknik getaran mulut. Suaranya mirip siulan, digunakan untuk hiburan pribadi, pengiring nyanyian, atau saat berburu. Pikon mencerminkan kreativitas musik masyarakat pedalaman Papua Pegunungan.",
-    foto: "",
+    foto: "assets/pikon.jpeg",
     latitude: -4.095,
     longitude: 138.8752,
   },
   {
     provinsi: "Papua Pegunungan",
     kategori: "Tempat Wisata",
-    nama: "Lembah Baliem",
+    nama: "Gunung Trikora",
     deskripsi:
       "Dikelilingi pegunungan tinggi, lembah ini dihuni suku Dani yang masih memegang tradisi nenek moyang. Wisatawan dapat melihat kehidupan adat, rumah honai, serta sistem pertanian khas pegunungan yang unik dan menarik secara budaya.",
-    foto: "",
+    foto: "assets/gunungTrikora.jpg",
     latitude: -4.095,
     longitude: 138.8752,
   },
@@ -2997,7 +2897,7 @@ const allCulture = [
     nama: "Danau Habema",
     deskripsi:
       "Danau tertinggi di Indonesia, berada di kawasan Pegunungan Jayawijaya. Dikelilingi padang rumput dan kabut tipis, danau ini memiliki keindahan mistis. Merupakan tempat sakral bagi suku Dani dan lokasi trekking favorit para pendaki.",
-    foto: "",
+    foto: "assets/danauHabema.jpeg",
     latitude: -4.398,
     longitude: 138.7456,
   },
@@ -3007,7 +2907,7 @@ const allCulture = [
     nama: "Sagu Lempeng",
     deskripsi:
       "Sagu dibakar menjadi lempengan padat dan kering, disantap bersama ikan asap, sambal, atau kelapa parut. Makanan pokok masyarakat pesisir dan pedalaman Papua Selatan ini mencerminkan kearifan lokal dalam mengolah sagu sebagai sumber utama karbohidrat.",
-    foto: "",
+    foto: "assets/saguLempeng.jpg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3017,7 +2917,7 @@ const allCulture = [
     nama: "Ikan Asap Kuah",
     deskripsi:
       "Ikan hasil tangkapan sungai seperti ikan gabus diasapi, lalu dimasak dalam kuah rempah ringan. Disajikan bersama papeda atau sagu bakar. Hidangan ini umum dijumpai di Merauke dan mencerminkan pengaruh budaya Marind dan perairan sekitar.",
-    foto: "",
+    foto: "assets/ikanAsapKuah.jpg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3027,7 +2927,7 @@ const allCulture = [
     nama: "Tradisi Tifa-Tifa Marind",
     deskripsi:
       "Tradisi berkumpulnya warga Marind sambil memainkan tifa, bernyanyi, dan berdansa dalam lingkaran. Tifa-Tifa menjadi bentuk syukur, ekspresi sukacita, serta sarana sosial yang mempererat hubungan antaranggota suku dan generasi muda.",
-    foto: "",
+    foto: "assets/tradisiTifa.jpg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3037,7 +2937,7 @@ const allCulture = [
     nama: "Upacara Bakar Batu Marind",
     deskripsi:
       "Seperti daerah pegunungan, masyarakat Marind di Papua Selatan juga memiliki tradisi bakar batu. Biasanya dilakukan saat penyambutan tamu, pernikahan, atau panen. Upacara ini menjadi simbol berbagi, kehormatan, dan kerjasama komunitas.",
-    foto: "",
+    foto: "assets/bakarBatu.jpg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3047,7 +2947,7 @@ const allCulture = [
     nama: "Tifa Marind",
     deskripsi:
       "Alat musik pukul dari kayu dan kulit binatang, dimainkan untuk mengiringi tarian dan nyanyian adat. Bentuknya panjang dan ramping, menghasilkan suara ritmis kuat yang menciptakan suasana semangat saat upacara dan pertemuan adat.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3057,7 +2957,7 @@ const allCulture = [
     nama: "Karinding Papua (Serupa Pikon)",
     deskripsi:
       "Alat musik tiup mini dari bambu tipis. Menghasilkan suara mendesis yang dimainkan untuk hiburan pribadi atau dalam ritual spiritual. Meski sederhana, alat ini sarat makna dan sering digunakan dalam komunikasi tradisional di pedalaman Papua Selatan.",
-    foto: "",
+    foto: "assets/karinding.jpeg",
     latitude: -8.4608,
     longitude: 140.3377,
   },
@@ -3067,7 +2967,7 @@ const allCulture = [
     nama: "Taman Nasional Wasur",
     deskripsi:
       "Terletak di Merauke, dikenal sebagai 'Serengeti-nya Papua.' Memiliki padang rumput luas, rawa, dan hutan dataran rendah. Menjadi habitat burung migran, kanguru pohon, dan buaya. Cocok untuk ekowisata dan pengamatan satwa langka.",
-    foto: "",
+    foto: "assets/tamanNasionalWasur.jpg",
     latitude: -8.65,
     longitude: 140.65,
   },
@@ -3077,7 +2977,7 @@ const allCulture = [
     nama: "Pantai Lampu Satu",
     deskripsi:
       "Pantai berpasir putih di Merauke dengan mercusuar peninggalan Belanda. Menjadi tempat favorit warga lokal untuk menikmati matahari terbenam. Pantai ini juga menjadi simbol ujung paling timur Indonesia dan lokasi perayaan nasional tahunan.",
-    foto: "",
+    foto: "assets/pantaiLampuSatu.jpeg",
     latitude: -8.5083,
     longitude: 140.4079,
   },
@@ -3087,7 +2987,7 @@ const allCulture = [
     nama: "Papeda Ikan Kuah Kuning",
     deskripsi:
       "Makanan utama dari sagu yang dimasak menjadi bubur lengket. Disajikan bersama ikan laut seperti tongkol atau mubara dalam kuah kuning berbumbu kunyit dan rempah. Papeda mencerminkan kebiasaan makan sehat masyarakat pesisir Sorong dan sekitarnya.",
-    foto: "",
+    foto: "assets/papedaKuahKuning.jpg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3097,7 +2997,7 @@ const allCulture = [
     nama: "Ikan Bakar Sambal Colo-Colo",
     deskripsi:
       "Ikan segar hasil tangkapan laut Papua Barat Daya dibakar langsung di atas bara, disajikan dengan sambal colo-colo khas Maluku-Papua. Rasa gurih ikan berpadu dengan sambal asam pedas menciptakan kelezatan sederhana yang digemari masyarakat lokal.",
-    foto: "",
+    foto: "assets/ikanSambalColo.jpg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3107,7 +3007,7 @@ const allCulture = [
     nama: "Tradisi Noken Suku Moi",
     deskripsi:
       "Tas rajut dari kulit kayu yang digunakan untuk membawa hasil kebun, bayi, atau barang pribadi. Noken melambangkan ketekunan dan tanggung jawab perempuan Papua, serta telah diakui UNESCO sebagai warisan budaya takbenda dunia.",
-    foto: "",
+    foto: "assets/noken.jpg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3117,7 +3017,7 @@ const allCulture = [
     nama: "Tari Yospan",
     deskripsi:
       "Tarian pergaulan khas Tanah Papua yang mencampurkan gerak Yosim dan Pancar. Diiringi tifa dan lagu ceria, tarian ini mencerminkan semangat persahabatan, kebersamaan, dan sukacita generasi muda, sering ditampilkan dalam penyambutan tamu.",
-    foto: "",
+    foto: "assets/yospan.jpg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3127,7 +3027,7 @@ const allCulture = [
     nama: "Tifa Sorong",
     deskripsi:
       "Alat musik pukul dari kayu berlubang, bagian atasnya ditutup kulit rusa. Dipukul untuk mengiringi tari Yospan, lagu adat, atau upacara penting. Suaranya tajam dan menghentak, jadi pusat ritme dalam pertunjukan seni Papua Barat Daya.",
-    foto: "",
+    foto: "assets/tifa.jpeg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3137,7 +3037,7 @@ const allCulture = [
     nama: "Suling Bambu Papua",
     deskripsi:
       "Suling dari bambu tipis, memiliki suara lembut dan mendayu. Digunakan untuk mengiringi nyanyian atau meditasi spiritual. Alat ini masih digunakan masyarakat pedalaman untuk berkomunikasi atau mengungkapkan perasaan melalui nada melankolis.",
-    foto: "",
+    foto: "assets/sulingBambu.jpeg",
     latitude: -0.8833,
     longitude: 131.25,
   },
@@ -3147,7 +3047,7 @@ const allCulture = [
     nama: "Kepulauan Raja Ampat (bagian Sorong)",
     deskripsi:
       "Meskipun sebagian besar masuk Papua Barat, sebagian wilayah Raja Ampat berada di Papua Barat Daya, seperti Kota Sorong sebagai pintu masuk utama. Dikenal dengan keanekaragaman laut tertinggi di dunia, jadi destinasi diving dan snorkeling populer.",
-    foto: "",
+    foto: "assets/rajaAmpat.jpg",
     latitude: -0.47,
     longitude: 130.82,
   },
@@ -3157,7 +3057,7 @@ const allCulture = [
     nama: "Taman Wisata Alam Sorong",
     deskripsi:
       "Kawasan hutan tropis di pinggiran Kota Sorong yang menyajikan keindahan alam, jalur trekking, dan habitat burung cenderawasih. Cocok untuk wisata edukatif dan pengenalan ekosistem hutan Papua kepada pengunjung lokal maupun mancanegara.",
-    foto: "",
+    foto: "assets/alamSorong.jpeg",
     latitude: -0.8833,
     longitude: 131.25,
   },

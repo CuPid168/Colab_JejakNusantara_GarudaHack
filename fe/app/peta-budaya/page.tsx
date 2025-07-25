@@ -23,6 +23,7 @@ const PetaBudaya = () => {
     "Banten",
     "Bengkulu",
     "Daerah Istimewa Yogyakarta",
+    "DKI Jakarta",
     "Gorontalo",
     "Jambi",
     "Jawa Barat",
