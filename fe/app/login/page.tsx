@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Alert } from "@/components/ui/alert";
+import { Label } from "@/components/ui/label";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -39,20 +40,46 @@ export default function LoginPage() {
             <p className="text-base text-muted-foreground mb-6">Silakan masuk untuk mengakses akun Anda dan nikmati seluruh fitur yang ada.</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <Input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-            <Input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              required
-            />
+            <div className="relative">
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="email"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${email ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Email
+              </Label>
+            </div>
+            <div className="relative">
+              <Input
+                id="password"
+                type="password"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="password"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${password ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Password
+              </Label>
+            </div>
             {error && <Alert>{error}</Alert>}
             <Button
               type="submit"
