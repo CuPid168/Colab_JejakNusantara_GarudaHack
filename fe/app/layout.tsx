@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ClientLayout from "./ClientLayout";
+import { Toaster } from "sonner";
 
 import "./global.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={lato.className}>
         <ClientLayout>
+          <Toaster position="top-center" />
           <Header />
           {children}
           <Footer />
