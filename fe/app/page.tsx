@@ -149,13 +149,8 @@ export default function Home() {
                 src="/images/landing_jumbotron.png"
                 alt="landing jumbotron"
                 width={800}
-<<<<<<< HEAD
-                height={800}
-                className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
-=======
                 height={600}
                 className="w-full max-w-3xl h-auto object-cover rounded-xl z-10"
->>>>>>> 901626e2da9d515dd7da3602e0fd6946d75b4664
                 priority
               />
             </div>
