@@ -38,16 +38,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex gap-5 flex-1 bg-black">
-        <div className="self-start">
-          <img src="images/beranda-1.png" alt="foto1" className=" object-cover w-52 h-40" />
-          <img src="images/beranda-2.png" alt="foto2" className=" object-cover w-52 h-40" />
-        </div>
-        <div className="self-end">
-          <img src="images/beranda-3.png" alt="foto3" className="w-52 h-32" />
-          <img src="images/beranda-4.png" alt="foto4" className="w-52 h-32" />
-        </div>
-      </div>
+      <div className="flex gap-5 flex-1 h-[200px]">gg gamink</div>
     </div>
   );
 }

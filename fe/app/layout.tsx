@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ClientLayout from "./ClientLayout";
 
-import "./globals.css";
+import "./global.css";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
