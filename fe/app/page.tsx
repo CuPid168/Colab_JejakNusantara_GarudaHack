@@ -28,16 +28,15 @@ export default function Home() {
   return (
     <>
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
+        <div className="mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
           <div className="flex flex-col space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              34 Provinsi
-            </h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">34 Provinsi</h1>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#FF7D29]">
               7.241 Budaya
             </h1>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Bahasa, Adat, Kesenian, dan Kuliner Tradisional Indonesia adalah warisan yang tak ternilai. Mari pelajari, pahami, dan teruskan kepada generasi selanjutnya!
+              Bahasa, Adat, Kesenian, dan Kuliner Tradisional Indonesia adalah warisan yang tak ternilai. Mari
+              pelajari, pahami, dan teruskan kepada generasi selanjutnya!
             </p>
             <div className="flex gap-3 items-center">
               <Link
@@ -52,7 +51,13 @@ export default function Home() {
               >
                 Tanya AI Budaya
                 <span>
-                  <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
@@ -69,28 +74,27 @@ export default function Home() {
               <div
                 className="absolute z-0"
                 style={{
-                  width: '500px',
-                  height: '500px',
-                  borderRadius: '50%',
-                  background: '#FF7D29',
+                  width: "500px",
+                  height: "500px",
+                  borderRadius: "50%",
+                  background: "#FF7D29",
                   opacity: 0.7,
-                  filter: 'blur(120px)',
-                  left: '50%',
-                  top: '50%',
-                  transform: 'translate(-50%, -50%)',
+                  filter: "blur(120px)",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)",
                 }}
               />
               <Image
                 src="/images/landing_jumbotron.png"
                 alt="landing jumbotron"
-                width={800}
-                height={600}
+                width={2000}
+                height={2000}
                 className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
                 priority
               />
             </div>
           </div>
-
         </div>
       </section>
       {/* Info Section: Cultural Problems */}
@@ -103,9 +107,12 @@ export default function Home() {
                 <FaGraduationCap className="text-white text-2xl" />
               </div>
               <div className="min-w-0">
-                <p className="font-bold text-white text-base md:text-lg mb-1">Pendidikan Budaya yang Terbatas</p>
+                <p className="font-bold text-white text-base md:text-lg mb-1">
+                  Pendidikan Budaya yang Terbatas
+                </p>
                 <p className="text-gray-200 text-xs md:text-sm">
-                  Edukasi budaya lokal sering kali hanya diajarkan di bangku SD, tanpa keberlanjutan yang disesuaikan dengan transformasi digital
+                  Edukasi budaya lokal sering kali hanya diajarkan di bangku SD, tanpa keberlanjutan yang
+                  disesuaikan dengan transformasi digital
                 </p>
               </div>
             </div>
@@ -115,9 +122,12 @@ export default function Home() {
                 <FaComments className="text-white text-2xl" />
               </div>
               <div className="min-w-0">
-                <div className="font-bold text-white text-base md:text-lg mb-1">Gen Z Minim Bisa Bahasa Daerah Sendiri</div>
+                <div className="font-bold text-white text-base md:text-lg mb-1">
+                  Gen Z Minim Bisa Bahasa Daerah Sendiri
+                </div>
                 <div className="text-gray-200 text-xs md:text-sm">
-                  Karena generasi Gen Z yang nantinya jadi orang tua juga nggak bisa, bahasa daerah makin terancam punah.
+                  Karena generasi Gen Z yang nantinya jadi orang tua juga nggak bisa, bahasa daerah makin
+                  terancam punah.
                 </div>
               </div>
             </div>
@@ -127,9 +137,12 @@ export default function Home() {
                 <FaGlobe className="text-white text-2xl" />
               </div>
               <div className="min-w-0">
-                <div className="font-bold text-white text-base md:text-lg mb-1">Budaya Terlupakan di Era Digital</div>
+                <div className="font-bold text-white text-base md:text-lg mb-1">
+                  Budaya Terlupakan di Era Digital
+                </div>
                 <div className="text-gray-200 text-xs md:text-sm">
-                  Di tengah arus globalisasi dan konten luar yang mendominasi, budaya lokal makin terpinggirkan dan jarang dikenali oleh generasi digital.
+                  Di tengah arus globalisasi dan konten luar yang mendominasi, budaya lokal makin
+                  terpinggirkan dan jarang dikenali oleh generasi digital.
                 </div>
               </div>
             </div>
@@ -143,22 +156,22 @@ export default function Home() {
               <div
                 className="absolute z-0"
                 style={{
-                  width: '500px',
-                  height: '500px',
-                  borderRadius: '50%',
-                  background: '#FF7D29',
+                  width: "500px",
+                  height: "500px",
+                  borderRadius: "50%",
+                  background: "#FF7D29",
                   opacity: 0.7,
-                  filter: 'blur(120px)',
-                  left: '50%',
-                  top: '50%',
-                  transform: 'translate(-50%, -50%)',
+                  filter: "blur(120px)",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)",
                 }}
               />
               <Image
                 src="/images/landing_peta.png"
                 alt="landing jumbotron"
-                width={800}
-                height={600}
+                width={1000}
+                height={1000}
                 className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
                 priority
               />
@@ -179,7 +192,8 @@ export default function Home() {
               <div className="min-w-0">
                 <p className="font-bold text-black text-base md:text-lg mb-1">Budaya</p>
                 <p className="text-black/50 text-xs md:text-sm">
-                  Budaya adalah identitas bangsa. Mari lestarikan agar generasi muda tetap mengenal jati diri Indonesia.
+                  Budaya adalah identitas bangsa. Mari lestarikan agar generasi muda tetap mengenal jati diri
+                  Indonesia.
                 </p>
               </div>
             </div>
@@ -190,7 +204,8 @@ export default function Home() {
               <div className="min-w-0">
                 <p className="font-bold text-black text-base md:text-lg mb-1">Makanan Daerah</p>
                 <p className="text-black/50 text-xs md:text-sm">
-                  Makanan tradisional mencerminkan kekayaan daerah. Rasakan cita rasa khas nusantara dan kenali asal-usulnya.
+                  Makanan tradisional mencerminkan kekayaan daerah. Rasakan cita rasa khas nusantara dan
+                  kenali asal-usulnya.
                 </p>
               </div>
             </div>
@@ -201,7 +216,8 @@ export default function Home() {
               <div className="min-w-0">
                 <p className="font-bold text-black text-base md:text-lg mb-1">Tempat Wisata</p>
                 <p className="text-black/50 text-xs md:text-sm">
-                  Jelajahi keindahan alam dan budaya lokal. Setiap tempat punya cerita yang layak dijaga dan dibagikan.
+                  Jelajahi keindahan alam dan budaya lokal. Setiap tempat punya cerita yang layak dijaga dan
+                  dibagikan.
                 </p>
               </div>
             </div>
@@ -212,7 +228,8 @@ export default function Home() {
               <div className="min-w-0">
                 <p className="font-bold text-black text-base md:text-lg mb-1">Alat Musik</p>
                 <p className="text-black/50 text-xs md:text-sm">
-                  Alat musik tradisional adalah suara warisan budaya. Mainkan, kenali, dan hidupkan kembali irama nusantara.
+                  Alat musik tradisional adalah suara warisan budaya. Mainkan, kenali, dan hidupkan kembali
+                  irama nusantara.
                 </p>
               </div>
             </div>
@@ -231,9 +248,7 @@ export default function Home() {
       {/* Ragam Nusantara Section */}
       <section className="w-full py-12 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Ragam Nusantara
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Ragam Nusantara</h2>
         </div>
 
         {/* Marquee 1: Left */}
@@ -244,7 +259,7 @@ export default function Home() {
                 key={`first-${index}`}
                 className="relative flex-shrink-0 rounded-md overflow-hidden"
                 // ✅ Use inline styles for fixed dimensions
-                style={{ width: '450px', height: '250px' }}
+                style={{ width: "450px", height: "250px" }}
               >
                 <Image
                   src={image.src}
@@ -266,20 +281,14 @@ export default function Home() {
               <div
                 key={`second-${index}`}
                 className="relative flex-shrink-0 rounded-md overflow-hidden"
-                style={{ width: '450px', height: '250px' }}
+                style={{ width: "450px", height: "250px" }}
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes="450px"
-                  className="object-cover"
-                />
+                <Image src={image.src} alt={image.alt} fill sizes="450px" className="object-cover" />
               </div>
             ))}
           </div>
         </Marquee>
       </section>
     </>
-  )
+  );
 }
