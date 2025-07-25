@@ -279,7 +279,7 @@ export default function KomunitasPage() {
               {/* Create Post Button */}
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                  <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2 shadow-lg backdrop-blur-sm" style={{backdropFilter: 'blur(4px)'}}>
+                  <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2 shadow-lg backdrop-blur-sm" style={{ backdropFilter: 'blur(4px)' }}>
                     Create Post
                   </Button>
                 </DialogTrigger>
@@ -323,13 +323,10 @@ export default function KomunitasPage() {
             </>
           ) : (
             <div className="flex flex-col items-center w-full gap-6 pt-2">
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
-                <Image src="/images/login.svg" alt="Profile" width={96} height={96} />
-              </div>
               <div className="font-semibold text-lg mb-1">Anda belum login</div>
               <div className="text-sm text-gray-500 mb-4 text-center">Silakan login untuk membuat postingan dan melihat profil Anda.</div>
               <Link href="/login" className="w-full">
-                <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white text-lg font-semibold py-1 shadow-lg backdrop-blur-sm" style={{backdropFilter: 'blur(4px)'}}>
+                <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white text-lg font-semibold py-1 shadow-lg backdrop-blur-sm" style={{ backdropFilter: 'blur(4px)' }}>
                   Login
                 </Button>
               </Link>
