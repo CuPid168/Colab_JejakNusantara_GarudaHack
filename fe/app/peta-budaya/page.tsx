@@ -110,6 +110,7 @@ const PetaBudaya = () => {
           selectedCulture={selectedCulture}
           setSelectedCulture={setSelectedCulture}
           cultureInOneProvince={cultureInOneProvince}
+          //@ts-ignore
           dropdownRef={dropdownRef}
         />
       </div>
@@ -118,6 +119,7 @@ const PetaBudaya = () => {
         selectedProvince={selectedProvince}
         selectedCategory={selectedCategory}
         selectedCulture={selectedCulture}
+          //@ts-ignore
         setSelectedCulture={setSelectedCulture}
       />
     </div>

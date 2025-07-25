@@ -40,6 +40,7 @@ const tentangKami = () => {
     },
   ];
 
+  //@ts-ignore
   const handleSubmit = (e) => {
     e.preventDefault();
 

@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { PrismaClient } from '@/generated/prisma';
 import { getServerSession } from 'next-auth/next';
+//@ts-ignore
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 
 const prisma = new PrismaClient();
