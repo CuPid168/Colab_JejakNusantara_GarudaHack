@@ -54,7 +54,7 @@ const CultureDetail = ({
         )}
       </div>
       <div className="p-4 flex-1/2 border border-black/10 rounded-lg">
-        {selectedCulture?.foto !== "" && <img src={selectedCulture?.foto} alt="" className="w-full h-80 object-cover rounded-lg" />}
+        <img src={selectedCulture?.foto} alt="" className="w-full h-80 object-cover rounded-lg" />
 
         <h1 className="text-[#FF7D29] text-2xl font-bold mt-4">{selectedCulture?.nama}</h1>
         <p className="text-black/50 mt-2">{selectedCulture?.deskripsi}</p>

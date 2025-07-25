@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
-
 import dynamic from "next/dynamic";
 import SearchCulture from "./SearchCulture";
 import CultureDetail from "./CultureDetail";
@@ -56,9 +55,9 @@ const PetaBudaya = () => {
     "Sulawesi Tengah",
     "Sulawesi Tenggara",
     "Sulawesi Utara",
-    "Sumatera Barat",
-    "Sumatera Selatan",
-    "Sumatera Utara",
+    "Sumatra Barat",
+    "Sumatra Selatan",
+    "Sumatra Utara",
   ];
 
   const dropdownRef = useRef<HTMLDivElement>(null);
