@@ -135,21 +135,118 @@ export default function KomunitasPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fa]">
-      <div className="flex flex-1 w-full max-w-7xl mx-auto gap-8 py-10 px-4">
-        {/* Timeline (3/4) */}
-        <div className="flex-1 bg-white rounded-xl shadow-md p-6 min-h-[70vh]">
-          <h2 className="text-xl font-bold mb-4">Timeline Komunitas</h2>
+      <div className="flex flex-col md:flex-row flex-1 w-full max-w-7xl mx-auto gap-4 md:gap-8 py-6 md:py-10 px-2 md:px-4">
+        {/* Profile (top on mobile, right on desktop) */}
+        <div className="w-full md:w-[320px] min-w-0 bg-white rounded-xl shadow-md p-4 md:p-6 flex flex-col items-center mb-4 md:mb-0">
+          {session && session.user ? (
+            <>
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
+                {/*@ts-ignore */}
+                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session?.user.id || session.user.email}`} alt="Profile" width={96} height={96} />
+              </div>
+              <div className="font-semibold text-base md:text-lg mb-1">{session.user.name || "Pengguna"}</div>
+              <div className="text-xs md:text-sm text-gray-500 mb-4">{typeof session.user.email === 'string' ? session.user.email : '-'}</div>
+              {/* User stats */}
+              <div className="flex gap-4 mb-4">
+                <div className="text-center">
+                  <div className="font-bold text-[#7B4019]">{posts.filter(p => p.user?.email === session?.user?.email).length}</div>
+                  <div className="text-xs text-gray-500">Post</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-bold text-[#7B4019]">0</div>
+                  <div className="text-xs text-gray-500">Like</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-bold text-[#7B4019]">0</div>
+                  <div className="text-xs text-gray-500">Upvote</div>
+                </div>
+              </div>
+              {/* User's posted images gallery */}
+              <div className="w-full flex flex-col items-center mb-6">
+                <div className="w-full text-xs md:text-sm font-semibold mb-2 text-center">Postingan Anda</div>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {posts.filter(p => p.user?.email === session?.user?.email).length === 0 ? (
+                    <div className="text-xs text-gray-400">Belum ada postingan.</div>
+                  ) : (
+                    posts.filter(p => p.user?.email === session?.user?.email).map(p => (
+                      <div key={p.id} className="w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden border border-gray-200 bg-gray-100 flex items-center justify-center">
+                        <Image src={p.image} alt="Post" width={64} height={64} className="object-cover w-full h-full" />
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+              {/* Create Post Button */}
+              <Dialog open={open} onOpenChange={setOpen}>
+                <DialogTrigger asChild>
+                  <Button className="w-full h-12 md:h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2 shadow-lg backdrop-blur-sm text-sm md:text-base" style={{ backdropFilter: 'blur(4px)' }}>
+                    Create Post
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-md w-full">
+                  <DialogHeader>
+                    <DialogTitle>Buat Postingan Baru</DialogTitle>
+                  </DialogHeader>
+                  <form className="flex flex-col gap-4 mt-4" onSubmit={handleSubmit}>
+                    <label className="font-medium">Gambar Budaya</label>
+                    <Input
+                      type="file"
+                      accept="image/*"
+                      required
+                      ref={fileInputRef}
+                      onChange={e => setImage(e.target.files?.[0] || null)}
+                    />
+                    <label className="font-medium">Lokasi</label>
+                    <Input
+                      type="text"
+                      placeholder="Contoh: Banyuwangi"
+                      required
+                      value={location}
+                      onChange={e => setLocation(e.target.value)}
+                    />
+                    <label className="font-medium">Deskripsi</label>
+                    <textarea
+                      placeholder="Deskripsikan budaya..."
+                      required
+                      value={description}
+                      onChange={e => setDescription(e.target.value)}
+                      className="flex w-full rounded-2xl border border-input bg-background px-5 py-3 text-xs md:text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus:border-primary focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all h-20 md:h-24 resize-none"
+                      style={{ borderRadius: '1rem' }}
+                    />
+                    {error && <div className="text-red-500 text-sm">{error}</div>}
+                    <Button type="submit" className="mt-2 bg-[#7B4019] text-white rounded-full" disabled={loading}>
+                      {loading ? "Posting..." : "Posting"}
+                    </Button>
+                  </form>
+                </DialogContent>
+              </Dialog>
+            </>
+          ) : (
+            <div className="flex flex-col items-center w-full gap-6 pt-2">
+              <div className="font-semibold text-base md:text-lg mb-1">Anda belum login</div>
+              <div className="text-xs md:text-sm text-gray-500 mb-4 text-center">Silakan login untuk membuat postingan dan melihat profil Anda.</div>
+              <Link href="/login" className="w-full">
+                <Button className="w-full h-12 md:h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white text-base md:text-lg font-semibold py-1 shadow-lg backdrop-blur-sm" style={{ backdropFilter: 'blur(4px)' }}>
+                  Login
+                </Button>
+              </Link>
+            </div>
+          )}
+        </div>
+        {/* Timeline (below profile on mobile, left on desktop) */}
+        <div className="flex-1 w-full bg-white rounded-xl shadow-md p-4 md:p-6 min-h-[70vh]">
+          <h2 className="text-lg md:text-xl font-bold mb-4">Timeline Komunitas</h2>
           {/* Timeline posts will go here */}
           {posts.length === 0 ? (
-            <div className="text-gray-400 text-center mt-20">Belum ada postingan.</div>
+            <div className="text-gray-400 text-center mt-10 md:mt-20">Belum ada postingan.</div>
           ) : (
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 md:gap-6">
               {posts.map(post => (
-                <div key={post.id} className="bg-[#f8f9fa] rounded-xl shadow p-4 flex flex-col gap-2">
-                  <div className="flex items-center gap-3 mb-2">
-                    <Image src={post.user?.image || `https://i.pravatar.cc/300?u=${post.user?.id}`} alt="User" width={36} height={36} className="rounded-full" />
+                <div key={post.id} className="bg-[#f8f9fa] rounded-xl shadow p-3 md:p-4 flex flex-col gap-2">
+                  <div className="flex items-center gap-2 md:gap-3 mb-2">
+                    <Image src={post.user?.image || `https://i.pravatar.cc/300?u=${post.user?.id}`} alt="User" width={32} height={32} className="rounded-full" />
                     <div>
-                      <div className="font-semibold">{post.user?.name || "User"}</div>
+                      <div className="font-semibold text-xs md:text-base">{post.user?.name || "User"}</div>
                       {post.user?.domisili && (
                         <div className="text-xs text-gray-500">{post.user.domisili}</div>
                       )}
@@ -157,10 +254,10 @@ export default function KomunitasPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                    <Image src={post.image} alt="Post" width={400} height={300} className="rounded-lg object-cover max-h-72" />
+                    <Image src={post.image} alt="Post" width={400} height={300} className="rounded-lg object-cover max-h-40 md:max-h-72" />
                   </div>
-                  <div className="mt-2 text-sm text-gray-700 whitespace-pre-line">{post.description}</div>
-                  <div className="flex gap-6 mt-2 text-xs text-gray-500 items-center">
+                  <div className="mt-2 text-xs md:text-sm text-gray-700 whitespace-pre-line">{post.description}</div>
+                  <div className="flex gap-4 md:gap-6 mt-2 text-xs text-gray-500 items-center">
                     <button
                       className={`flex items-center gap-1 ${!session ? 'opacity-50 cursor-not-allowed' : 'hover:text-[#7B4019]'}`}
                       onClick={() => handleLike(post.id)}
@@ -197,12 +294,12 @@ export default function KomunitasPage() {
                         ) : commentError ? (
                           <div className="text-red-500 text-center py-6">{commentError}</div>
                         ) : (
-                          <div className="flex flex-col gap-4 max-h-72 overflow-y-auto py-2">
+                          <div className="flex flex-col gap-2 md:gap-4 max-h-40 md:max-h-72 overflow-y-auto py-2">
                             {comments.length === 0 ? (
                               <div className="text-gray-400 text-center">Belum ada komentar.</div>
                             ) : comments.map((c, i) => (
-                              <div key={i} className="flex gap-3 items-start">
-                                <Image src={c.user?.image || `https://i.pravatar.cc/300?u=${c.user?.id}`} alt="User" width={28} height={28} className="rounded-full" />
+                              <div key={i} className="flex gap-2 md:gap-3 items-start">
+                                <Image src={c.user?.image || `https://i.pravatar.cc/300?u=${c.user?.id}`} alt="User" width={24} height={24} className="rounded-full" />
                                 <div>
                                   <div className="font-semibold text-xs">{c.user?.name || 'User'}</div>
                                   {c.user?.domisili && <div className="text-xs text-gray-500">{c.user.domisili}</div>}
@@ -219,12 +316,12 @@ export default function KomunitasPage() {
                               value={commentText}
                               onChange={e => setCommentText(e.target.value)}
                               placeholder="Tulis komentar..."
-                              className="flex-1 border rounded-full px-4 py-2 text-sm"
+                              className="flex-1 border rounded-full px-4 py-2 text-xs md:text-sm"
                               disabled={commentLoading}
                               maxLength={300}
                               required
                             />
-                            <Button type="submit" disabled={commentLoading || !commentText.trim()} className="rounded-full bg-[#7B4019] text-white px-4 py-2">
+                            <Button type="submit" disabled={commentLoading || !commentText.trim()} className="rounded-full bg-[#7B4019] text-white px-4 py-2 text-xs md:text-sm">
                               Kirim
                             </Button>
                           </form>
@@ -234,103 +331,6 @@ export default function KomunitasPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          )}
-        </div>
-        {/* Profile (1/4) */}
-        <div className="w-[320px] min-w-[260px] bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
-          {session && session.user ? (
-            <>
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
-                {/*@ts-ignore */}
-                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session?.user.id || session.user.email}`} alt="Profile" width={96} height={96} />
-              </div>
-              <div className="font-semibold text-lg mb-1">{session.user.name || "Pengguna"}</div>
-              <div className="text-sm text-gray-500 mb-4">{typeof session.user.email === 'string' ? session.user.email : '-'}</div>
-              {/* User stats */}
-              <div className="flex gap-4 mb-4">
-                <div className="text-center">
-                  <div className="font-bold text-[#7B4019]">{posts.filter(p => p.user?.email === session?.user?.email).length}</div>
-                  <div className="text-xs text-gray-500">Post</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-bold text-[#7B4019]">0</div>
-                  <div className="text-xs text-gray-500">Like</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-bold text-[#7B4019]">0</div>
-                  <div className="text-xs text-gray-500">Upvote</div>
-                </div>
-              </div>
-              {/* User's posted images gallery */}
-              <div className="w-full flex flex-col items-center mb-6">
-                <div className="w-full text-sm font-semibold mb-2 text-center">Postingan Anda</div>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {posts.filter(p => p.user?.email === session?.user?.email).length === 0 ? (
-                    <div className="text-xs text-gray-400">Belum ada postingan.</div>
-                  ) : (
-                    posts.filter(p => p.user?.email === session?.user?.email).map(p => (
-                      <div key={p.id} className="w-16 h-16 rounded-lg overflow-hidden border border-gray-200 bg-gray-100 flex items-center justify-center">
-                        <Image src={p.image} alt="Post" width={64} height={64} className="object-cover w-full h-full" />
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
-              {/* Create Post Button */}
-              <Dialog open={open} onOpenChange={setOpen}>
-                <DialogTrigger asChild>
-                  <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2 shadow-lg backdrop-blur-sm" style={{ backdropFilter: 'blur(4px)' }}>
-                    Create Post
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-md w-full">
-                  <DialogHeader>
-                    <DialogTitle>Buat Postingan Baru</DialogTitle>
-                  </DialogHeader>
-                  <form className="flex flex-col gap-4 mt-4" onSubmit={handleSubmit}>
-                    <label className="font-medium">Gambar Budaya</label>
-                    <Input
-                      type="file"
-                      accept="image/*"
-                      required
-                      ref={fileInputRef}
-                      onChange={e => setImage(e.target.files?.[0] || null)}
-                    />
-                    <label className="font-medium">Lokasi</label>
-                    <Input
-                      type="text"
-                      placeholder="Contoh: Banyuwangi"
-                      required
-                      value={location}
-                      onChange={e => setLocation(e.target.value)}
-                    />
-                    <label className="font-medium">Deskripsi</label>
-                    <textarea
-                      placeholder="Deskripsikan budaya..."
-                      required
-                      value={description}
-                      onChange={e => setDescription(e.target.value)}
-                      className="flex w-full rounded-2xl border border-input bg-background px-5 py-3 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus:border-primary focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all h-24 resize-none"
-                      style={{ borderRadius: '1rem' }}
-                    />
-                    {error && <div className="text-red-500 text-sm">{error}</div>}
-                    <Button type="submit" className="mt-2 bg-[#7B4019] text-white rounded-full" disabled={loading}>
-                      {loading ? "Posting..." : "Posting"}
-                    </Button>
-                  </form>
-                </DialogContent>
-              </Dialog>
-            </>
-          ) : (
-            <div className="flex flex-col items-center w-full gap-6 pt-2">
-              <div className="font-semibold text-lg mb-1">Anda belum login</div>
-              <div className="text-sm text-gray-500 mb-4 text-center">Silakan login untuk membuat postingan dan melihat profil Anda.</div>
-              <Link href="/login" className="w-full">
-                <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white text-lg font-semibold py-1 shadow-lg backdrop-blur-sm" style={{ backdropFilter: 'blur(4px)' }}>
-                  Login
-                </Button>
-              </Link>
             </div>
           )}
         </div>
