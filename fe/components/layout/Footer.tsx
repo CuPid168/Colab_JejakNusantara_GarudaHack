@@ -23,7 +23,7 @@ const Footer = () => {
           memastikan bahwa warisan budaya Indonesia tetap hidup di hati masyarakat, kini dan nanti.
         </p>
         <div className="space-x-4 flex flex-wrap justify-center gap-3">
-          <Link href="/about" className="cursor-pointer rounded-full bg-[#131313] px-6 py-3">
+          <Link href="/tentang-kami" className="cursor-pointer rounded-full bg-[#131313] px-6 py-3">
             👀 Tentang Kami
           </Link>
           <Link href="/login" className="cursor-pointer rounded-full bg-[#131313] px-6 py-3">

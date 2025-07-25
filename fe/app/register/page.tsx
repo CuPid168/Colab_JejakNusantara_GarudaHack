@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Alert } from "@/components/ui/alert";
 import { signIn } from "next-auth/react";
+import { Label } from "@/components/ui/label";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -45,34 +46,86 @@ export default function RegisterPage() {
             <p className="text-base text-muted-foreground mb-6">Lengkapi formulirnya dan kamu siap menjelajah budaya nusantara!</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <Input
-              type="text"
-              placeholder="Nama"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              required
-            />
-            <Input
-              type="text"
-              placeholder="Domisili"
-              value={domisili}
-              onChange={e => setDomisili(e.target.value)}
-              required
-            />
-            <Input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-            <Input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              required
-            />
+            <div className="relative">
+              <Input
+                id="name"
+                type="text"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="name"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${name ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Nama
+              </Label>
+            </div>
+            <div className="relative">
+              <Input
+                id="domisili"
+                type="text"
+                value={domisili}
+                onChange={e => setDomisili(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="domisili"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${domisili ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Domisili
+              </Label>
+            </div>
+            <div className="relative">
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="email"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${email ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Email
+              </Label>
+            </div>
+            <div className="relative">
+              <Input
+                id="password"
+                type="password"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                className="peer pt-6"
+                placeholder=" "
+                required
+              />
+              <Label
+                htmlFor="password"
+                className={`absolute left-3 top-1.5 z-10 origin-[0] transition-all duration-200 pointer-events-none text-muted-foreground
+                  peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground
+                  peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-primary
+                  ${password ? 'top-1.5 text-xs text-primary' : ''}`}
+              >
+                Password
+              </Label>
+            </div>
             {error && <Alert>{error}</Alert>}
             {success && <Alert className="border-green-500 bg-green-50 text-green-700">{success}</Alert>}
             <Button
