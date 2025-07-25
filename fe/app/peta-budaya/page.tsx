@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import SearchCulture from "./SearchCulture";
 import CultureDetail from "./CultureDetail";
 import allCulture from "./allculture";
+import { motion } from "framer-motion";
 
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
@@ -93,37 +94,71 @@ const PetaBudaya = () => {
 
   return (
     <div className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-5">
-      <h1 className="font-bold text-3xl">Peta Budaya</h1>
-      <div className="rounded-lg gap-6 sm:gap-8 p-3 sm:p-6 shadow-md space-y-4">
-        <div className="relative z-0">
+      <motion.h1
+        className="font-bold text-3xl"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        Peta Budaya
+      </motion.h1>
+      <motion.div
+        className="rounded-lg gap-6 sm:gap-8 p-3 sm:p-6 shadow-md space-y-4"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <motion.div
+          className="relative z-0"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           <Map allCulture={allCulture} />
-        </div>
-        <SearchCulture
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          <SearchCulture
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            hoveredProvince={hoveredProvince}
+            setHoveredProvince={setHoveredProvince}
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            isDropdownOpen={isDropdownOpen}
+            setIsDropdownOpen={setIsDropdownOpen}
+            setSelectedProvince={setSelectedProvince}
+            provincesList={provincesList}
+            selectedCulture={selectedCulture}
+            setSelectedCulture={setSelectedCulture}
+            cultureInOneProvince={cultureInOneProvince}
+            //@ts-ignore
+            dropdownRef={dropdownRef}
+          />
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <CultureDetail
+          allCulture={allCulture}
+          selectedProvince={selectedProvince}
           selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          hoveredProvince={hoveredProvince}
-          setHoveredProvince={setHoveredProvince}
-          searchTerm={searchTerm}
-          setSearchTerm={setSearchTerm}
-          isDropdownOpen={isDropdownOpen}
-          setIsDropdownOpen={setIsDropdownOpen}
-          setSelectedProvince={setSelectedProvince}
-          provincesList={provincesList}
           selectedCulture={selectedCulture}
+          //@ts-ignore
           setSelectedCulture={setSelectedCulture}
-          cultureInOneProvince={cultureInOneProvince}
-          //@ts-ignore
-          dropdownRef={dropdownRef}
         />
-      </div>
-      <CultureDetail
-        allCulture={allCulture}
-        selectedProvince={selectedProvince}
-        selectedCategory={selectedCategory}
-        selectedCulture={selectedCulture}
-          //@ts-ignore
-        setSelectedCulture={setSelectedCulture}
-      />
+      </motion.div>
     </div>
   );
 };
