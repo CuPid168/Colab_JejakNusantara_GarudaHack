@@ -1,11 +1,11 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import { PrismaClient } from '@/generated/prisma';
-import formidable, { Fields, Files, File } from 'formidable';
-import fs from 'fs';
-import path from 'path';
-import { getServerSession } from 'next-auth/next';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { PrismaClient } from "@/generated/prisma";
+import formidable, { Fields, Files, File } from "formidable";
+import fs from "fs";
+import path from "path";
+import { getServerSession } from "next-auth/next";
 //@ts-ignore
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 export const config = {
   api: {
@@ -15,16 +15,18 @@ export const config = {
 
 const prisma = new PrismaClient();
 
-async function parseForm(req: NextApiRequest): Promise<{ fields: Fields; files: Files }> {
+async function parseForm(
+  req: NextApiRequest,
+): Promise<{ fields: Fields; files: Files }> {
   return new Promise((resolve, reject) => {
     const form = formidable({
       multiples: false,
-      uploadDir: path.join(process.cwd(), 'public', 'uploads'),
+      uploadDir: path.join(process.cwd(), "public", "uploads"),
       keepExtensions: true,
       maxFileSize: 5 * 1024 * 1024, // 5MB
       filename: (_name, _ext, part) => {
-        const unique = Date.now() + '-' + Math.round(Math.random() * 1e9);
-        return `${unique}${path.extname(part.originalFilename || '')}`;
+        const unique = Date.now() + "-" + Math.round(Math.random() * 1e9);
+        return `${unique}${path.extname(part.originalFilename || "")}`;
       },
     });
     form.parse(req, (err, fields, files) => {
@@ -34,13 +36,24 @@ async function parseForm(req: NextApiRequest): Promise<{ fields: Fields; files: 
   });
 }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'GET') {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
+  if (req.method === "GET") {
     // Fetch all posts with user, likes, upvotes, comments count
     const posts = await prisma.post.findMany({
-      orderBy: { createdAt: 'desc' },
+      orderBy: { createdAt: "desc" },
       include: {
-        user: { select: { id: true, name: true, image: true, email: true, domisili: true } },
+        user: {
+          select: {
+            id: true,
+            name: true,
+            image: true,
+            email: true,
+            domisili: true,
+          },
+        },
         likes: true,
         upvotes: true,
         comments: true,
@@ -60,15 +73,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(200).json(formatted);
   }
 
-  if (req.method === 'POST') {
+  if (req.method === "POST") {
     // Auth check
+    //@ts-ignore
     const session = await getServerSession(req, res, authOptions);
     if (!session || !session.user?.email) {
-      return res.status(401).json({ error: 'Unauthorized' });
+      return res.status(401).json({ error: "Unauthorized" });
     }
 
     // Ensure uploads dir exists
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+    const uploadDir = path.join(process.cwd(), "public", "uploads");
     if (!fs.existsSync(uploadDir)) {
       fs.mkdirSync(uploadDir, { recursive: true });
     }
@@ -78,11 +92,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       ({ fields, files } = await parseForm(req));
     } catch (err) {
-      return res.status(400).json({ error: 'Invalid form data' });
+      return res.status(400).json({ error: "Invalid form data" });
     }
 
-    const location = Array.isArray(fields.location) ? fields.location[0] : fields.location;
-    const description = Array.isArray(fields.description) ? fields.description[0] : fields.description;
+    const location = Array.isArray(fields.location)
+      ? fields.location[0]
+      : fields.location;
+    const description = Array.isArray(fields.description)
+      ? fields.description[0]
+      : fields.description;
     let imageFile: File | undefined;
     if (Array.isArray(files?.image)) {
       imageFile = files.image[0];
@@ -90,13 +108,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       imageFile = files.image as File;
     }
     if (!imageFile || !location || !description) {
-      return res.status(400).json({ error: 'Missing required fields' });
+      return res.status(400).json({ error: "Missing required fields" });
     }
 
     // Get user
-    const user = await prisma.user.findUnique({ where: { email: session.user.email } });
+    const user = await prisma.user.findUnique({
+      where: { email: session.user.email },
+    });
     if (!user) {
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({ error: "User not found" });
     }
 
     // Save post
@@ -113,6 +133,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(200).json({ success: true, post });
   }
 
-  res.setHeader('Allow', ['GET', 'POST']);
+  res.setHeader("Allow", ["GET", "POST"]);
   res.status(405).end(`Method ${req.method} Not Allowed`);
-} 
+}
+
