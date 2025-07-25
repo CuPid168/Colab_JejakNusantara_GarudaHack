@@ -279,7 +279,9 @@ export default function KomunitasPage() {
               {/* Create Post Button */}
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                  <Button className="w-full rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2">Create Post</Button>
+                  <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2 mt-2 shadow-lg backdrop-blur-sm" style={{backdropFilter: 'blur(4px)'}}>
+                    Create Post
+                  </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-md w-full">
                   <DialogHeader>
@@ -327,7 +329,9 @@ export default function KomunitasPage() {
               <div className="font-semibold text-lg mb-1">Anda belum login</div>
               <div className="text-sm text-gray-500 mb-4 text-center">Silakan login untuk membuat postingan dan melihat profil Anda.</div>
               <Link href="/login" className="w-full">
-                <Button className="w-full rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white font-semibold py-2">Login</Button>
+                <Button className="w-full h-14 rounded-full bg-gradient-to-r from-[#7B4019] to-[#FF7D29] text-white text-lg font-semibold py-1 shadow-lg backdrop-blur-sm" style={{backdropFilter: 'blur(4px)'}}>
+                  Login
+                </Button>
               </Link>
             </div>
           )}
