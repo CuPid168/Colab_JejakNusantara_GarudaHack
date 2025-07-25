@@ -4,6 +4,7 @@ import formidable, { Fields, Files, File } from 'formidable';
 import fs from 'fs';
 import path from 'path';
 import { getServerSession } from 'next-auth/next';
+//@ts-ignore
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 
 export const config = {

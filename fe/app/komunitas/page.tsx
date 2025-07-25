@@ -242,7 +242,7 @@ export default function KomunitasPage() {
           {session && session.user ? (
             <>
               <div className="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-[#7B4019]">
-                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session?.user.id || session.user.email}`} alt="Profile" width={96} height={96} />
+                <Image src={session.user.image || `https://i.pravatar.cc/300?u=${session.user.email}`} alt="Profile" width={96} height={96} />
               </div>
               <div className="font-semibold text-lg mb-1">{session.user.name || "Pengguna"}</div>
               <div className="text-sm text-gray-500 mb-4">{typeof session.user.email === 'string' ? session.user.email : '-'}</div>

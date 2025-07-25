@@ -12,6 +12,7 @@ const MarkerCluster = ({ markers }: any) => {
   const map = useMap();
 
   useEffect(() => {
+    //@ts-ignore
     const markerClusterGroup = L.markerClusterGroup();
 
     markers.forEach((marker: any) => {
