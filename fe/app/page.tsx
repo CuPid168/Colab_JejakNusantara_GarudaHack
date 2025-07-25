@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <>
       <motion.section
-        className="w-full py-12 md:py-24 lg:py-32"
+        className="w-full py-12 md:py-24 lg:py-32 min-h-[60vh] bg-[#FFEEA9]/20"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -191,7 +191,7 @@ export default function Home() {
       </motion.section>
       {/* Info Section: Cultural Problems */}
       <motion.section
-        className="w-full py-8"
+        className="w-full py-20 -mt-[10.2rem]"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

@@ -41,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full border-b bg-background">
+    <header className="w-full bg-background">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
