@@ -19,6 +19,7 @@ import {
   SheetTitle,
 } from "../ui/sheet";
 import { FiMenu } from "react-icons/fi";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 
 const navLinks = [
   { name: "Beranda", href: "/" },
@@ -33,7 +34,7 @@ const authButtons = [
 ];
 
 const Header = () => {
-  const pathname = usePathname();
+  const pathname = usePathname() || "";
   const { data: session } = useSession();
   const isActive = (link: string) => {
     return pathname === link || (pathname.startsWith(link) && link !== "/");
@@ -68,14 +69,39 @@ const Header = () => {
         </nav>
         {/* Desktop Auth/User */}
         <div className="hidden lg:flex items-center gap-3">
-          {session && session.user ? (
-            <>
-              <span className="font-semibold text-primary">{session.user.name}</span>
-              <Button variant="outline" onClick={() => signOut({ callbackUrl: "/" })}>
-                <span className="rounded-full">Keluar</span>
-              </Button>
-            </>
-          ) : (
+          {session && session.user ? (() => {
+            type UserWithDomisili = typeof session.user & { id?: string; domisili?: string };
+            const user = session.user as UserWithDomisili;
+            return (
+              <div className="relative flex items-center gap-3">
+                <Image
+                  src={user.image || `https://i.pravatar.cc/300?u=${user.id || user.email}`}
+                  alt="Profile"
+                  width={40}
+                  height={40}
+                  className="rounded-full border object-cover w-10 h-10"
+                />
+                <div className="flex flex-col justify-center">
+                  <span className="font-semibold text-primary leading-tight">{user.name}</span>
+                  {user.domisili && (
+                    <span className="text-xs text-gray-500 leading-tight">{user.domisili}</span>
+                  )}
+                </div>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="ml-2 p-1 rounded-full hover:bg-accent focus:outline-none flex items-center">
+                      <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-40">
+                    <DropdownMenuItem onClick={() => signOut({ callbackUrl: "/" })}>
+                      Keluar
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+            );
+          })() : (
             authButtons.map((button) => (
               <Button
                 asChild
