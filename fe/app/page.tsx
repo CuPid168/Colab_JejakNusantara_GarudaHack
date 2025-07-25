@@ -128,16 +128,18 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="relative z-0 flex justify-center items-center">
+            <div className="relative z-0 flex justify-center items-center w-full">
               <div
                 className="absolute z-0"
                 style={{
-                  width: '500px',
-                  height: '500px',
+                  width: '60vw',
+                  maxWidth: '28rem',
+                  height: '60vw',
+                  maxHeight: '28rem',
                   borderRadius: '50%',
                   background: '#FF7D29',
                   opacity: 0.7,
-                  filter: 'blur(120px)',
+                  filter: 'blur(8vw)',
                   left: '50%',
                   top: '50%',
                   transform: 'translate(-50%, -50%)',
@@ -148,7 +150,7 @@ export default function Home() {
                 alt="landing jumbotron"
                 width={800}
                 height={600}
-                className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
+                className="w-full max-w-3xl h-auto object-cover rounded-xl z-10"
                 priority
               />
             </div>
@@ -202,16 +204,18 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
           <div className="flex justify-center items-center">
-            <div className="relative z-0 flex justify-center items-center">
+            <div className="relative z-0 flex justify-center items-center w-full">
               <div
                 className="absolute z-0"
                 style={{
-                  width: '500px',
-                  height: '500px',
+                  width: '60vw',
+                  maxWidth: '28rem',
+                  height: '60vw',
+                  maxHeight: '28rem',
                   borderRadius: '50%',
                   background: '#FF7D29',
                   opacity: 0.7,
-                  filter: 'blur(120px)',
+                  filter: 'blur(8vw)',
                   left: '50%',
                   top: '50%',
                   transform: 'translate(-50%, -50%)',
@@ -222,7 +226,7 @@ export default function Home() {
                 alt="landing jumbotron"
                 width={800}
                 height={600}
-                className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
+                className="w-full max-w-3xl h-auto object-cover rounded-xl z-10"
                 priority
               />
             </div>
