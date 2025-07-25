@@ -52,3 +52,7 @@ To create an accessible, engaging, and interactive experience that nurtures appr
 ## 🗂️ Pitch Deck
 
 📄 [View our Pitch Deck on Google Drive](https://drive.google.com/file/d/1mbNTmw3Bvbs911igqzzWhLV0vdKDJCRP/view?usp=sharing)
+
+## 📸 Screenshots
+
+<img width="1920" height="1080" alt="Mockup 1" src="https://github.com/user-attachments/assets/df785260-04b7-458e-9881-781ebaa44930" />
