@@ -56,3 +56,6 @@ To create an accessible, engaging, and interactive experience that nurtures appr
 ## 📸 Screenshots
 
 <img width="1920" height="1080" alt="Mockup 1" src="https://github.com/user-attachments/assets/df785260-04b7-458e-9881-781ebaa44930" />
+
+## 🧠 AI Contribution Acknowledgment
+During the development process, we leveraged general-purpose AI tools to assist with writing, debugging, and refining code, as well as generating documentation. These tools were used to accelerate productivity and enhance the overall development workflow in a time-constrained setting.
