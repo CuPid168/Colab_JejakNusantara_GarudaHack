@@ -107,7 +107,7 @@ const Header = () => {
                 asChild
                 key={button.name}
                 variant={button.name === "Daftar" ? "default" : "outline"}
-                className={`rounded-full ${button.name === "Daftar" ? "text-white" : ""}`}
+                className={`rounded-full h-10 px-6 text-base font-semibold ${button.name === "Daftar" ? "text-white" : ""}`}
               >
                 <Link href={button.href}>{button.name}</Link>
               </Button>
@@ -153,7 +153,7 @@ const Header = () => {
                       asChild
                       key={button.name}
                       variant={button.name === "Daftar" ? "default" : "outline"}
-                      className={`rounded-full ${button.name === "Daftar" ? "text-white" : ""}`}
+                      className={`rounded-full h-10 px-6 text-base font-semibold ${button.name === "Daftar" ? "text-white" : ""}`}
                     >
                       <Link href={button.href}>{button.name}</Link>
                     </Button>
