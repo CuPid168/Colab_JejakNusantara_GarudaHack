@@ -129,7 +129,7 @@ const SearchCulture = ({
         )}
       </div>
 
-      <div className="flex w-full items-center justify-between gap-2">
+      <div className="flex w-full items-center justify-between gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 py-2">
         {categoryButton.map((category) => (
           <button
             key={category}

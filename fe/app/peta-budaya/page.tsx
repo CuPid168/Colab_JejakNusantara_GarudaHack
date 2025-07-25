@@ -14,11 +14,14 @@ const PetaBudaya = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedProvince, setSelectedProvince] = useState("Aceh");
   const [hoveredProvince, setHoveredProvince] = useState<string | null>(null);
-  const [searchTerm, setSearchTerm] = useState("");  
+  const [searchTerm, setSearchTerm] = useState("");
   const cultureInOneProvince = allCulture.filter(
-    (item) => item.provinsi === selectedProvince && item?.kategori === selectedCategory
+    (item) =>
+      item.provinsi === selectedProvince && item?.kategori === selectedCategory
   );
-  const [selectedCulture, setSelectedCulture] = useState(cultureInOneProvince[0]);
+  const [selectedCulture, setSelectedCulture] = useState(
+    cultureInOneProvince[0]
+  );
 
   const provincesList = [
     "Aceh",
@@ -65,7 +68,10 @@ const PetaBudaya = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsDropdownOpen(false);
         setHoveredProvince(null);
         if (searchTerm.trim() === "") {
@@ -86,9 +92,9 @@ const PetaBudaya = () => {
   }, [isDropdownOpen, selectedProvince]);
 
   return (
-    <div className="mt-10 mx-25 space-y-5">
+    <div className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-5">
       <h1 className="font-bold text-3xl">Peta Budaya</h1>
-      <div className="rounded-lg gap-10 p-3 shadow-md space-y-4">
+      <div className="rounded-lg gap-6 sm:gap-8 p-3 sm:p-6 shadow-md space-y-4">
         <Map allCulture={allCulture} />
         <SearchCulture
           selectedCategory={selectedCategory}
