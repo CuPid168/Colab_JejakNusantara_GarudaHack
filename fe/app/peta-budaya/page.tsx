@@ -95,7 +95,9 @@ const PetaBudaya = () => {
     <div className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-5">
       <h1 className="font-bold text-3xl">Peta Budaya</h1>
       <div className="rounded-lg gap-6 sm:gap-8 p-3 sm:p-6 shadow-md space-y-4">
-        <Map allCulture={allCulture} />
+        <div className="relative z-0">
+          <Map allCulture={allCulture} />
+        </div>
         <SearchCulture
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}

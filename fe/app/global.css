@@ -137,3 +137,15 @@
   --shadow-xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 8px 10px -2px hsl(0 0% 0% / 0.1);
   --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.25);
 }
+
+/* Fix Leaflet map z-index so overlays (like mobile drawer) appear above the map */
+.leaflet-container {
+  z-index: 1 !important;
+}
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1 !important;
+}
+
+/* If your drawer uses a z-index, make sure it's higher than 1 (e.g., 1000) */
