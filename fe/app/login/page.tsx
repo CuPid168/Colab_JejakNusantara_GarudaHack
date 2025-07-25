@@ -32,8 +32,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className={`m-auto mt-10 flex w-[1100px] items-center justify-center gap-4`}>
-      <div className="">
+    <div className="mx-auto mt-10 flex flex-col-reverse md:flex-row items-center justify-center gap-8 max-w-4xl w-full px-4">
+      <div className="w-full md:w-1/2">
         <h1 className="mb-2 text-4xl font-bold">Bergabung Sekarang</h1>
         <p className="mb-5 text-lg text-gray-500">
           Lengkapi formulirnya dan kamu siap menjelajah budaya nusantara!
@@ -74,16 +74,32 @@ export default function LoginPage() {
           className="mb-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-full border border-gray-300 bg-white py-4 text-sm font-semibold text-black/75 transition-colors hover:bg-gray-100"
         >
           Login dengan Google
-          <Image src="images/google-logo.svg" alt="hide Password" width={18} height={18} />
+          <Image
+            src="images/google-logo.svg"
+            alt="hide Password"
+            width={18}
+            height={18}
+          />
         </button>
         <p className="text-center text-sm text-gray-500">
           Belum punya akun?
-          <Link href="/register" className="ml-2 font-bold text-blue-500 underline">
+          <Link
+            href="/register"
+            className="ml-2 font-bold text-blue-500 underline"
+          >
             Daftar
           </Link>
         </p>
       </div>
-      <Image src="/images/daftar.svg" alt="vector daftar" width={600} height={600} />
+      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <Image
+          src="/images/daftar.svg"
+          alt="vector daftar"
+          width={350}
+          height={350}
+          className="w-full max-w-xs md:max-w-sm h-auto"
+        />
+      </div>
     </div>
   );
 }

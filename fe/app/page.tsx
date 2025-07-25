@@ -84,7 +84,7 @@ export default function Home() {
                 src="/images/landing_jumbotron.png"
                 alt="landing jumbotron"
                 width={800}
-                height={600}
+                height={800}
                 className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
                 priority
               />
