@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ClientLayout from "./ClientLayout";
 import { Toaster } from "sonner";
+import PageTransition from "@/components/PageTransition";
 
 import "./global.css";
 
@@ -28,7 +29,9 @@ export default function RootLayout({
         <ClientLayout>
           <Toaster position="top-center" />
           <Header />
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
           <Footer />
         </ClientLayout>
       </body>

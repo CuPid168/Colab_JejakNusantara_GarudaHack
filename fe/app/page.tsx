@@ -1,9 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { FaGraduationCap, FaComments, FaGlobe } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import { useState, useEffect, useRef } from "react";
+import type { EmblaCarouselType } from "embla-carousel";
+import { motion } from "framer-motion";
 
 const marqueeImages1 = [
   { src: "/assets/rajaAmpat.jpg", alt: "Raja Ampat" },
@@ -24,20 +36,97 @@ const marqueeImages2 = [
 const firstMarqueeContent = [...marqueeImages1, ...marqueeImages1];
 const secondMarqueeContent = [...marqueeImages2, ...marqueeImages2];
 
+const feedbacks = [
+  {
+    avatar: "https://i.pravatar.cc/300?img=1",
+    name: "Yanto Budiman",
+    domicile: "Kediri",
+    feedback:
+      "Lewat Jejak Nusantara, aku baru tahu kalau daerah-daerah di Indonesia punya budaya yang sedalam ini. Seru banget eksplorasinya!",
+  },
+  {
+    avatar: "https://i.pravatar.cc/300?img=2",
+    name: "Siti Rahma",
+    domicile: "Makassar",
+    feedback:
+      "Platform ini bikin aku makin cinta sama budaya Indonesia. Banyak info menarik yang sebelumnya aku nggak tahu!",
+  },
+  {
+    avatar: "https://i.pravatar.cc/300?img=3",
+    name: "Budi Santoso",
+    domicile: "Bandung",
+    feedback:
+      "Fitur-fiturnya keren dan mudah digunakan. Cocok buat generasi muda yang mau belajar budaya lokal!",
+  },
+];
+
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselApi = useRef<EmblaCarouselType | undefined>(undefined);
+  useEffect(() => {
+    if (!carouselApi.current) return;
+    const api = carouselApi.current;
+    const onSelect = () => {
+      setCurrentIndex(api.selectedScrollSnap());
+    };
+    api.on("select", onSelect);
+    onSelect();
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [carouselApi.current]);
+  // Auto-slide
+  useEffect(() => {
+    if (!carouselApi.current) return;
+    const api = carouselApi.current;
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [carouselApi.current]);
+  const goToSlide = (idx: number) => {
+    if (!carouselApi.current) return;
+    carouselApi.current.scrollTo(idx);
+  };
+
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
+      <motion.section
+        className="w-full py-12 md:py-24 lg:py-32"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="container mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
           <div className="flex flex-col space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">34 Provinsi</h1>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#FF7D29]">
+            <motion.h1
+              className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+            >
+              34 Provinsi
+            </motion.h1>
+            <motion.h1
+              className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#FF7D29]"
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
               7.241 Budaya
-            </h1>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Bahasa, Adat, Kesenian, dan Kuliner Tradisional Indonesia adalah warisan yang tak ternilai. Mari
-              pelajari, pahami, dan teruskan kepada generasi selanjutnya!
-            </p>
+            </motion.h1>
+            <motion.p
+              className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+            >
+              Bahasa, Adat, Kesenian, dan Kuliner Tradisional Indonesia adalah warisan yang tak ternilai. Mari pelajari, pahami, dan teruskan kepada generasi selanjutnya!
+            </motion.p>
             <div className="flex gap-3 items-center">
               <Link
                 className=" text-white bg-linear-to-r from-[#7B4019] to-[#E1752E] rounded-full px-6 rounded-full py-4 "
@@ -69,36 +158,51 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <div className="relative z-0 flex justify-center items-center">
+          <motion.div
+            className="flex justify-center items-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            <div className="relative z-0 flex justify-center items-center w-full">
               <div
                 className="absolute z-0"
                 style={{
-                  width: "500px",
-                  height: "500px",
-                  borderRadius: "50%",
-                  background: "#FF7D29",
+                  width: '60vw',
+                  maxWidth: '28rem',
+                  height: '60vw',
+                  maxHeight: '28rem',
+                  borderRadius: '50%',
+                  background: '#FF7D29',
                   opacity: 0.7,
-                  filter: "blur(120px)",
-                  left: "50%",
-                  top: "50%",
-                  transform: "translate(-50%, -50%)",
+                  filter: 'blur(8vw)',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%, -50%)',
                 }}
               />
               <Image
                 src="/images/landing_jumbotron.png"
                 alt="landing jumbotron"
-                width={2000}
-                height={2000}
-                className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
+                width={800}
+                height={600}
+                className="w-full max-w-3xl h-auto object-cover rounded-xl z-10"
                 priority
               />
             </div>
-          </div>
+          </motion.div>
+
         </div>
-      </section>
+      </motion.section>
       {/* Info Section: Cultural Problems */}
-      <section className="w-full py-8">
+      <motion.section
+        className="w-full py-8"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="bg-gradient-to-r from-[#7B4019] to-[#E1752E] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-stretch">
             {/* Problem 1 */}
@@ -148,35 +252,49 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      </motion.section>
+      <motion.section
+        className="w-full py-12 md:py-24 lg:py-32"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
         <div className="container mx-auto w-full grid items-center gap-6 px-4 lg:px-8 lg:grid-cols-2 lg:gap-10">
-          <div className="flex justify-center items-center">
-            <div className="relative z-0 flex justify-center items-center">
+          <motion.div
+            className="flex justify-center items-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            <div className="relative z-0 flex justify-center items-center w-full">
               <div
                 className="absolute z-0"
                 style={{
-                  width: "500px",
-                  height: "500px",
-                  borderRadius: "50%",
-                  background: "#FF7D29",
+                  width: '60vw',
+                  maxWidth: '28rem',
+                  height: '60vw',
+                  maxHeight: '28rem',
+                  borderRadius: '50%',
+                  background: '#FF7D29',
                   opacity: 0.7,
-                  filter: "blur(120px)",
-                  left: "50%",
-                  top: "50%",
-                  transform: "translate(-50%, -50%)",
+                  filter: 'blur(8vw)',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%, -50%)',
                 }}
               />
               <Image
                 src="/images/landing_peta.png"
                 alt="landing jumbotron"
-                width={1000}
-                height={1000}
-                className="w-full max-w-2xl h-auto object-cover rounded-xl z-10"
+                width={800}
+                height={600}
+                className="w-full max-w-3xl h-auto object-cover rounded-xl z-10"
                 priority
               />
             </div>
-          </div>
+          </motion.div>
 
           <div className="flex flex-col space-y-4">
             <h1 className="text-xl font-bold tracking-tighter sm:text-xl md:text-2xl text-[#FF7D29] tracking-widest">
@@ -244,9 +362,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* Ragam Nusantara Section */}
-      <section className="w-full py-12 bg-background">
+      <motion.section
+        className="w-full py-12 mb-20 bg-background"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Ragam Nusantara</h2>
         </div>
@@ -288,7 +412,71 @@ export default function Home() {
             ))}
           </div>
         </Marquee>
-      </section>
+      </motion.section>
+      {/* Jejak Nusantara Section */}
+      <motion.section
+        className="w-full py-16 -mb-24"
+        style={{ background: '#FDF8EE' }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="container mx-auto px-4 lg:px-8 flex flex-col items-center relative">
+          {/* Decorative Image - now outside carousel container */}
+          <div className="absolute top-0 left-0 z-0 pointer-events-none select-none" style={{ transform: 'translate(430%, 80%)' }}>
+            <Image
+              src="/images/landing_jejak.png"
+              alt="Jejak Decorative"
+              width={100}
+              height={100}
+              className="opacity-90"
+              priority
+            />
+          </div>
+          <h3 className="text-[#FF7D29] tracking-widest font-semibold text-base md:text-lg mb-1 text-center">Jejak Nusantara</h3>
+          <h2 className="text-black text-2xl md:text-4xl font-bold mb-8 text-center">Pendapat Pengguna</h2>
+          {/* Carousel */}
+          <div className="w-full max-w-2xl relative flex flex-col items-center z-10">
+            {/* Carousel Component */}
+            <Carousel
+              opts={{ loop: true, align: 'center' }}
+              className="w-full"
+              setApi={api => (carouselApi.current = api)}
+            >
+              <CarouselContent>
+                {feedbacks.map((item, idx) => (
+                  <CarouselItem key={idx} className="flex justify-center">
+                    <div className="bg-white rounded-2xl shadow-lg px-8 py-12 mb-12 flex flex-col items-center w-full max-w-xl relative z-10">
+                      <img
+                        src={item.avatar}
+                        alt={item.name}
+                        className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#FF7D29]"
+                      />
+                      <div className="text-lg font-bold text-black text-center">{item.name}</div>
+                      <div className="text-[#FF7D29] text-sm font-medium mb-2 text-center">{item.domicile}</div>
+                      <div className="text-gray-500 text-center text-base max-w-md">{item.feedback}</div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="bg-white border-2 border-[#FF7D29] text-[#FF7D29] hover:bg-[#FF7D29] hover:text-white transition-colors" />
+              <CarouselNext className="bg-white border-2 border-[#FF7D29] text-[#FF7D29] hover:bg-[#FF7D29] hover:text-white transition-colors" />
+            </Carousel>
+            {/* Indicator Dots */}
+            <div className="flex justify-center gap-2 mt-6">
+              {feedbacks.map((_, idx) => (
+                <button
+                  key={idx}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${currentIndex === idx ? 'bg-[#FF7D29]' : 'bg-[#FF7D29] opacity-30'}`}
+                  onClick={() => goToSlide(idx)}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </motion.section>
     </>
   );
 }
