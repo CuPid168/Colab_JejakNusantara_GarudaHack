@@ -2,6 +2,9 @@
 import { useState, useEffect, useRef } from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import { DotWave } from "@uiball/loaders";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { FiTrash2 } from "react-icons/fi";
 
 function getOrCreateSessionId() {
   if (typeof window === "undefined") return "";
@@ -170,7 +173,7 @@ export default function Chatbot() {
         className="flex-1 overflow-y-auto bg-[#f8f9fa] rounded-lg p-4 mb-4 flex flex-col bg-gray-100"
       >
         {chatState.showWelcome && (
-          <div className="text-white bg-[#7B4019] rounded-2xl px-5 py-2.5 self-start mb-3 max-w-[80%] font-medium">
+          <div className="text-white bg-[#7B4019] rounded-2xl px-5 py-2.5 self-start mb-3 max-w-[65%] font-medium">
             Selamat datang! Tanyakan apa saja tentang budaya Indonesia, bahasa daerah, makanan, cerita rakyat, atau tradisi unik. Klik saran di bawah untuk mulai!
           </div>
         )}
@@ -187,7 +190,7 @@ export default function Chatbot() {
                 className="flex justify-start mb-2"
               >
                 <div
-                  className="bg-[#7B4019] text-white rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line self-start"
+                  className="bg-[#7B4019] text-white rounded-2xl px-4 py-2 max-w-[65%] whitespace-pre-line self-start"
                 >
                   {renderWithBold(typewriterText)}
                 </div>
@@ -200,7 +203,7 @@ export default function Chatbot() {
               className={`flex mb-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`rounded-2xl px-4 py-2 max-w-[80%] whitespace-pre-line ${msg.role === "user" ? "bg-white text-black self-end shadow-md !rounded-tr-none" : "bg-[#7b3f00] text-white self-start shadow-md !rounded-tl-none"}`}
+                className={`rounded-2xl px-4 py-2 max-w-[${msg.role === "ai" ? "65%" : "80%"}] whitespace-pre-line ${msg.role === "user" ? "bg-white text-black self-end shadow-md !rounded-tr-none" : "bg-[#7b3f00] text-white self-start shadow-md !rounded-tl-none"}`}
               >
                 {msg.role === "ai" ? renderWithBold(msg.text) : msg.text}
               </div>
@@ -216,24 +219,28 @@ export default function Chatbot() {
         )}
         <div ref={chatEndRef} />
       </div>
-      <div className="flex gap-2 mb-2 flex-wrap">
+      <div className="flex gap-2 mb-2 flex-wrap items-center">
         {SUGGESTIONS.map((s, i) => (
           <button
             key={i}
             onClick={() => handleSuggestionClick(s)}
-            className="bg-[#f1faee] text-[#7b3f00] border-none rounded-2xl px-4 py-1.5 text-sm cursor-pointer font-medium shadow-sm transition-colors duration-200 hover:bg-[#ffe5d0]"
+            className="bg-white text-[#7b3f00] border-none rounded-2xl px-4 py-1.5 text-sm cursor-pointer font-medium shadow-sm transition-colors duration-200 hover:bg-[#ffe5d0] shadow-xl"
             type="button"
           >
             {s}
           </button>
         ))}
-        <button
+        <div className="flex-1" />
+        <Button
+          variant="ghost"
+          size="icon"
           onClick={handleClear}
-          className="ml-auto bg-[#e63946] text-white border-none rounded-2xl px-4 py-1.5 text-sm cursor-pointer font-medium shadow-sm"
+          className="bg-[#e63946] hover:bg-[#b71c1c] text-white rounded-full p-2 transition-colors border border-white border-solid"
           type="button"
+          aria-label="Hapus Chat"
         >
-          Hapus Chat
-        </button>
+          <FiTrash2 size={20} />
+        </Button>
       </div>
       <form
         onSubmit={e => {
@@ -242,24 +249,21 @@ export default function Chatbot() {
         }}
         className="flex items-end gap-2 w-full"
       >
-        <TextareaAutosize
+        <Input
           value={chatState.input}
           onChange={e => setChatState(prev => ({ ...prev, input: e.target.value }))}
-          onKeyDown={handleInputKeyDown}
-          minRows={1}
-          maxRows={6}
           placeholder="Tanya bahasa atau seputar budaya ..."
-          className="flex-1 px-3 py-3 rounded-full border border-[#FF7D29] resize-none text-base outline-none w-full disabled:bg-gray-100"
+          className="flex-1 h-12 rounded-full text-base"
           disabled={chatState.loading}
         />
-        <button
+        <Button
           type="submit"
           disabled={chatState.loading || !chatState.input.trim()}
-          className={`rounded-full flex items-center justify-center text-white font-bold text-xl px-4 py-2 transition-colors duration-200 ${chatState.loading || !chatState.input.trim() ? "bg-gray-400 cursor-not-allowed" : "bg-[#FF7D29] hover:bg-[#c92a2a] cursor-pointer"}`}
+          className="h-12 px-5 rounded-full flex items-center justify-center text-white font-bold text-xl transition-colors duration-200 bg-[#FF7D29] hover:bg-[#c92a2a] disabled:bg-gray-400 disabled:cursor-not-allowed"
           aria-label="Kirim"
         >
           ▶
-        </button>
+        </Button>
       </form>
       {chatState.error && <div className="text-[#e63946] mt-2">{chatState.error}</div>}
     </div>
